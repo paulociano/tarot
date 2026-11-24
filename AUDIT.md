@@ -77,3 +77,6 @@ Baseline a433929: testes aprovados. Upload 887c3d2: cinco MP3 identificados no G
 
 ## ARCANA Universe — fase 1
 Baseline a5e89f3: CI e publicação aprovados, cinco faixas integradas. Extensão da arquitetura com registry de rotas e câmaras, caminho de navegação, portal radial acessível e Ateliê funcional. Exportação SVG contém apenas geometria autoral; nenhuma pintura, intenção em texto ou recurso externo. Rascunho em memória, sem persistência ainda. Ateliê reutiliza Biblioteca. Novos testes de rotas, geometria, limites, download, foco e largura 360px, além de axe em nove rotas × três larguras. Testes completos pendentes. Nenhum arquivo pictórico ou MP3 modificado.
+
+## Astrarium — fase 2
+Astronomy Engine ESM 2.1.19 vendorizado sem alterações (blob upstream 6b73063bbc90bafe1ad9a712cfd9e9b958a54d60), licença MIT preservada. Cálculos geocêntricos, data local ao meio-dia, navegação 1900–2100, cache limitado de meses/estações, import sob demanda com guarda de rota e shell offline. Teste de referência eclipse solar total 2024-04-08 e equinócio 2024-03-20 com tolerância de dez minutos, calendário bissexto e posições finitas; smoke mobile e axe em dez rotas. Não valida visibilidade local, orientação física do disco, astrologia ou precisão de navegação. Sem novos assets pictóricos/sonoros. CI novo pendente.

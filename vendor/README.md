@@ -1,0 +1,1 @@
+Astronomy Engine JavaScript ESM, v2.1.19, MIT. Upstream: https://github.com/cosinekitty/astronomy/tree/v2.1.19/source/js/esm . Unmodified source Git blob 6b73063bbc90bafe1ad9a712cfd9e9b958a54d60. Copyright Don Cross. See ASTRONOMY-LICENSE.txt.

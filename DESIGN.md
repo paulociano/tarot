@@ -61,3 +61,6 @@ Cinco composições Suno fornecidas pelo autor, preservadas nos caminhos origina
 
 ## Universum
 Tese visual: o Portal é um instrumento armilar habitável, não um catálogo de widgets. Cinco câmaras reais distribuem-se em um diagrama orbital de SVG e links HTML, com alternativa de navegação linear para toque e teclado. O hero mantém as pinturas e o acesso direto à tiragem. Identidade obsidiana/índigo/ametista/ouro/marfim preservada. O Ateliê começa como uma mesa de criação geométrica em duas colunas, com prévia autoral e controles semânticos; em telas pequenas, composição e controles empilham. Não usar pinturas exportáveis nem prometer significado sobrenatural dos sigilos. Sem novas bibliotecas ou autoplay.
+
+## Astrarium
+Instrumento circular em latão visual/indigo com escala de fase, calendário de discos lunares calculados e mapa de longitudes em anéis separados (não escala de distância). Reutiliza pintura e trilha do Observatório. Números e eventos possuem equivalentes textuais acessíveis, não dependem de cor nem do SVG. A navegação temporal é explícita, sem simular influência lunar ou previsões pessoais.

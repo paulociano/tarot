@@ -1,7 +1,7 @@
 // Stable registry: navigation, room ownership and cinematic environment are independent.
 export const chambers=Object.freeze([
  {id:'sanctuary',name:'O Santuário',glyph:'✧',scene:'ritual',route:'ritual',description:'Tarot e rituais',detail:'Escolha cartas, explore uma questão ou construa uma tiragem.',x:50,y:13,links:[['ritual','Iniciar tiragem'],['architect','Arquiteto de rituais']]},
- {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Símbolo do dia',detail:'Uma imagem para acompanhar suas reflexões.',x:84,y:39,links:[['daily','Carta do dia']]},
+ {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Céu e ciclos',detail:'Explore a Lua, os astros e a carta do dia.',x:84,y:39,links:[['daily','Carta do dia'],['astrarium','Astrarium · Mapa celeste']]},
  {id:'atelier',name:'O Ateliê',glyph:'◇',scene:'atlas',route:'atelier',description:'Criação simbólica',detail:'Componha sua própria mandala ou sigilo.',x:71,y:82,links:[['atelier','Ateliê Alquímico']]},
  {id:'grimoire',name:'O Grimório',glyph:'▤',scene:'journal',route:'journal',description:'Memória e reflexão',detail:'Revisite suas leituras e proteja seu histórico.',x:29,y:82,links:[['journal','Diário e cofre']]},
  {id:'library',name:'A Biblioteca',glyph:'✷',scene:'atlas',route:'atlas',description:'Conhecimento',detail:'Descubra arcanos, combinações e a Jornada do Louco.',x:16,y:39,links:[['atlas','Baralho completo'],['lab','Combinações'],['journey','Jornada do Louco']]}
@@ -11,6 +11,7 @@ export const routes=Object.freeze({
  ritual:{scene:'ritual',nav:'ritual',title:'O Santuário',room:'sanctuary'},
  architect:{scene:'ritual',nav:'ritual',title:'Arquiteto de Rituais',room:'sanctuary'},
  daily:{scene:'daily',nav:'daily',title:'O Observatório',room:'observatory'},
+ astrarium:{scene:'daily',nav:'daily',title:'Astrarium',room:'observatory'},
  atlas:{scene:'atlas',nav:'atlas',title:'A Biblioteca',room:'library'},
  lab:{scene:'atlas',nav:'lab',title:'Laboratório de Combinações',room:'library'},
  journey:{scene:'atlas',nav:'atlas',title:'Jornada do Louco',room:'library'},
