@@ -10,8 +10,7 @@ export const deck = [
     "scene": "Viajante de manto branco à beira de um penhasco que se curva para o céu, cão branco, rosa e pequeno fardo, estrada de estrelas além do abismo",
     "upright": "abertura e liberdade",
     "reversed": "imprudência ou medo de começar",
-    "action": "experimente um passo pequeno sem ignorar riscos",
-    "prompt": "Carta O Louco, Arcano Maior 0. Cena: Viajante de manto branco à beira de um penhasco que se curva para o céu, cão branco, rosa e pequeno fardo, estrada de estrelas além do abismo. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "experimente um passo pequeno sem ignorar riscos"
   },
   {
     "id": "01-o-mago",
@@ -24,8 +23,7 @@ export const deck = [
     "scene": "Figura diante de mesa suspensa com uma taça, uma espada, um pentáculo e um bastão, mão erguida ligando céu e terra, símbolo do infinito em luz",
     "upright": "iniciativa e recursos",
     "reversed": "dispersão ou manipulação",
-    "action": "identifique o recurso que já possui",
-    "prompt": "Carta O Mago, Arcano Maior 1. Cena: Figura diante de mesa suspensa com uma taça, uma espada, um pentáculo e um bastão, mão erguida ligando céu e terra, símbolo do infinito em luz. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "identifique o recurso que já possui"
   },
   {
     "id": "02-a-sacerdotisa",
@@ -38,8 +36,7 @@ export const deck = [
     "scene": "Guardiã entre pilares preto e branco, véu de romãs flutuantes, crescente lunar aos pés e livro fechado sobre lago espelhado",
     "upright": "intuição e silêncio",
     "reversed": "segredos ou desconexão interior",
-    "action": "observe o que ainda não consegue nomear",
-    "prompt": "Carta A Sacerdotisa, Arcano Maior 2. Cena: Guardiã entre pilares preto e branco, véu de romãs flutuantes, crescente lunar aos pés e livro fechado sobre lago espelhado. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "observe o que ainda não consegue nomear"
   },
   {
     "id": "03-a-imperatriz",
@@ -52,8 +49,7 @@ export const deck = [
     "scene": "Soberana coroada de estrelas em jardim de trigo e árvores que florescem em planetas, rio de seda, escudo de Vênus",
     "upright": "criação e cuidado",
     "reversed": "dependência ou excesso de zelo",
-    "action": "nutra algo que precisa crescer",
-    "prompt": "Carta A Imperatriz, Arcano Maior 3. Cena: Soberana coroada de estrelas em jardim de trigo e árvores que florescem em planetas, rio de seda, escudo de Vênus. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "nutra algo que precisa crescer"
   },
   {
     "id": "04-o-imperador",
@@ -66,8 +62,7 @@ export const deck = [
     "scene": "Soberano de armadura sob manto rubro em trono de pedra com cabeças de carneiro, montanhas cúbicas e cetro solar",
     "upright": "estrutura e responsabilidade",
     "reversed": "rigidez ou controle",
-    "action": "estabeleça um limite claro e justo",
-    "prompt": "Carta O Imperador, Arcano Maior 4. Cena: Soberano de armadura sob manto rubro em trono de pedra com cabeças de carneiro, montanhas cúbicas e cetro solar. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "estabeleça um limite claro e justo"
   },
   {
     "id": "05-o-hierofante",
@@ -80,8 +75,7 @@ export const deck = [
     "scene": "Mestre entre duas colunas numa biblioteca-templo impossível, duas chaves cruzadas e dois aprendizes, tiara em três níveis",
     "upright": "aprendizado e tradição",
     "reversed": "conformismo ou ruptura de crenças",
-    "action": "questione quais princípios ainda fazem sentido",
-    "prompt": "Carta O Hierofante, Arcano Maior 5. Cena: Mestre entre duas colunas numa biblioteca-templo impossível, duas chaves cruzadas e dois aprendizes, tiara em três níveis. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "questione quais princípios ainda fazem sentido"
   },
   {
     "id": "06-os-enamorados",
@@ -94,8 +88,7 @@ export const deck = [
     "scene": "Duas figuras diante de árvore frutífera e árvore em chamas, anjo de luz acima, montanha dividida ao fundo, caminhos que se encontram",
     "upright": "escolhas alinhadas e vínculo",
     "reversed": "desalinhamento ou indecisão",
-    "action": "nomeie os valores por trás da escolha",
-    "prompt": "Carta Os Enamorados, Arcano Maior 6. Cena: Duas figuras diante de árvore frutífera e árvore em chamas, anjo de luz acima, montanha dividida ao fundo, caminhos que se encontram. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "nomeie os valores por trás da escolha"
   },
   {
     "id": "07-o-carro",
@@ -108,8 +101,7 @@ export const deck = [
     "scene": "Condutor em carro de pedra suspenso entre uma esfinge negra e uma branca, dossel estrelado e cidade impossível atrás",
     "upright": "direção e determinação",
     "reversed": "perda de rumo ou pressa",
-    "action": "escolha um destino e alinhe forças",
-    "prompt": "Carta O Carro, Arcano Maior 7. Cena: Condutor em carro de pedra suspenso entre uma esfinge negra e uma branca, dossel estrelado e cidade impossível atrás. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "escolha um destino e alinhe forças"
   },
   {
     "id": "08-a-forca",
@@ -122,8 +114,7 @@ export const deck = [
     "scene": "Mulher serena toca a juba de um leão feito de fogo suave, infinito dourado acima e vale em espiral",
     "upright": "coragem e autocontrole",
     "reversed": "insegurança ou força excessiva",
-    "action": "responda com firmeza e gentileza",
-    "prompt": "Carta A Força, Arcano Maior 8. Cena: Mulher serena toca a juba de um leão feito de fogo suave, infinito dourado acima e vale em espiral. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "responda com firmeza e gentileza"
   },
   {
     "id": "09-o-eremita",
@@ -136,8 +127,7 @@ export const deck = [
     "scene": "Ancião em pico que flutua sobre névoa noturna, lanterna com estrela de seis pontas e cajado, horizonte silencioso",
     "upright": "introspecção e discernimento",
     "reversed": "isolamento ou evasão",
-    "action": "reserve um espaço de reflexão",
-    "prompt": "Carta O Eremita, Arcano Maior 9. Cena: Ancião em pico que flutua sobre névoa noturna, lanterna com estrela de seis pontas e cajado, horizonte silencioso. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reserve um espaço de reflexão"
   },
   {
     "id": "10-a-roda-da-fortuna",
@@ -150,8 +140,7 @@ export const deck = [
     "scene": "Roda celeste colossal com quatro criaturas aladas nos cantos, serpente descendente e esfinge no topo, paisagem em estações simultâneas",
     "upright": "ciclos e mudança",
     "reversed": "resistência à mudança",
-    "action": "separe o que controla do que não controla",
-    "prompt": "Carta A Roda da Fortuna, Arcano Maior 10. Cena: Roda celeste colossal com quatro criaturas aladas nos cantos, serpente descendente e esfinge no topo, paisagem em estações simultâneas. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "separe o que controla do que não controla"
   },
   {
     "id": "11-a-justica",
@@ -164,8 +153,7 @@ export const deck = [
     "scene": "Figura frontal com balança equilibrada e espada vertical entre pilares, espelho que divide o mundo em duas metades",
     "upright": "equilíbrio e responsabilidade",
     "reversed": "parcialidade ou injustiça",
-    "action": "verifique fatos e consequências",
-    "prompt": "Carta A Justiça, Arcano Maior 11. Cena: Figura frontal com balança equilibrada e espada vertical entre pilares, espelho que divide o mundo em duas metades. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "verifique fatos e consequências"
   },
   {
     "id": "12-o-enforcado",
@@ -178,8 +166,7 @@ export const deck = [
     "scene": "Pessoa suspensa por um pé de uma árvore em T que brota de uma nuvem, halo dourado e horizonte invertido, expressão tranquila",
     "upright": "pausa e nova perspectiva",
     "reversed": "estagnação ou sacrifício inútil",
-    "action": "teste uma interpretação alternativa",
-    "prompt": "Carta O Enforcado, Arcano Maior 12. Cena: Pessoa suspensa por um pé de uma árvore em T que brota de uma nuvem, halo dourado e horizonte invertido, expressão tranquila. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "teste uma interpretação alternativa"
   },
   {
     "id": "13-a-morte",
@@ -192,8 +179,7 @@ export const deck = [
     "scene": "Cavaleiro esquelético em armadura negra sobre cavalo branco, estandarte com rosa branca, sol nascendo entre torres distantes, flores renascendo sem violência",
     "upright": "encerramento e transformação",
     "reversed": "apego ou resistência ao fim",
-    "action": "identifique o que pode ser encerrado",
-    "prompt": "Carta A Morte, Arcano Maior 13. Cena: Cavaleiro esquelético em armadura negra sobre cavalo branco, estandarte com rosa branca, sol nascendo entre torres distantes, flores renascendo sem violência. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "identifique o que pode ser encerrado"
   },
   {
     "id": "14-a-temperanca",
@@ -206,8 +192,7 @@ export const deck = [
     "scene": "Anjo com um pé na água e outro na terra, transfere líquido entre duas taças suspensas, caminho dourado em direção ao sol",
     "upright": "integração e moderação",
     "reversed": "desequilíbrio ou impaciência",
-    "action": "combine extremos em uma ação sustentável",
-    "prompt": "Carta A Temperança, Arcano Maior 14. Cena: Anjo com um pé na água e outro na terra, transfere líquido entre duas taças suspensas, caminho dourado em direção ao sol. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "combine extremos em uma ação sustentável"
   },
   {
     "id": "15-o-diabo",
@@ -220,8 +205,7 @@ export const deck = [
     "scene": "Figura caprina sombria sobre pedestal, duas figuras adultas com correntes frouxas e saída iluminada, sombras formando desejos",
     "upright": "apego e padrões de dependência",
     "reversed": "libertação ou negação",
-    "action": "reconheça um hábito que limita sua escolha",
-    "prompt": "Carta O Diabo, Arcano Maior 15. Cena: Figura caprina sombria sobre pedestal, duas figuras adultas com correntes frouxas e saída iluminada, sombras formando desejos. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reconheça um hábito que limita sua escolha"
   },
   {
     "id": "16-a-torre",
@@ -234,8 +218,7 @@ export const deck = [
     "scene": "Torre de pedra atingida por relâmpago, coroa desprendida, duas silhuetas descendo entre fragmentos, céu rachado revelando estrelas",
     "upright": "ruptura e revelação",
     "reversed": "resistência ou crise interna",
-    "action": "reconstrua a partir de fatos sólidos",
-    "prompt": "Carta A Torre, Arcano Maior 16. Cena: Torre de pedra atingida por relâmpago, coroa desprendida, duas silhuetas descendo entre fragmentos, céu rachado revelando estrelas. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reconstrua a partir de fatos sólidos"
   },
   {
     "id": "17-a-estrela",
@@ -248,8 +231,7 @@ export const deck = [
     "scene": "Figura à margem de lago vertendo água de dois jarros, uma estrela central e sete menores, árvore com pássaro, céu azul profundo",
     "upright": "esperança e renovação",
     "reversed": "desânimo ou perda de confiança",
-    "action": "encontre uma fonte concreta de renovação",
-    "prompt": "Carta A Estrela, Arcano Maior 17. Cena: Figura à margem de lago vertendo água de dois jarros, uma estrela central e sete menores, árvore com pássaro, céu azul profundo. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "encontre uma fonte concreta de renovação"
   },
   {
     "id": "18-a-lua",
@@ -262,8 +244,7 @@ export const deck = [
     "scene": "Lua enorme entre duas torres, cão e lobo junto a caminho sinuoso, lagostim emerge de lago refletindo realidade impossível",
     "upright": "incerteza e imaginação",
     "reversed": "confusão em dissipação ou autoengano",
-    "action": "distinga percepção de evidência",
-    "prompt": "Carta A Lua, Arcano Maior 18. Cena: Lua enorme entre duas torres, cão e lobo junto a caminho sinuoso, lagostim emerge de lago refletindo realidade impossível. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "distinga percepção de evidência"
   },
   {
     "id": "19-o-sol",
@@ -276,8 +257,7 @@ export const deck = [
     "scene": "Criança em cavalo branco sob sol radiante, girassóis e bandeira vermelha ondulando em céu dourado, alegria sem excesso ornamental",
     "upright": "clareza e vitalidade",
     "reversed": "otimismo forçado ou alegria abafada",
-    "action": "valorize o que está claro e funcionando",
-    "prompt": "Carta O Sol, Arcano Maior 19. Cena: Criança em cavalo branco sob sol radiante, girassóis e bandeira vermelha ondulando em céu dourado, alegria sem excesso ornamental. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "valorize o que está claro e funcionando"
   },
   {
     "id": "20-o-julgamento",
@@ -290,8 +270,7 @@ export const deck = [
     "scene": "Anjo toca trombeta sobre mar de espelhos, figuras despertam de caixas de pedra abertas rumo à luz, montanhas ao fundo",
     "upright": "despertar e reavaliação",
     "reversed": "autocrítica ou chamado ignorado",
-    "action": "revise decisões sem se condenar",
-    "prompt": "Carta O Julgamento, Arcano Maior 20. Cena: Anjo toca trombeta sobre mar de espelhos, figuras despertam de caixas de pedra abertas rumo à luz, montanhas ao fundo. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "revise decisões sem se condenar"
   },
   {
     "id": "21-o-mundo",
@@ -304,8 +283,7 @@ export const deck = [
     "scene": "Figura dançante dentro de guirlanda oval suspensa no cosmos, dois bastões, quatro seres simbólicos nos cantos, horizonte circular",
     "upright": "integração e conclusão",
     "reversed": "ciclo incompleto ou falta de fechamento",
-    "action": "reconheça o percurso e conclua uma etapa",
-    "prompt": "Carta O Mundo, Arcano Maior 21. Cena: Figura dançante dentro de guirlanda oval suspensa no cosmos, dois bastões, quatro seres simbólicos nos cantos, horizonte circular. Acento: ouro antigo e violeta profundo. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reconheça o percurso e conclua uma etapa"
   },
   {
     "id": "paus-01",
@@ -318,8 +296,7 @@ export const deck = [
     "scene": "Uma mão surge de nuvem segurando um único bastão vivo com brotos de chama, montanhas férteis",
     "upright": "inspiração e iniciativa",
     "reversed": "bloqueio criativo ou impulso sem direção",
-    "action": "capture uma ideia e dê o primeiro passo",
-    "prompt": "Carta Ás de Paus, Arcano Menor. Cena: Uma mão surge de nuvem segurando um único bastão vivo com brotos de chama, montanhas férteis. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "capture uma ideia e dê o primeiro passo"
   },
   {
     "id": "paus-02",
@@ -332,8 +309,7 @@ export const deck = [
     "scene": "Viajante em muralha com globo nas mãos e exatamente dois bastões, dois horizontes possíveis",
     "upright": "planejamento e possibilidades",
     "reversed": "medo do desconhecido ou planejamento excessivo",
-    "action": "compare duas opções reais",
-    "prompt": "Carta Dois de Paus, Arcano Menor. Cena: Viajante em muralha com globo nas mãos e exatamente dois bastões, dois horizontes possíveis. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "compare duas opções reais"
   },
   {
     "id": "paus-03",
@@ -346,8 +322,7 @@ export const deck = [
     "scene": "Figura observa navios em mar elevado no céu, três bastões verticais no primeiro plano",
     "upright": "expansão e visão",
     "reversed": "atraso ou expectativa frustrada",
-    "action": "procure sinais de progresso",
-    "prompt": "Carta Três de Paus, Arcano Menor. Cena: Figura observa navios em mar elevado no céu, três bastões verticais no primeiro plano. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "procure sinais de progresso"
   },
   {
     "id": "paus-04",
@@ -360,8 +335,7 @@ export const deck = [
     "scene": "Quatro bastões sustentam guirlanda de flores e portal festivo, duas figuras celebram ao fundo",
     "upright": "celebração e estabilidade",
     "reversed": "tensão doméstica ou celebração adiada",
-    "action": "reconheça uma conquista compartilhada",
-    "prompt": "Carta Quatro de Paus, Arcano Menor. Cena: Quatro bastões sustentam guirlanda de flores e portal festivo, duas figuras celebram ao fundo. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reconheça uma conquista compartilhada"
   },
   {
     "id": "paus-05",
@@ -374,8 +348,7 @@ export const deck = [
     "scene": "Cinco figuras cruzam cinco bastões em arena de dunas espelhadas, competição sem violência",
     "upright": "competição e atrito",
     "reversed": "evitação ou conflito interno",
-    "action": "transforme divergência em conversa clara",
-    "prompt": "Carta Cinco de Paus, Arcano Menor. Cena: Cinco figuras cruzam cinco bastões em arena de dunas espelhadas, competição sem violência. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "transforme divergência em conversa clara"
   },
   {
     "id": "paus-06",
@@ -388,8 +361,7 @@ export const deck = [
     "scene": "Cavaleiro com coroa de louros atravessa cortejo, seis bastões ao todo, um com guirlanda",
     "upright": "reconhecimento e vitória",
     "reversed": "vaidade ou falta de reconhecimento",
-    "action": "celebre mérito sem depender de aplausos",
-    "prompt": "Carta Seis de Paus, Arcano Menor. Cena: Cavaleiro com coroa de louros atravessa cortejo, seis bastões ao todo, um com guirlanda. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "celebre mérito sem depender de aplausos"
   },
   {
     "id": "paus-07",
@@ -402,8 +374,7 @@ export const deck = [
     "scene": "Figura em plataforma defende posição com um bastão contra seis que sobem de baixo",
     "upright": "resistência e defesa",
     "reversed": "exaustão ou defensividade",
-    "action": "escolha quais limites defender",
-    "prompt": "Carta Sete de Paus, Arcano Menor. Cena: Figura em plataforma defende posição com um bastão contra seis que sobem de baixo. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "escolha quais limites defender"
   },
   {
     "id": "paus-08",
@@ -416,8 +387,7 @@ export const deck = [
     "scene": "Oito bastões em voo diagonal cruzam vale e céu dobrado, nenhum personagem",
     "upright": "velocidade e comunicação",
     "reversed": "atraso ou precipitação",
-    "action": "priorize uma mensagem ou ação urgente",
-    "prompt": "Carta Oito de Paus, Arcano Menor. Cena: Oito bastões em voo diagonal cruzam vale e céu dobrado, nenhum personagem. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "priorize uma mensagem ou ação urgente"
   },
   {
     "id": "paus-09",
@@ -430,8 +400,7 @@ export const deck = [
     "scene": "Figura com faixa na cabeça segura um bastão, oito atrás formando barreira luminosa",
     "upright": "persistência e cautela",
     "reversed": "esgotamento ou hipervigilância",
-    "action": "proteja energia sem fechar todas as portas",
-    "prompt": "Carta Nove de Paus, Arcano Menor. Cena: Figura com faixa na cabeça segura um bastão, oito atrás formando barreira luminosa. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "proteja energia sem fechar todas as portas"
   },
   {
     "id": "paus-10",
@@ -444,8 +413,7 @@ export const deck = [
     "scene": "Pessoa carrega dez bastões que se curvam como gravidade até cidade distante",
     "upright": "responsabilidade e sobrecarga",
     "reversed": "delegação necessária ou peso insustentável",
-    "action": "retire uma obrigação não essencial",
-    "prompt": "Carta Dez de Paus, Arcano Menor. Cena: Pessoa carrega dez bastões que se curvam como gravidade até cidade distante. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "retire uma obrigação não essencial"
   },
   {
     "id": "paus-11",
@@ -458,8 +426,7 @@ export const deck = [
     "scene": "Jovem mensageiro contempla um bastão brotando em deserto com salamandras de luz",
     "upright": "curiosidade e entusiasmo",
     "reversed": "inconstância ou insegurança criativa",
-    "action": "aprenda por experimentação",
-    "prompt": "Carta Pajem de Paus, Arcano Menor. Cena: Jovem mensageiro contempla um bastão brotando em deserto com salamandras de luz. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "aprenda por experimentação"
   },
   {
     "id": "paus-12",
@@ -472,8 +439,7 @@ export const deck = [
     "scene": "Cavaleiro de cavalo em movimento ergue bastão entre dunas flamejantes",
     "upright": "ousadia e movimento",
     "reversed": "impulsividade ou frustração",
-    "action": "canalize energia em um objetivo",
-    "prompt": "Carta Cavaleiro de Paus, Arcano Menor. Cena: Cavaleiro de cavalo em movimento ergue bastão entre dunas flamejantes. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "canalize energia em um objetivo"
   },
   {
     "id": "paus-13",
@@ -486,8 +452,7 @@ export const deck = [
     "scene": "Rainha com bastão e girassol em trono de leões, gato negro aos pés, sol âmbar",
     "upright": "confiança e magnetismo",
     "reversed": "ciúme ou insegurança",
-    "action": "ocupe seu espaço sem diminuir ninguém",
-    "prompt": "Carta Rainha de Paus, Arcano Menor. Cena: Rainha com bastão e girassol em trono de leões, gato negro aos pés, sol âmbar. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "ocupe seu espaço sem diminuir ninguém"
   },
   {
     "id": "paus-14",
@@ -500,8 +465,7 @@ export const deck = [
     "scene": "Rei com bastão florido em trono de salamandras, paisagem de fogo contido",
     "upright": "liderança e visão",
     "reversed": "autoritarismo ou pressa",
-    "action": "inspire com exemplo e direção",
-    "prompt": "Carta Rei de Paus, Arcano Menor. Cena: Rei com bastão florido em trono de salamandras, paisagem de fogo contido. Acento do naipe: âmbar queimado e brasa. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "inspire com exemplo e direção"
   },
   {
     "id": "copas-01",
@@ -514,8 +478,7 @@ export const deck = [
     "scene": "Mão de nuvem oferece uma taça transbordando cinco correntes, pomba branca e lago de lótus",
     "upright": "abertura afetiva e compaixão",
     "reversed": "repressão ou vazio emocional",
-    "action": "acolha um sentimento sem julgá-lo",
-    "prompt": "Carta Ás de Copas, Arcano Menor. Cena: Mão de nuvem oferece uma taça transbordando cinco correntes, pomba branca e lago de lótus. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "acolha um sentimento sem julgá-lo"
   },
   {
     "id": "copas-02",
@@ -528,8 +491,7 @@ export const deck = [
     "scene": "Duas figuras trocam duas taças sob caduceu e leão alado, mar espelhado",
     "upright": "reciprocidade e parceria",
     "reversed": "desconexão ou desequilíbrio",
-    "action": "converse sobre o que cada pessoa oferece",
-    "prompt": "Carta Dois de Copas, Arcano Menor. Cena: Duas figuras trocam duas taças sob caduceu e leão alado, mar espelhado. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "converse sobre o que cada pessoa oferece"
   },
   {
     "id": "copas-03",
@@ -542,8 +504,7 @@ export const deck = [
     "scene": "Três figuras erguem três taças em círculo sobre colheita flutuante",
     "upright": "amizade e celebração",
     "reversed": "excesso social ou afastamento",
-    "action": "cultive uma conexão saudável",
-    "prompt": "Carta Três de Copas, Arcano Menor. Cena: Três figuras erguem três taças em círculo sobre colheita flutuante. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "cultive uma conexão saudável"
   },
   {
     "id": "copas-04",
@@ -556,8 +517,7 @@ export const deck = [
     "scene": "Figura sob árvore observa três taças no chão e uma quarta oferecida por nuvem",
     "upright": "apatia e contemplação",
     "reversed": "nova abertura ou inquietação",
-    "action": "observe uma oportunidade ignorada",
-    "prompt": "Carta Quatro de Copas, Arcano Menor. Cena: Figura sob árvore observa três taças no chão e uma quarta oferecida por nuvem. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "observe uma oportunidade ignorada"
   },
   {
     "id": "copas-05",
@@ -570,8 +530,7 @@ export const deck = [
     "scene": "Figura de manto escuro diante de três taças tombadas e duas intactas atrás, ponte sobre rio",
     "upright": "luto e decepção",
     "reversed": "aceitação ou apego à perda",
-    "action": "reconheça a perda e o que permanece",
-    "prompt": "Carta Cinco de Copas, Arcano Menor. Cena: Figura de manto escuro diante de três taças tombadas e duas intactas atrás, ponte sobre rio. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reconheça a perda e o que permanece"
   },
   {
     "id": "copas-06",
@@ -584,8 +543,7 @@ export const deck = [
     "scene": "Duas figuras jovens em jardim antigo, seis taças preenchidas com flores, uma oferecida",
     "upright": "nostalgia e generosidade",
     "reversed": "idealização do passado ou maturação",
-    "action": "recupere uma lembrança sem morar nela",
-    "prompt": "Carta Seis de Copas, Arcano Menor. Cena: Duas figuras jovens em jardim antigo, seis taças preenchidas com flores, uma oferecida. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "recupere uma lembrança sem morar nela"
   },
   {
     "id": "copas-07",
@@ -598,8 +556,7 @@ export const deck = [
     "scene": "Sete taças flutuam em nuvem, cada uma com visão distinta: castelo, joias, serpente, rosto, louros, dragão e figura velada",
     "upright": "possibilidades e fantasia",
     "reversed": "confusão ou escolha mais realista",
-    "action": "reduza opções com critérios concretos",
-    "prompt": "Carta Sete de Copas, Arcano Menor. Cena: Sete taças flutuam em nuvem, cada uma com visão distinta: castelo, joias, serpente, rosto, louros, dragão e figura velada. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reduza opções com critérios concretos"
   },
   {
     "id": "copas-08",
@@ -612,8 +569,7 @@ export const deck = [
     "scene": "Oito taças empilhadas diante de viajante que parte sob lua eclipsada, montanhas aquáticas",
     "upright": "desapego e busca de sentido",
     "reversed": "medo de partir ou retorno",
-    "action": "avalie o que já não nutre você",
-    "prompt": "Carta Oito de Copas, Arcano Menor. Cena: Oito taças empilhadas diante de viajante que parte sob lua eclipsada, montanhas aquáticas. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "avalie o que já não nutre você"
   },
   {
     "id": "copas-09",
@@ -626,8 +582,7 @@ export const deck = [
     "scene": "Figura satisfeita diante de nove taças em arco sobre tecido azul",
     "upright": "satisfação e gratidão",
     "reversed": "insatisfação ou excesso",
-    "action": "defina o que realmente significa suficiente",
-    "prompt": "Carta Nove de Copas, Arcano Menor. Cena: Figura satisfeita diante de nove taças em arco sobre tecido azul. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "defina o que realmente significa suficiente"
   },
   {
     "id": "copas-10",
@@ -640,8 +595,7 @@ export const deck = [
     "scene": "Dez taças formam arco-íris sobre família e paisagem de lar, rio e casa ao longe",
     "upright": "harmonia e pertencimento",
     "reversed": "ideal familiar rígido ou desarmonia",
-    "action": "construa pertencimento com expectativas realistas",
-    "prompt": "Carta Dez de Copas, Arcano Menor. Cena: Dez taças formam arco-íris sobre família e paisagem de lar, rio e casa ao longe. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "construa pertencimento com expectativas realistas"
   },
   {
     "id": "copas-11",
@@ -654,8 +608,7 @@ export const deck = [
     "scene": "Jovem olha peixe que emerge de uma taça junto a ondas suspensas",
     "upright": "sensibilidade e criatividade",
     "reversed": "imaturidade emocional ou bloqueio",
-    "action": "expresse um sentimento com delicadeza",
-    "prompt": "Carta Pajem de Copas, Arcano Menor. Cena: Jovem olha peixe que emerge de uma taça junto a ondas suspensas. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "expresse um sentimento com delicadeza"
   },
   {
     "id": "copas-12",
@@ -668,8 +621,7 @@ export const deck = [
     "scene": "Cavaleiro em cavalo branco leva taça erguida em direção a rio sinuoso",
     "upright": "romance e idealismo",
     "reversed": "promessas vazias ou idealização",
-    "action": "compare intenção com atitude",
-    "prompt": "Carta Cavaleiro de Copas, Arcano Menor. Cena: Cavaleiro em cavalo branco leva taça erguida em direção a rio sinuoso. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "compare intenção com atitude"
   },
   {
     "id": "copas-13",
@@ -682,8 +634,7 @@ export const deck = [
     "scene": "Rainha contempla taça ornamentada fechada em trono à beira-mar, conchas e água serena",
     "upright": "empatia e intuição",
     "reversed": "absorção emocional ou dependência",
-    "action": "cuide sem abandonar seus limites",
-    "prompt": "Carta Rainha de Copas, Arcano Menor. Cena: Rainha contempla taça ornamentada fechada em trono à beira-mar, conchas e água serena. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "cuide sem abandonar seus limites"
   },
   {
     "id": "copas-14",
@@ -696,8 +647,7 @@ export const deck = [
     "scene": "Rei com taça e cetro em trono sobre mar agitado, navio e peixe distante",
     "upright": "maturidade emocional",
     "reversed": "repressão ou instabilidade",
-    "action": "regule a emoção antes de responder",
-    "prompt": "Carta Rei de Copas, Arcano Menor. Cena: Rei com taça e cetro em trono sobre mar agitado, navio e peixe distante. Acento do naipe: azul petróleo e pérola. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "regule a emoção antes de responder"
   },
   {
     "id": "espadas-01",
@@ -710,8 +660,7 @@ export const deck = [
     "scene": "Uma mão de nuvem ergue espada única com coroa e ramos, montanhas sob vento claro",
     "upright": "clareza e verdade",
     "reversed": "confusão ou julgamento precipitado",
-    "action": "formule o fato central com precisão",
-    "prompt": "Carta Ás de Espadas, Arcano Menor. Cena: Uma mão de nuvem ergue espada única com coroa e ramos, montanhas sob vento claro. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "formule o fato central com precisão"
   },
   {
     "id": "espadas-02",
@@ -724,8 +673,7 @@ export const deck = [
     "scene": "Figura vendada sustenta duas espadas cruzadas diante de mar e crescente lunar",
     "upright": "indecisão e impasse",
     "reversed": "sobrecarga mental ou decisão inevitável",
-    "action": "identifique a informação que falta",
-    "prompt": "Carta Dois de Espadas, Arcano Menor. Cena: Figura vendada sustenta duas espadas cruzadas diante de mar e crescente lunar. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "identifique a informação que falta"
   },
   {
     "id": "espadas-03",
@@ -738,8 +686,7 @@ export const deck = [
     "scene": "Coração rubro simbólico atravessado por três espadas sob chuva, sem anatomia gráfica",
     "upright": "dor e separação",
     "reversed": "cicatrização ou dor reprimida",
-    "action": "dê espaço ao sentimento e procure apoio",
-    "prompt": "Carta Três de Espadas, Arcano Menor. Cena: Coração rubro simbólico atravessado por três espadas sob chuva, sem anatomia gráfica. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "dê espaço ao sentimento e procure apoio"
   },
   {
     "id": "espadas-04",
@@ -752,8 +699,7 @@ export const deck = [
     "scene": "Figura repousa sobre sarcófago de pedra, três espadas na parede e uma abaixo, vitral de luz",
     "upright": "descanso e recuperação",
     "reversed": "inquietação ou exaustão",
-    "action": "crie uma pausa deliberada",
-    "prompt": "Carta Quatro de Espadas, Arcano Menor. Cena: Figura repousa sobre sarcófago de pedra, três espadas na parede e uma abaixo, vitral de luz. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "crie uma pausa deliberada"
   },
   {
     "id": "espadas-05",
@@ -766,8 +712,7 @@ export const deck = [
     "scene": "Figura segura três espadas, duas no chão, duas pessoas se afastam sob nuvens angulares",
     "upright": "conflito e custo da vitória",
     "reversed": "reconciliação ou ressentimento",
-    "action": "avalie o preço de ter razão",
-    "prompt": "Carta Cinco de Espadas, Arcano Menor. Cena: Figura segura três espadas, duas no chão, duas pessoas se afastam sob nuvens angulares. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "avalie o preço de ter razão"
   },
   {
     "id": "espadas-06",
@@ -780,8 +725,7 @@ export const deck = [
     "scene": "Barqueiro conduz duas figuras em barco com seis espadas, água turbulenta atrás e calma adiante",
     "upright": "transição e recuperação",
     "reversed": "bagagem antiga ou resistência",
-    "action": "planeje uma travessia gradual",
-    "prompt": "Carta Seis de Espadas, Arcano Menor. Cena: Barqueiro conduz duas figuras em barco com seis espadas, água turbulenta atrás e calma adiante. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "planeje uma travessia gradual"
   },
   {
     "id": "espadas-07",
@@ -794,8 +738,7 @@ export const deck = [
     "scene": "Figura leva cinco espadas, duas permanecem no campo, tenda e sombras em labirinto",
     "upright": "estratégia e evasão",
     "reversed": "revelação ou autoengano",
-    "action": "escolha transparência onde for possível",
-    "prompt": "Carta Sete de Espadas, Arcano Menor. Cena: Figura leva cinco espadas, duas permanecem no campo, tenda e sombras em labirinto. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "escolha transparência onde for possível"
   },
   {
     "id": "espadas-08",
@@ -808,8 +751,7 @@ export const deck = [
     "scene": "Figura vendada com laços frouxos cercada por oito espadas, caminho livre visível",
     "upright": "limitação percebida",
     "reversed": "libertação ou medo persistente",
-    "action": "procure uma saída que ainda não testou",
-    "prompt": "Carta Oito de Espadas, Arcano Menor. Cena: Figura vendada com laços frouxos cercada por oito espadas, caminho livre visível. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "procure uma saída que ainda não testou"
   },
   {
     "id": "espadas-09",
@@ -822,8 +764,7 @@ export const deck = [
     "scene": "Figura sentada na cama cobre o rosto, nove espadas horizontais em céu de pesadelo",
     "upright": "ansiedade e ruminação",
     "reversed": "alívio ou preocupação acumulada",
-    "action": "separe preocupações de ações possíveis",
-    "prompt": "Carta Nove de Espadas, Arcano Menor. Cena: Figura sentada na cama cobre o rosto, nove espadas horizontais em céu de pesadelo. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "separe preocupações de ações possíveis"
   },
   {
     "id": "espadas-10",
@@ -836,8 +777,7 @@ export const deck = [
     "scene": "Figura deitada sob dez espadas estilizadas não gráficas, horizonte de amanhecer",
     "upright": "fim doloroso e fechamento",
     "reversed": "recuperação ou resistência ao fim",
-    "action": "permita que uma etapa termine",
-    "prompt": "Carta Dez de Espadas, Arcano Menor. Cena: Figura deitada sob dez espadas estilizadas não gráficas, horizonte de amanhecer. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "permita que uma etapa termine"
   },
   {
     "id": "espadas-11",
@@ -850,8 +790,7 @@ export const deck = [
     "scene": "Jovem segura espada erguida em colina ventosa, pássaros e nuvens cortadas",
     "upright": "curiosidade e vigilância",
     "reversed": "fofoca ou pensamento disperso",
-    "action": "pergunte antes de concluir",
-    "prompt": "Carta Pajem de Espadas, Arcano Menor. Cena: Jovem segura espada erguida em colina ventosa, pássaros e nuvens cortadas. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "pergunte antes de concluir"
   },
   {
     "id": "espadas-12",
@@ -864,8 +803,7 @@ export const deck = [
     "scene": "Cavaleiro avança com espada erguida, árvores inclinadas pelo vento",
     "upright": "determinação e franqueza",
     "reversed": "agressividade ou pressa",
-    "action": "desacelere antes de agir",
-    "prompt": "Carta Cavaleiro de Espadas, Arcano Menor. Cena: Cavaleiro avança com espada erguida, árvores inclinadas pelo vento. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "desacelere antes de agir"
   },
   {
     "id": "espadas-13",
@@ -878,8 +816,7 @@ export const deck = [
     "scene": "Rainha de perfil ergue espada vertical e estende mão livre, trono de nuvens e borboletas",
     "upright": "discernimento e independência",
     "reversed": "frieza ou crítica excessiva",
-    "action": "comunique um limite com clareza",
-    "prompt": "Carta Rainha de Espadas, Arcano Menor. Cena: Rainha de perfil ergue espada vertical e estende mão livre, trono de nuvens e borboletas. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "comunique um limite com clareza"
   },
   {
     "id": "espadas-14",
@@ -892,8 +829,7 @@ export const deck = [
     "scene": "Rei frontal com espada vertical, trono de borboletas e céu límpido",
     "upright": "lógica e autoridade intelectual",
     "reversed": "abuso de poder ou rigidez mental",
-    "action": "fundamente uma decisão em evidências",
-    "prompt": "Carta Rei de Espadas, Arcano Menor. Cena: Rei frontal com espada vertical, trono de borboletas e céu límpido. Acento do naipe: prata fria e cinza azul. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "fundamente uma decisão em evidências"
   },
   {
     "id": "ouros-01",
@@ -906,8 +842,7 @@ export const deck = [
     "scene": "Mão de nuvem sustenta um pentáculo dourado sobre jardim e arco que conduz a montanhas",
     "upright": "oportunidade concreta",
     "reversed": "oportunidade perdida ou planejamento frágil",
-    "action": "teste uma possibilidade com recursos reais",
-    "prompt": "Carta Ás de Ouros, Arcano Menor. Cena: Mão de nuvem sustenta um pentáculo dourado sobre jardim e arco que conduz a montanhas. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "teste uma possibilidade com recursos reais"
   },
   {
     "id": "ouros-02",
@@ -920,8 +855,7 @@ export const deck = [
     "scene": "Figura equilibra dois pentáculos ligados por fita em infinito, navios sobre ondas",
     "upright": "adaptação e prioridades",
     "reversed": "desorganização ou sobrecarga",
-    "action": "simplifique suas prioridades",
-    "prompt": "Carta Dois de Ouros, Arcano Menor. Cena: Figura equilibra dois pentáculos ligados por fita em infinito, navios sobre ondas. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "simplifique suas prioridades"
   },
   {
     "id": "ouros-03",
@@ -934,8 +868,7 @@ export const deck = [
     "scene": "Artesão e duas figuras estudam projeto em catedral impossível, três pentáculos na abóbada",
     "upright": "cooperação e competência",
     "reversed": "desalinhamento ou trabalho isolado",
-    "action": "defina responsabilidades e combine habilidades",
-    "prompt": "Carta Três de Ouros, Arcano Menor. Cena: Artesão e duas figuras estudam projeto em catedral impossível, três pentáculos na abóbada. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "defina responsabilidades e combine habilidades"
   },
   {
     "id": "ouros-04",
@@ -948,8 +881,7 @@ export const deck = [
     "scene": "Figura segura quatro pentáculos, um sobre a cabeça, um no peito e dois sob os pés, cidade distante",
     "upright": "segurança e controle",
     "reversed": "apego ou desprendimento",
-    "action": "avalie o que preservar e o que compartilhar",
-    "prompt": "Carta Quatro de Ouros, Arcano Menor. Cena: Figura segura quatro pentáculos, um sobre a cabeça, um no peito e dois sob os pés, cidade distante. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "avalie o que preservar e o que compartilhar"
   },
   {
     "id": "ouros-05",
@@ -962,8 +894,7 @@ export const deck = [
     "scene": "Duas figuras caminham na neve junto a vitral iluminado com cinco pentáculos",
     "upright": "escassez e exclusão",
     "reversed": "recuperação ou dificuldade em pedir apoio",
-    "action": "identifique ajuda concreta disponível",
-    "prompt": "Carta Cinco de Ouros, Arcano Menor. Cena: Duas figuras caminham na neve junto a vitral iluminado com cinco pentáculos. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "identifique ajuda concreta disponível"
   },
   {
     "id": "ouros-06",
@@ -976,8 +907,7 @@ export const deck = [
     "scene": "Figura distribui moedas a duas pessoas, balança na mão, seis pentáculos claramente visíveis",
     "upright": "generosidade e troca",
     "reversed": "dependência ou reciprocidade desigual",
-    "action": "esclareça condições de uma troca",
-    "prompt": "Carta Seis de Ouros, Arcano Menor. Cena: Figura distribui moedas a duas pessoas, balança na mão, seis pentáculos claramente visíveis. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "esclareça condições de uma troca"
   },
   {
     "id": "ouros-07",
@@ -990,8 +920,7 @@ export const deck = [
     "scene": "Jardineiro contempla planta com sete pentáculos, raízes formando ampulheta",
     "upright": "paciência e avaliação",
     "reversed": "impaciência ou retorno insuficiente",
-    "action": "avalie progresso antes de investir mais esforço",
-    "prompt": "Carta Sete de Ouros, Arcano Menor. Cena: Jardineiro contempla planta com sete pentáculos, raízes formando ampulheta. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "avalie progresso antes de investir mais esforço"
   },
   {
     "id": "ouros-08",
@@ -1004,8 +933,7 @@ export const deck = [
     "scene": "Artesão grava um pentáculo, sete outros organizados na oficina, oito ao todo",
     "upright": "prática e aperfeiçoamento",
     "reversed": "perfeccionismo ou desmotivação",
-    "action": "treine uma habilidade de modo consistente",
-    "prompt": "Carta Oito de Ouros, Arcano Menor. Cena: Artesão grava um pentáculo, sete outros organizados na oficina, oito ao todo. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "treine uma habilidade de modo consistente"
   },
   {
     "id": "ouros-09",
@@ -1018,8 +946,7 @@ export const deck = [
     "scene": "Figura elegante em vinhedo com falcão e nove pentáculos entre videiras",
     "upright": "autonomia e frutos do esforço",
     "reversed": "dependência ou excesso de trabalho",
-    "action": "aprecie o que conquistou com equilíbrio",
-    "prompt": "Carta Nove de Ouros, Arcano Menor. Cena: Figura elegante em vinhedo com falcão e nove pentáculos entre videiras. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "aprecie o que conquistou com equilíbrio"
   },
   {
     "id": "ouros-10",
@@ -1032,8 +959,7 @@ export const deck = [
     "scene": "Três gerações e cães sob arco arquitetônico com dez pentáculos em árvore geométrica",
     "upright": "legado e estabilidade",
     "reversed": "instabilidade ou conflito de valores",
-    "action": "considere consequências de longo prazo",
-    "prompt": "Carta Dez de Ouros, Arcano Menor. Cena: Três gerações e cães sob arco arquitetônico com dez pentáculos em árvore geométrica. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "considere consequências de longo prazo"
   },
   {
     "id": "ouros-11",
@@ -1046,8 +972,7 @@ export const deck = [
     "scene": "Jovem contempla pentáculo flutuante num campo fértil, montanha distante",
     "upright": "aprendizado e planejamento",
     "reversed": "procrastinação ou falta de foco",
-    "action": "transforme interesse em estudo concreto",
-    "prompt": "Carta Pajem de Ouros, Arcano Menor. Cena: Jovem contempla pentáculo flutuante num campo fértil, montanha distante. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "transforme interesse em estudo concreto"
   },
   {
     "id": "ouros-12",
@@ -1060,8 +985,7 @@ export const deck = [
     "scene": "Cavaleiro em cavalo escuro imóvel segura pentáculo, campo arado ao fundo",
     "upright": "disciplina e constância",
     "reversed": "estagnação ou rotina rígida",
-    "action": "escolha uma ação repetível",
-    "prompt": "Carta Cavaleiro de Ouros, Arcano Menor. Cena: Cavaleiro em cavalo escuro imóvel segura pentáculo, campo arado ao fundo. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "escolha uma ação repetível"
   },
   {
     "id": "ouros-13",
@@ -1074,8 +998,7 @@ export const deck = [
     "scene": "Rainha contempla pentáculo no colo em jardim fértil, coelho e trono vegetal",
     "upright": "cuidado prático e prosperidade",
     "reversed": "autonegligência ou excesso de cuidado",
-    "action": "reserve recursos para si também",
-    "prompt": "Carta Rainha de Ouros, Arcano Menor. Cena: Rainha contempla pentáculo no colo em jardim fértil, coelho e trono vegetal. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "reserve recursos para si também"
   },
   {
     "id": "ouros-14",
@@ -1088,7 +1011,6 @@ export const deck = [
     "scene": "Rei com pentáculo e cetro em trono de touros e vinhas, castelo no horizonte",
     "upright": "estabilidade e gestão",
     "reversed": "materialismo ou controle excessivo",
-    "action": "administre recursos com responsabilidade",
-    "prompt": "Carta Rei de Ouros, Arcano Menor. Cena: Rei com pentáculo e cetro em trono de touros e vinhas, castelo no horizonte. Acento do naipe: verde musgo e bronze. Crie uma única ilustração autoral de tarot surrealista onírico, pintura a óleo sobre tela de granulação fina, arquitetura impossível, perspectiva atmosférica, chiaroscuro cinematográfico, símbolos legíveis na miniatura, figura ou objeto focal central, planos de profundidade e margem de segurança de 8%. Paleta de obsidiana, índigo, ouro antigo e marfim; acentos cromáticos indicados. Formato vertical 2:3, arte preenchendo todo o quadro, resolução sugerida 1024 × 1536 ou maior. Sem letras, números, moldura, logotipo, assinatura, colagem ou mockup; sem símbolos duplicados além dos descritos. Preservar a mesma linguagem pictórica e iluminação suave de recorte em toda a série."
+    "action": "administre recursos com responsabilidade"
   }
 ];

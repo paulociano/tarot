@@ -30,3 +30,6 @@ A direção de ateliê foi rejeitada em favor de uma experiência imersiva, pró
 ## Ritual dos sigilos
 
 Cada carta possui um sigilo original determinístico (13 traçados × 6 marcas de selo = 78 combinações), com cor de naipe. A revelação ativa dois anéis em sentidos opostos durante 2,7 s. A mandala agrega somente cartas já reveladas, com uma ligação para cada par; uma nova carta acende o nó e as linhas correspondentes. Inversões orientam o sigilo da mandala em 180°. Sem loops permanentes; reduced motion preserva o estado final. SVG/CSS sem dependências. Os motivos são ficcionais e não representam um alfabeto rúnico histórico.
+
+## Biblioteca interativa
+Cada carta do atlas apresenta a pintura na frente e uma ficha de estudo no verso: arcano/naipe, elemento, significados normal e invertido e área simbólica. Hover ou foco por teclado ativa a rotação; clique/toque abre os detalhes completos. A saída do ponteiro restaura a pintura. A mesa de tiragem permanece com cartas fechadas até a seleção.

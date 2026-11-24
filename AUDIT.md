@@ -14,7 +14,10 @@ Baseline: 78ac832. Aplicação estática, 79 PNGs (245.160.886 bytes). Evidênci
 | A09 | CSS acumulado | 2 | Consolidar após baseline visual | Pendente |
 | A10 | contraste, zoom, leitor de tela, LCP/INP/CLS | — | auditoria manual e lab/field | UNKNOWN |
 
-Gate: CI Node + Chromium 360/768/1440; captura home, atlas, mandala, carta revelada. Estado da nova versão pendente até conclusão. Sem medição de campo. PNGs, diário, prompts, sigilos e sessões preservados.
+Gate: CI Node + Chromium 360/768/1440; captura home, atlas, mandala, carta revelada. Estado da nova versão pendente até conclusão. Sem medição de campo. PNGs, diário, sigilos e sessões preservados.
 
 ## A01 — complemento de performance
 Gerador de 158 WebPs (420/1050 px) e manifesto; CI separado produz pacote e estatística. O aplicativo suporta srcset e fallback PNG, e os fundos usam derivados quando o pacote está instalado. A publicação branch-based mantém PNG até instalar o pacote em assets/optimized. Não há alegação de redução medida ou deployment de WebP nesta etapa.
+
+## Atlas — consulta interativa
+Cartas com duas faces, prévia por hover/foco e detalhes completos por clique/toque. Escape dispensa a prévia. Sem material de produção artística na aplicação. Testes de hover, teclado, toque e ausência dos controles removidos.

@@ -1,24 +1,33 @@
 # ARCANA · Tarot surrealista
 
-Experiência de tarot Rider-Waite-Smith em português. Aplicação estática para GitHub Pages, com baralho autoral, tiragens, interpretação simbólica e diário local.
+[**Acessar a aplicação**](https://paulociano.github.io/tarot/)
 
-A direção artística é uma proposta: surrealismo onírico, óleo sobre tela, arquitetura impossível, índigo, ouro antigo e marfim. As imagens finais serão adicionadas em `assets/cards/<id>.webp`; o aplicativo utiliza arte geométrica provisória quando ausentes.
+ARCANA é uma experiência imersiva de tarot em português, inspirada na tradição Rider-Waite-Smith, com 78 ilustrações autorais de surrealismo onírico e um verso compartilhado. A direção visual reúne pintura a óleo, arquitetura impossível, índigo, ouro antigo e marfim.
 
-O assistente local usa regras interpretativas, não um modelo de IA. Uma futura integração com modelo generativo precisa de backend seguro; nunca publique chaves de API no GitHub Pages.
+## Experiência
 
-Publicação: Settings → Pages → Deploy from a branch → main → /(root). Abra `index.html` via servidor HTTP local para desenvolvimento.
+- Biblioteca interativa: passe o mouse ou use o teclado para virar as cartas e consultar significados e características. Clique ou toque para abrir o estudo completo.
+- Sete modalidades de tiragem, escolha intuitiva, sorteio automático ou registro de cartas físicas, com inversões opcionais.
+- Viradas tridimensionais, 78 sigilos autorais animados e mandala progressiva das cartas reveladas.
+- Interpretação por posição, orientação, elementos e combinações; carta do dia, favoritos, diário, exportação JSON e retomada de sessões.
+- Controles de som e movimento, preferência por movimento reduzido e layout responsivo.
 
-## Versão 2 — Mesa de leitura
+O assistente utiliza regras interpretativas locais, não IA generativa. Tarot é uma ferramenta de reflexão, não previsão nem aconselhamento profissional. Sessões, diário e favoritos são armazenados no navegador, sem sincronização entre dispositivos.
 
-- Sete tiragens, escolha intuitiva no baralho embaralhado de 78 cartas, sorteio automático e registro de cartas físicas.
-- Carta do dia local, favoritos, perfil de elementos e pares completos (45 na Cruz Celta).
-- Tiragem em andamento, diário e conversas armazenados no navegador. Não há transmissão de perguntas para terceiros.
-- O assistente continua baseado em regras locais; respostas não são previsões nem leitura de pensamentos.
-- O upload das imagens WebP não exige mudança no código; arquivos ausentes preservam a ilustração provisória.
+## Projeto
 
-## Validação
+HTML, CSS, JavaScript ES modules e SVG, sem framework ou backend. As 79 imagens originais estão em `assets/cards/`. `deck.js` contém os significados e a iconografia; `engine.js` implementa as leituras e `runes.js` os sigilos. Consulte `DESIGN.md` para identidade visual e `AUDIT.md` para auditoria técnica.
 
-Execute `npm test` para testes de domínio. Para o smoke test em Chromium: `npm install --no-save playwright@1.56.1`, `npx playwright install chromium`, `node browser/smoke.mjs`.
+## Desenvolvimento e testes
 
-### Otimização de imagens
-Os PNGs em assets/cards são os originais. `python -m pip install Pillow==11.3.0` e `python scripts/optimize-art.py` geram WebPs em `assets/optimized/` e ativam o manifesto. O workflow Prepare optimized ARCANA artwork também gera o pacote para download; extraia seu conteúdo nessa pasta e faça commit para publicar pelo GitHub Pages. Sem pacote, a aplicação continua usando PNG. Os originais não são alterados.
+Requer Node.js 22 para testes. Sirva a raiz com `python -m http.server 8000` e acesse http://localhost:8000/.
+
+- `npm test`: testes de domínio.
+- `npm install --no-save playwright@1.56.1`, `npx playwright install chromium` e `node browser/smoke.mjs`: testes de navegador, incluindo desktop, mobile, teclado e viradas.
+- GitHub Actions executa as verificações a cada atualização da branch main.
+
+## Imagens e publicação
+
+Os PNGs originais são preservados. A aplicação aceita também WebP, JPG e JPEG. Para gerar derivados responsivos, execute `python -m pip install Pillow==11.3.0` e `python scripts/optimize-art.py`. O workflow **Prepare optimized ARCANA artwork** produz o pacote; extraia em `assets/optimized/` e faça commit para habilitar os derivados. Sem eles, são usados os originais.
+
+Publicação via GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root).

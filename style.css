@@ -55,7 +55,7 @@ label{display:grid;gap:8px;color:var(--muted);font-size:16px}input,select,textar
 .atlas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:32px 24px}.atlas-item{display:block;background:none;border:0;padding:0;text-align:left;color:var(--ink);min-width:0}.atlas-item .tarot{transition:border-color .2s var(--ease)}.atlas-item small{display:block;font-size:14px;line-height:1.35;padding-top:8px}
 .chat{display:grid;gap:16px;margin-top:16px}.msg{border-left:1px solid var(--gold);background:var(--panel);padding:12px 16px;max-width:94%;white-space:pre-wrap;overflow-wrap:anywhere}.msg.user{justify-self:end;border-left:0;border-right:1px solid var(--strong-line);background:var(--raised)}.chat-form{display:flex;gap:12px;margin-top:20px}.chat-form input{flex:1}
 .journal-entry{padding:24px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.journal-entry:last-child{border:0}.journal-entry h3{margin-top:8px}
-dialog{max-width:min(840px,92vw);max-height:90vh;overflow:auto;background:var(--panel);color:var(--ink);border:1px solid var(--strong-line);border-radius:2px;padding:clamp(20px,4vw,40px)}dialog::backdrop{background:#0c0b09d9}.detail-grid{display:grid;grid-template-columns:minmax(124px,220px) minmax(0,1fr);gap:32px;align-items:start;margin-bottom:24px}.prompt{font-size:16px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--muted)}
+dialog{max-width:min(840px,92vw);max-height:90vh;overflow:auto;background:var(--panel);color:var(--ink);border:1px solid var(--strong-line);border-radius:2px;padding:clamp(20px,4vw,40px)}dialog::backdrop{background:#0c0b09d9}.detail-grid{display:grid;grid-template-columns:minmax(124px,220px) minmax(0,1fr);gap:32px;align-items:start;margin-bottom:24px}
 footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding:24px clamp(20px,5vw,76px);color:var(--muted);font-size:14px}
 #toast{position:fixed;bottom:16px;right:16px;z-index:8;background:var(--raised);border:1px solid var(--gold);padding:12px 16px;max-width:calc(100% - 32px)}#toast:empty{display:none}
 @keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes reveal{from{transform:rotateY(90deg);opacity:.3}to{transform:rotateY(0);opacity:1}}@keyframes shuffle{0%,100%{transform:translateX(0)}35%{transform:translateX(6px) rotate(2deg)}70%{transform:translateX(-6px) rotate(-2deg)}}
@@ -158,3 +158,23 @@ dialog{background:#151526f7;border-color:var(--gold);border-radius:9px}dialog::b
 
 /* Prefer the generated WebP backgrounds when the derivative package is installed. */
 body.optimized-art[data-scene=home]{--scene:url('./assets/optimized/18-a-lua-1050.webp')}body.optimized-art[data-scene=ritual]{--scene:url('./assets/optimized/02-a-sacerdotisa-1050.webp')}body.optimized-art[data-scene=daily]{--scene:url('./assets/optimized/19-o-sol-1050.webp')}body.optimized-art[data-scene=atlas]{--scene:url('./assets/optimized/21-o-mundo-1050.webp')}body.optimized-art[data-scene=journal]{--scene:url('./assets/optimized/09-o-eremita-1050.webp')}
+
+/* Atlas: two-sided study cards. Hover previews; activation opens the complete accessible detail. */
+.atlas-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:26px 20px}
+.atlas-flippable{width:100%;display:block;align-self:start;text-align:center}
+.atlas-flip-stage{display:block;perspective:1100px;width:100%;position:relative}
+.atlas-flip-object{display:grid;grid-template-columns:minmax(0,1fr);transform-style:preserve-3d;transition:transform .72s cubic-bezier(.32,.08,.2,1);transform:rotateY(0deg)}
+.atlas-face{grid-area:1/1;display:block;min-width:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.atlas-front{transform:rotateY(0deg);display:flex;align-items:stretch;background:#171426;border-radius:6px}
+.atlas-front>.tarot{width:100%;align-self:center;box-shadow:none}
+.atlas-meaning{transform:rotateY(180deg);position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;padding:20px 13px;background:radial-gradient(ellipse at 50% 13%,#342843,#171426 65%);border:1px solid var(--gold);border-radius:6px;color:var(--ink);text-align:center;box-shadow:0 12px 28px #0005;overflow-wrap:anywhere}
+.atlas-meaning:before{content:"";position:absolute;inset:5px;border:1px solid #c6a46c60;border-radius:3px;pointer-events:none}
+.atlas-category{font:600 12px/1.2 var(--serif);color:var(--gold);letter-spacing:.06em}.atlas-name{font:600 clamp(21px,2.2vw,29px)/1.05 var(--serif);color:#f3e2be}
+.atlas-element{font-size:14px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:7px;width:100%}
+.atlas-key{display:grid;gap:3px;font-size:16px;line-height:1.18}.atlas-key b{color:var(--gold);font:600 14px/1.1 var(--serif)}
+.atlas-domain{font-size:13px;color:var(--muted);line-height:1.2}.atlas-more-label{font:600 14px/1.2 var(--serif);color:var(--gold);border-top:1px solid var(--line);padding-top:8px;width:100%}
+.atlas-flippable .atlas-caption{margin:0;padding-top:9px;text-align:center}.atlas-flippable:not(.flip-dismissed):focus-visible .atlas-flip-object{transform:rotateY(180deg)}
+@media(hover:hover) and (pointer:fine){.atlas-flippable:not(.flip-dismissed):hover .atlas-flip-object{transform:rotateY(180deg)}}
+@media(max-width:620px){.atlas-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:20px 12px}.atlas-meaning{padding:15px 9px;gap:7px}.atlas-key{font-size:15px}.atlas-name{font-size:23px}}
+@media(max-width:420px){.atlas-grid{grid-template-columns:minmax(0,1fr);max-width:270px;margin-inline:auto}.atlas-meaning{gap:12px;padding:22px 16px}}
+@media(prefers-reduced-motion:reduce){.atlas-flip-object{transition:none!important}}
