@@ -1,0 +1,1 @@
+Optional artwork overlays, with procedural fallback. `runa.png`: transparent square blank stone, no glyph. `moeda.png`: transparent square frontal bronze coin, no glyph or lettering. Existing SVG and HTML render exact symbols and values independently. Original files retained; no preload at home.

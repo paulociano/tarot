@@ -1,8 +1,8 @@
 // ARCANA public static resources only. No private data or third-party requests.
-const VERSION='v19-astrarium';
+const VERSION='v20-ancestral';
 const SHELL='arcana-shell-'+VERSION, ART='arcana-art-v1', ORIGINAL='arcana-original-v1';
 const scope=new URL(self.registration.scope);
-const shellPaths=['index.html','style.css','app.js','universe.js','atelier.js','astrarium.js','astronomy-data.js','vendor/astronomy.js','deck.js','engine.js','runes.js','storage.js','cinematic.js','soundscape.js','knowledge.js','oracle.js','vault.js','narration.js','voice-script.js','voice-worker.js','grimorio.js','journey.js','art-protection.js','reading-art.js','custom-ritual.js','pwa.js','manifest.webmanifest','assets/optimized/manifest.js','assets/icons/icon-192.png','assets/icons/icon-512.png'];
+const shellPaths=['index.html','style.css','app.js','universe.js','atelier.js','astrarium.js','astronomy-data.js','ancestral.js','ancestral-data.js','vendor/astronomy.js','deck.js','engine.js','runes.js','storage.js','cinematic.js','soundscape.js','knowledge.js','oracle.js','vault.js','narration.js','voice-script.js','voice-worker.js','grimorio.js','journey.js','art-protection.js','reading-art.js','custom-ritual.js','pwa.js','manifest.webmanifest','assets/optimized/manifest.js','assets/icons/icon-192.png','assets/icons/icon-512.png'];
 const shellURLs=new Set(shellPaths.map(p=>new URL(p,scope).href));
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(SHELL);await cache.addAll([...shellURLs].map(url=>new Request(url,{cache:'reload'})))} )()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('arcana-shell-')&&key!==SHELL)await caches.delete(key);await self.clients.claim()})()));
@@ -22,5 +22,5 @@ self.addEventListener('fetch',event=>{
  if(shellURLs.has(url.href)){event.respondWith((async()=>{const cached=await caches.match(req,{cacheName:SHELL});return cached||fetch(req)})());return}
  const path=pathOf(url);
  if(/^assets\/optimized\/(?:scenes\/)?[a-z0-9-]+\.webp$/.test(path)){event.respondWith(imageResponse(req,url,true));return}
- if(/^assets\/(?:cards|scenes|runes)\/[a-z0-9-]+\.(png|webp|jpe?g)$/.test(path))event.respondWith(imageResponse(req,url,false));
+ if(/^assets\/(?:cards|scenes|runes|instruments)\/[a-z0-9-]+\.(png|webp|jpe?g)$/.test(path))event.respondWith(imageResponse(req,url,false));
 });

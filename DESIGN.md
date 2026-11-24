@@ -64,3 +64,6 @@ Tese visual: o Portal é um instrumento armilar habitável, não um catálogo de
 
 ## Astrarium
 Instrumento circular em latão visual/indigo com escala de fase, calendário de discos lunares calculados e mapa de longitudes em anéis separados (não escala de distância). Reutiliza pintura e trilha do Observatório. Números e eventos possuem equivalentes textuais acessíveis, não dependem de cor nem do SVG. A navegação temporal é explícita, sem simular influência lunar ou previsões pessoais.
+
+## Oráculos ancestrais
+A seleção rúnica utiliza pedras de obsidiana, com símbolo oculto até a escolha, SVG preciso e texto acessível; o I Ching utiliza três moedas, seis linhas que se acumulam da base ao topo, marcação de mutações e figuras em paralelo. Texturas opcionais de autoria ARCANA são somente suportes materiais; a notação permanece vetorial. Não confundir os sigilos autorais do tarot com o Futhark histórico.
