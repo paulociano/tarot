@@ -1,8 +1,8 @@
 import {splitSpeech} from './voice-script.js';
 let worker=null,ctx=null,job=null;
 export function neuralAvailable(){return typeof Worker==='function'&&typeof WebAssembly==='object'&&typeof (window.AudioContext||window.webkitAudioContext)==='function'}
-export function stopNarration(){const old=job;job=null;if(old){clearTimeout(old.watchdog);for(const node of old.nodes){try{node.stop()}catch{}try{node.disconnect()}catch{}}old.nodes.clear();if(!old.generated){worker?.terminate();worker=null}old.onState?.('stopped','Narração interrompida.')} }
-function finish(state,message){const old=job;if(!old)return;job=null;clearTimeout(old.watchdog);for(const node of old.nodes){try{node.stop()}catch{}try{node.disconnect()}catch{}}old.nodes.clear();if(state==='error'){worker?.terminate();worker=null}old.onState?.(state,message)}
+export function stopNarration(){const old=job;job=null;if(old){clearTimeout(old.watchdog);for(const node of old.nodes){try{node.stop()}catch{}try{node.disconnect()}catch{}}old.nodes.clear();old.gain.disconnect();if(!old.generated){worker?.terminate();worker=null}old.onState?.('stopped','Narração interrompida.')} }
+function finish(state,message){const old=job;if(!old)return;job=null;clearTimeout(old.watchdog);for(const node of old.nodes){try{node.stop()}catch{}try{node.disconnect()}catch{}}old.nodes.clear();old.gain.disconnect();if(state==='error'){worker?.terminate();worker=null}old.onState?.(state,message)}
 function renew(){if(!job)return;clearTimeout(job.watchdog);job.watchdog=setTimeout(()=>finish('error','A preparação da voz demorou demais. Tente novamente.'),180000)}
 function receive(event){
  if(!job)return;const data=event.data;renew();

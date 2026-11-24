@@ -26,10 +26,10 @@ async function initialize(){
  engine=await ort.InferenceSession.create(await weights.arrayBuffer(),{executionProviders:['wasm']});
 }
 async function synthesize(text){
- let ids;
- const phon=await createPiperPhonemize({locateFile:name=>PHON+name,print:value=>{try{const result=JSON.parse(value);if(Array.isArray(result.phoneme_ids))ids=result.phoneme_ids}catch{}},printErr:()=>{}});
+ let ids=[];
+ const phon=await createPiperPhonemize({locateFile:name=>PHON+name,print:value=>{try{const result=JSON.parse(value);if(Array.isArray(result.phoneme_ids))ids.push(...result.phoneme_ids)}catch{}},printErr:()=>{}});
  phon.callMain(['-l',config.espeak.voice,'--input',JSON.stringify([{text}]),'--espeak_data','/espeak-ng-data']);
- if(!ids?.length)throw Error('Não foi possível preparar a pronúncia.');
+ if(!ids.length)throw Error('Não foi possível preparar a pronúncia.');
  const tensor=(values,shape)=>new ort.Tensor('int64',BigInt64Array.from(values.map(BigInt)),shape);
  const feeds={input:tensor(ids,[1,ids.length]),input_lengths:tensor([ids.length],[1]),scales:new ort.Tensor('float32',Float32Array.from([config.inference.noise_scale,Math.min(1.35,(config.inference.length_scale||1)*1.12),config.inference.noise_w]),[3])};
  if(Object.keys(config.speaker_id_map||{}).length)feeds.sid=tensor([0],[1]);
