@@ -141,3 +141,17 @@ dialog{background:#151526f7;border-color:var(--gold);border-radius:9px}dialog::b
 
 /* Keep the halo in the ritual area without creating horizontal page overflow. */
 .spread{overflow:clip;overflow-clip-margin:14px}.rune-detail .rune-halo{max-width:calc(100% + 36px)}
+
+/* Ritual experience polish */
+.header-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.header-controls .icon{min-height:40px}.header nav a{min-height:44px;display:flex;align-items:center}
+.ritual-title{font-family:var(--serif);font-size:clamp(34px,4.5vw,62px)}.steps .step-current{color:var(--gold);border-bottom:1px solid var(--gold);font-weight:600}.ritual-next{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-top:16px;color:var(--muted)}.ritual-next strong{color:var(--ink)}
+.spread-preview{border-block:1px solid var(--line);padding:16px 0}.spread-preview>.eyebrow{display:block;margin-bottom:10px}.mini-spread{display:flex;flex-wrap:wrap;gap:12px}.mini-spread>span{display:flex;align-items:center;gap:7px;font-size:15px}.mini-spread i{display:grid;place-items:center;width:24px;height:32px;border:1px solid var(--line);color:var(--gold);font:600 17px var(--serif);font-style:normal;background:#252139}
+.slot-next .position{font-weight:600;color:#f1d8a5}.slot-next button>.back{border-color:#f1d8a5;box-shadow:0 0 18px #c6a46c38}.deck-controls{display:flex;justify-content:space-between;gap:12px;align-items:center}.deck-controls [data-deck-dir]{font-size:25px;min-width:44px}.deck-tray{overscroll-behavior-x:contain;scrollbar-width:auto}
+.reading-jumps{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.reading,.rune-altar{scroll-margin-top:24px}.chat{max-height:420px;overflow:auto;overscroll-behavior:contain;padding:4px}
+#atlas-more{justify-content:center}.atlas-grid .atlas-item:focus-visible{outline-offset:5px}.hero-cards>.rune-halo{width:92%;top:48%;opacity:.35;z-index:0}.hero-cards>.rune-halo.rune-awake{animation:hero-rune 2.6s ease-out both}
+@keyframes hero-rune{from{opacity:0;transform:translate(-50%,-50%) scale(.8)}to{opacity:.35;transform:translate(-50%,-50%) scale(1)}}
+.route-enter{animation:route-enter .48s var(--ease) both}@keyframes route-enter{from{opacity:.4;transform:translateY(6px)}to{opacity:1;transform:none}}
+.slot-awake .flip-object{animation-duration:1050ms}.slot-awake .rune-awake{animation-delay:.12s}.constellation-awake .new-link{animation-delay:.85s}.constellation-awake .new-node{animation-delay:.65s}
+.reading-arrival{animation:reading-in .55s .3s var(--ease) both}@keyframes reading-in{from{opacity:.4;transform:translateY(12px)}to{opacity:1;transform:none}}
+.motion-off *, .motion-off *::before,.motion-off *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.motion-off .flip-object{transform:rotateY(180deg)}.motion-off .rune-awake{opacity:.44;transform:translate(-50%,-50%)}.motion-off .new-link{stroke-dashoffset:0}
+@media(max-width:620px){.header-controls{gap:5px}.header-controls .icon{font-size:12px;padding:6px 8px}.header nav{justify-content:flex-start;column-gap:14px}.ritual-next{align-items:flex-start;flex-direction:column}.mini-spread{gap:8px}.mini-spread>span{font-size:13px}.deck-controls{gap:5px}.deck-controls .secondary{padding-inline:9px}.slot .position{min-height:32px}.rune-altar{margin-top:20px}.hero-cards>.rune-halo{width:85%}}
