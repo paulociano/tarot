@@ -238,4 +238,5 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 #narrate[aria-busy=true]{opacity:.7;cursor:progress}#narration-status{min-height:1.4em}
 
-.oracle-remote{margin-top:22px;padding:16px 0 0;border-top:1px solid var(--line)}.oracle-remote summary{cursor:pointer;color:var(--gold);padding:8px 0}.oracle-remote label{display:block;margin:12px 0}.oracle-remote .check{display:flex;align-items:flex-start;gap:10px}.oracle-remote #oracle-remote-status{font-size:14px;color:var(--gold)}.oracle-remote #oracle-remote-status:empty{display:none}
+/* Cofre portátil */
+.vault-panel{background:radial-gradient(ellipse at 100% 0%,#35243f70,transparent 70%),#121323bb}.vault-panel label{display:block;max-width:580px;margin-top:18px}.vault-panel input[type=file]{max-width:100%;width:100%;overflow:hidden;font:inherit}.vault-panel #vault-status{color:var(--gold);font-size:15px}.vault-panel #vault-status:empty{display:none}.vault-panel .actions{margin-top:10px}
