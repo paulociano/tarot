@@ -237,3 +237,5 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 .art,.back,.scene-painting,.scene-background,.altar-visual,.lab-mandala{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.protected-art,.art img,.back img,.scene-painting{pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none}.art svg,.back svg{pointer-events:none}
 
 #narrate[aria-busy=true]{opacity:.7;cursor:progress}#narration-status{min-height:1.4em}
+
+.oracle-remote{margin-top:22px;padding:16px 0 0;border-top:1px solid var(--line)}.oracle-remote summary{cursor:pointer;color:var(--gold);padding:8px 0}.oracle-remote label{display:block;margin:12px 0}.oracle-remote .check{display:flex;align-items:flex-start;gap:10px}.oracle-remote #oracle-remote-status{font-size:14px;color:var(--gold)}.oracle-remote #oracle-remote-status:empty{display:none}

@@ -42,3 +42,6 @@ Remoção do museu e módulos correspondentes; redirecionamento de hash legado. 
 
 ## Voz neural
 Worker com recursos fixados por versão, inferência local, sem textos pessoais nos payloads do worker, sem chaves de API. Cache de modelo separado. Dependências externas ainda representam risco de supply chain e disponibilidade; teste real de áudio e dispositivos pendente. Encerramento por rota, parada, aba oculta e timeout. Modelo neural não garante qualidade equivalente a um locutor humano.
+
+## Oráculo generativo privado
+Implementação opcional sem credenciais nem endpoint ativo por padrão. Código de acesso server-side, origem restrita, payload minimizado, validação de cartas, instruções de segurança, limite de tokens, timeout e respostas sem cache. Sem armazenamento de credenciais do cliente. Throttle local não substitui quota distribuída; habilitação comercial exige autenticação, limites persistentes, avaliação adversarial e consentimento. Nenhuma chamada paga realizada nesta entrega.

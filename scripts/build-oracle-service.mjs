@@ -1,0 +1,1 @@
+import {mkdir,writeFile} from 'node:fs/promises';await mkdir('server-public',{recursive:true});await writeFile('server-public/index.html','<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>ARCANA · Serviço privado</title><p>Serviço privado do Oráculo ARCANA. Abra a aplicação no GitHub Pages.</p></html>');

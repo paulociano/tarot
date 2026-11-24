@@ -1,0 +1,10 @@
+{
+  "framework": null,
+  "buildCommand": "node scripts/build-oracle-service.mjs",
+  "outputDirectory": "server-public",
+  "functions": {
+    "api/oracle.js": {
+      "maxDuration": 30
+    }
+  }
+}

@@ -27,10 +27,7 @@ export function oracleReading(session){
 }
 export function oracleReply(question,session){
  const q=norm(question);const o=oracleReading(session);if(!o)return 'Comece uma tiragem para conversarmos sobre os símbolos.';
- // Guardrails have priority over card matching and conversational references.
- if(/suicid|me matar|tirar minha vida|autoagress|quero morrer|me machucar|acabar com minha vida/.test(q))return 'Sua segurança importa mais que qualquer leitura. Se estiver em risco imediato, procure uma pessoa de confiança e um serviço de emergência agora. No Brasil, o CVV oferece apoio pelo 188.';
- if(/diagnostico|remedio|tratamento|investir|aposta|processo judicial|gravidez|medicamento|doenca|cura|comprar acao/.test(q))return 'O tarot não determina resultados médicos, jurídicos ou financeiros. Busque dados verificáveis e orientação profissional qualificada. '+o.focus;
- if(/vai acontecer|me ama|vai voltar|prever|certeza|quando vou|quando vai|vai dar certo|futuro garantido/.test(q))return 'As cartas não permitem saber o futuro nem conhecer os sentimentos de outra pessoa. Podemos refletir sobre '+o.title.toLowerCase()+': '+o.practice;
+ const safe=safetyReply(question,session);if(safe)return safe;
  let cards=selected(q,o.reading.cards);const follow=/\b(ela|ele|essa|esse|isso|dessas|dess(es|a)|aprofund|continue|mais|exemplo|e na pratica)\b/.test(q)||/^(e |como |por que )/.test(q);
  if(!cards.length&&follow)cards=remembered((session.chat||[]).slice(-30),o.reading.cards);
  const lens=lensFor(question,session.topic)||lensFor(session.question,session.topic);
@@ -43,4 +40,13 @@ export function oracleReply(question,session){
  if(/conselho|agir|passo|pratica|faco/.test(q))return o.practice+'\n\n'+o.question;
  if(lens)return 'Perspectiva: '+lens.title+'. '+o.narrative+'\n\n'+lens.practice+'\n\n'+o.question;
  return o.narrative+'\n\n'+o.focus+' '+o.question+'\n\nSe quiser, indique uma carta, posição ou tema específico para aprofundar.';
+}
+
+export function safetyReply(question,session){const q=norm(question),o=oracleReading(session);if(!o)return null;
+ // Guardrails have priority over card matching and conversational references.
+ if(/suicid|me matar|tirar minha vida|autoagress|quero morrer|me machucar|acabar com minha vida/.test(q))return 'Sua segurança importa mais que qualquer leitura. Se estiver em risco imediato, procure uma pessoa de confiança e um serviço de emergência agora. No Brasil, o CVV oferece apoio pelo 188.';
+ if(/diagnostico|remedio|tratamento|investir|aposta|processo judicial|gravidez|medicamento|doenca|cura|comprar acao/.test(q))return 'O tarot não determina resultados médicos, jurídicos ou financeiros. Busque dados verificáveis e orientação profissional qualificada. '+o.focus;
+ if(/vai acontecer|me ama|vai voltar|prever|certeza|quando vou|quando vai|vai dar certo|futuro garantido/.test(q))return 'As cartas não permitem saber o futuro nem conhecer os sentimentos de outra pessoa. Podemos refletir sobre '+o.title.toLowerCase()+': '+o.practice;
+
+ return null;
 }
