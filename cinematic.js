@@ -23,11 +23,12 @@ export function animateArrival(stage,origin){
  if(origin&&target.width>0&&target.height>0&&target.top>=0&&target.bottom<=innerHeight&&origin.top>=0&&origin.bottom<=innerHeight){x=origin.left+origin.width/2-target.left-target.width/2;y=origin.top+origin.height/2-target.top-target.height/2;scale=Math.max(.35,Math.min(1,origin.width/target.width))}
  return stage.animate([{transform:'translate('+x+'px,'+y+'px) scale('+scale+')',opacity:.85},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:420,easing:'cubic-bezier(.2,.75,.25,1)'});
 }
-let audio=null,voices=[],bus=null,active=false;
+let audio=null,voices=[],bus=null,active=false,ducked=false;
+export function duckAmbient(enabled){ducked=enabled;if(bus&&audio){const t=audio.currentTime;bus.gain.cancelScheduledValues(t);bus.gain.setTargetAtTime(enabled?.012:.045,t,.18)}}
 const harmony={home:[110,164.81,220],ritual:[98,146.83,196],daily:[130.81,196,261.63],atlas:[110,146.83,220],journal:[82.41,123.47,164.81]};
 export async function ambient(enabled,route){
  active=enabled; if(!enabled||document.hidden){stopAmbient();return false}
- try{audio=audio||new (window.AudioContext||window.webkitAudioContext)();await audio.resume();if(!active||document.hidden)return false;stopAmbient();const t=audio.currentTime;bus=audio.createGain();bus.gain.setValueAtTime(.0001,t);bus.gain.exponentialRampToValueAtTime(.045,t+1.2);bus.connect(audio.destination);voices=(harmony[route]||harmony.home).map(f=>{const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.value=f;g.gain.value=.19;o.connect(g);g.connect(bus);o.start();return o});return true}catch{return false}
+ try{audio=audio||new (window.AudioContext||window.webkitAudioContext)();await audio.resume();if(!active||document.hidden)return false;stopAmbient();const t=audio.currentTime;bus=audio.createGain();bus.gain.setValueAtTime(.0001,t);bus.gain.exponentialRampToValueAtTime(ducked?.012:.045,t+1.2);bus.connect(audio.destination);voices=(harmony[route]||harmony.home).map(f=>{const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.value=f;g.gain.value=.19;o.connect(g);g.connect(bus);o.start();return o});return true}catch{return false}
 }
 function stopAmbient(){if(!audio||!bus)return;const old=bus,t=audio.currentTime;old.gain.cancelScheduledValues(t);old.gain.setTargetAtTime(.0001,t,.15);voices.forEach(o=>{try{o.stop(t+.9)}catch{}});voices=[];bus=null;setTimeout(()=>{try{old.disconnect()}catch{}},1000)}
 export function pauseAmbient(){stopAmbient()}

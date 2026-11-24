@@ -49,3 +49,6 @@ Marca reduzida ao wordmark ARCANA e ao losango existente. Jornada dos 22 arcanos
 
 ## Proteção e compartilhamento
 Museu removido por redundância. A biblioteca permanece interativa. Proteção de superfície por eventos e CSS sem bloquear atalhos, seleção de textos ou navegação. Exportação vetorial autoral com selo e identificação das cartas, sem raster ou conteúdo pessoal. Não constitui DRM.
+
+## Voz ARCANA
+Narração neural pt-BR sob demanda, ritmo desacelerado em 12% no length scale, pausas entre frases e ducking da trilha. A voz não recita anotações privadas. Sem voz nativa. A direção sonora privilegia clareza e silêncio, não efeitos de eco sobre a fala.

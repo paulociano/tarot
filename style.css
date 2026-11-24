@@ -235,3 +235,5 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 /* Direct image saving deterrence: preserve card buttons, touch scrolling and text selection. */
 .art,.back,.scene-painting,.scene-background,.altar-visual,.lab-mandala{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.protected-art,.art img,.back img,.scene-painting{pointer-events:none;-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none}.art svg,.back svg{pointer-events:none}
+
+#narrate[aria-busy=true]{opacity:.7;cursor:progress}#narration-status{min-height:1.4em}

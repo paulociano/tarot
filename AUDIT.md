@@ -39,3 +39,6 @@ Manifest e ícones, Service Worker de escopo relativo, app shell versionado, cac
 
 ## Proteção de superfície de arte
 Remoção do museu e módulos correspondentes; redirecionamento de hash legado. Proteção de contexto e arraste restrita às superfícies de arte, sem bloquear teclado ou cópia de textos. Exportação simbólica sem pinturas. Recursos públicos permanecem recuperáveis por URL ou captura; não é controle de acesso. Testes de navegador adicionados.
+
+## Voz neural
+Worker com recursos fixados por versão, inferência local, sem textos pessoais nos payloads do worker, sem chaves de API. Cache de modelo separado. Dependências externas ainda representam risco de supply chain e disponibilidade; teste real de áudio e dispositivos pendente. Encerramento por rota, parada, aba oculta e timeout. Modelo neural não garante qualidade equivalente a um locutor humano.
