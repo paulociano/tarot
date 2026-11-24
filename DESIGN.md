@@ -73,3 +73,6 @@ Câmara sem exigência de interação contínua. Um disco de luz pictórico em a
 
 ## Speculum
 Sete câmaras em constelação regular. A Câmara dos Espelhos usa diagramas SVG em vez de placares: roda de áreas somente desenha o polígono quando todas estão avaliadas, atlas destaca famílias escolhidas, bússola numerada, duas portas para alternativas. Todos têm equivalentes textuais, controles acessíveis e rascunho independente. Não inferir estado psicológico nem prescrever decisões. Reutiliza a trilha Grimório e recebe cenário opcional.
+
+## Onirium
+Oito câmaras. Atlas onírico como constelação pessoal de etiquetas explícitas, com conexões somente por sonhos compartilhados, números e lista equivalente. Rascunho em sessão, salvamento explícito e privacidade informada. Perguntas de associação pessoal, não dicionário de significados universais. Arte e música do Grimório como fallback; cenário próprio opcional.
