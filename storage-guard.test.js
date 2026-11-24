@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {storageGuard,COLLECTION_KEYS} from './storage.js';
+const memory=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v),removeItem:k=>m.delete(k)}};
+test('a stale tab cannot overwrite a newer reading',()=>{const s=memory(),a=storageGuard(()=>s),b=storageGuard(()=>s),key=COLLECTION_KEYS[0];assert.deepEqual(a.read(key,[]),[]);assert.deepEqual(b.read(key,[]),[]);assert.equal(b.write(key,[{id:'new'}]).ok,true);assert.equal(a.stale(key),true);assert.deepEqual(a.write(key,[{id:'old'}]),{ok:false,conflict:true});assert.deepEqual(JSON.parse(s.getItem(key)),[{id:'new'}])});
+test('fresh writes update expected versions and missing or denied storage fails safely',()=>{const s=memory(),g=storageGuard(()=>s);for(const k of COLLECTION_KEYS)g.read(k,[]);assert.equal(g.fresh(COLLECTION_KEYS),true);assert.equal(g.write(COLLECTION_KEYS[0],[1]).ok,true);assert.equal(g.fresh(COLLECTION_KEYS),true);s.removeItem(COLLECTION_KEYS[0]);assert.equal(g.fresh(COLLECTION_KEYS),false);g.refresh(COLLECTION_KEYS);assert.equal(g.fresh(COLLECTION_KEYS),true);const denied=storageGuard(()=>{throw Error('denied')});assert.deepEqual(denied.read(COLLECTION_KEYS[0],[]),[]);assert.equal(denied.write(COLLECTION_KEYS[0],[]).ok,false)});

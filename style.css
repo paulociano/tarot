@@ -240,3 +240,6 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 /* Cofre portátil */
 .vault-panel{background:radial-gradient(ellipse at 100% 0%,#35243f70,transparent 70%),#121323bb}.vault-panel label{display:block;max-width:580px;margin-top:18px}.vault-panel input[type=file]{max-width:100%;width:100%;overflow:hidden;font:inherit}.vault-panel #vault-status{color:var(--gold);font-size:15px}.vault-panel #vault-status:empty{display:none}.vault-panel .actions{margin-top:10px}
+
+/* Bounded journal and conversation rendering. */
+.journal-pagination{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding-top:18px}.journal-pagination:empty{display:none}.journal-pagination span{font-size:14px;color:var(--muted)}.journal-pagination button{min-height:44px}#chat-older{align-self:center;margin:8px auto;max-width:100%}#storage-warning:not([hidden]){display:block;padding:12px 16px;border:1px solid var(--gold);background:var(--panel);border-radius:4px;color:var(--ink);overflow-wrap:anywhere}

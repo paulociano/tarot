@@ -12,3 +12,16 @@ export function importJournal(text,existing=[]){
  return {records:[...existing,...added].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date)),added:added.length,skipped:rows.length-added.length}
 }
 export const journalBackup=records=>({format:'arcana-journal',version:1,records});
+
+// Optimistic concurrency guard for local tabs. Check exact stored versions before writing.
+// localStorage is not transactional across tabs: this detects stale snapshots, not a global lock.
+export const COLLECTION_KEYS=['arcana-journal-v1','arcana-favorites-v1','arcana-journey-v1','arcana-custom-rituals-v1'];
+export function storageGuard(provider){
+ const expected=new Map(),tracked=new Set([...COLLECTION_KEYS,'arcana-session-v2']);
+ const read=(key,fallback)=>{try{const raw=provider().getItem(key);if(tracked.has(key)&&!expected.has(key))expected.set(key,raw);return JSON.parse(raw)??fallback}catch{return fallback}};
+ const stale=key=>{try{return tracked.has(key)&&expected.has(key)&&provider().getItem(key)!==expected.get(key)}catch{return false}};
+ const fresh=keys=>keys.every(key=>expected.has(key)&&!stale(key));
+ const refresh=keys=>{for(const key of keys)expected.set(key,provider().getItem(key))};
+ const write=(key,value)=>{try{const s=provider();if(tracked.has(key)&&(!expected.has(key)||stale(key)))return {ok:false,conflict:true};const raw=JSON.stringify(value);s.setItem(key,raw);if(tracked.has(key))expected.set(key,raw);return {ok:true,conflict:false}}catch{return {ok:false,conflict:false}}};
+ return {read,write,stale,fresh,refresh};
+}
