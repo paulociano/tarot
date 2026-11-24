@@ -28,19 +28,27 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install Pillow==11.3.0
       - run: python scripts/optimize-art.py
-      - run: npm install --no-save playwright@1.56.1
+      - run: npm install --no-save playwright@1.56.1 axe-core@4.10.3
       - run: npx playwright install --with-deps chromium
       - run: node browser/smoke.mjs
         env:
           ARCANA_EXPECT_OPTIMIZED: '1'
+      - name: Build optimized static site
+        run: python scripts/build-site.py
+      - name: Audit optimized release (accessibility and resource budgets)
+        run: node browser/quality.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: arcana-visual-review
           path: browser/screenshots/
           if-no-files-found: ignore
-      - name: Build optimized static site
-        run: python scripts/build-site.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arcana-quality-report
+          path: browser/quality/
+          if-no-files-found: ignore
       - uses: actions/upload-artifact@v4
         with:
           name: arcana-optimized-site

@@ -74,3 +74,5 @@ O Oráculo permanece exclusivamente local; o piloto generativo foi retirado. O c
 
 ## Qualidade e resiliência
 O Grimório apresenta 12 registros por página e a conversa exibe inicialmente as últimas 20 mensagens (o histórico anterior continua disponível). O aplicativo verifica versões locais antes de gravar sessão, diário, favoritos, progresso e modelos; alterações de outra aba bloqueiam uma gravação desatualizada e exibem aviso de recuperação. A verificação é otimista, não uma transação atômica entre abas. Para recuperar uma aba em conflito, copie a leitura ou exporte seu cofre antes de recarregar. A integração da voz neural real passou no teste de síntese; avaliação perceptiva em dispositivos físicos continua necessária.
+
+`browser/quality.mjs` audita oito rotas do build otimizado em três larguras, com axe-core e orçamento de carregamento, no pipeline Test ARCANA. Veja o artefato `arcana-quality-report` para os resultados; não é certificação WCAG nem medição de campo.
