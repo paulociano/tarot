@@ -56,3 +56,6 @@ Baseline 675d3c9: CI unitário, Chromium e publicação Pages aprovados; síntes
 
 ### Gate contínuo de qualidade
 `browser/quality.mjs` verifica 8 rotas em 3 larguras (360/768/1440), pacote otimizado servido sob `/tarot/`, com axe-core 4.10.3. Gating: overflow horizontal, nomes/labels básicos e atributos ARIA essenciais, carregamento sob demanda da voz, orçamento inicial local de 2,5 MB e erros JS. Registra contagens de DOM, recursos, bytes e tempo de navegação, demais violações/incomplete do axe e screenshots. Sem fontes externas nem throttling no laboratório; não equivale a LCP/INP/CLS de campo ou conformidade WCAG. Relatório `arcana-quality-report` no CI. O relatório será produzido na execução; não declarar PASS antes dos resultados.
+
+## Refinamento sensorial
+Baseline de concorrência e paginação dfafd08 aprovado. Corrigidos descarte antecipado do cenário, reinício de áudio ao mudar dentro da mesma sala e sobreposição ilimitada potencial em navegação rápida. Mixer procedural com dois grupos máximos, teste de cancelamento de resume e grafo de Web Audio, fallback da pintura e reduced motion. Não houve avaliação auditiva humana; parâmetros são decisões de direção sonora. Relatório axe anterior ainda em execução no início desta etapa.

@@ -52,3 +52,6 @@ Museu removido por redundância. A biblioteca permanece interativa. Proteção d
 
 ## Voz ARCANA
 Narração neural pt-BR sob demanda, ritmo desacelerado em 12% no length scale, pausas entre frases e ducking da trilha. A voz não recita anotações privadas. Sem voz nativa. A direção sonora privilegia clareza e silêncio, não efeitos de eco sobre a fala.
+
+## Continuidade sensorial
+Cada sala possui assinatura harmônica discreta. Crossfade e panorama de baixa intensidade; a voz tem prioridade. Trocas de cenários não devem piscar ou deixar o fundo vazio durante a carga. Pulso final da mandala como confirmação breve, sem partículas ou animação infinita adicional. A paleta, pinturas e controles existentes permanecem.

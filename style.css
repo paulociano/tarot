@@ -243,3 +243,10 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 /* Bounded journal and conversation rendering. */
 .journal-pagination{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding-top:18px}.journal-pagination:empty{display:none}.journal-pagination span{font-size:14px;color:var(--muted)}.journal-pagination button{min-height:44px}#chat-older{align-self:center;margin:8px auto;max-width:100%}#storage-warning:not([hidden]){display:block;padding:12px 16px;border:1px solid var(--gold);background:var(--panel);border-radius:4px;color:var(--ink);overflow-wrap:anywhere}
+
+/* Sensory polish: the outgoing painting stays until the incoming one is ready. */
+.scene-layer{transition:opacity .72s cubic-bezier(.25,.65,.28,1)}.scene-layer[data-painting]{contain:paint}.scene-layer.scene-visible{opacity:1}
+@media(hover:hover) and (pointer:fine){.header-controls .control-icon{transition:color .2s,border-color .2s,background .2s}.header-controls .control-icon:active{transform:scale(.94)}}
+.altar-visual{isolation:isolate;position:relative}.altar-complete .altar-visual:after{content:"";position:absolute;inset:5%;border-radius:50%;pointer-events:none;border:1px solid #d1b27b70;box-shadow:0 0 24px #c6a46c26,inset 0 0 16px #c6a46c16;opacity:0;animation:seal-complete 1.9s 1.8s cubic-bezier(.2,.65,.3,1) both}
+@keyframes seal-complete{0%{opacity:0;transform:scale(.88)}35%{opacity:.85}100%{opacity:0;transform:scale(1.12)}}
+@media(prefers-reduced-motion:reduce){.scene-layer{transition:none!important}.altar-complete .altar-visual:after{display:none}}.motion-off .altar-complete .altar-visual:after{display:none}

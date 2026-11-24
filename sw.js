@@ -1,8 +1,8 @@
 // ARCANA public static resources only. No private data or third-party requests.
-const VERSION='v11-quality';
+const VERSION='v12-sensory';
 const SHELL='arcana-shell-'+VERSION, ART='arcana-art-v1', ORIGINAL='arcana-original-v1';
 const scope=new URL(self.registration.scope);
-const shellPaths=['index.html','style.css','app.js','deck.js','engine.js','runes.js','storage.js','cinematic.js','knowledge.js','oracle.js','vault.js','narration.js','voice-script.js','voice-worker.js','grimorio.js','journey.js','art-protection.js','reading-art.js','custom-ritual.js','pwa.js','manifest.webmanifest','assets/optimized/manifest.js','assets/icons/icon-192.png','assets/icons/icon-512.png'];
+const shellPaths=['index.html','style.css','app.js','deck.js','engine.js','runes.js','storage.js','cinematic.js','soundscape.js','knowledge.js','oracle.js','vault.js','narration.js','voice-script.js','voice-worker.js','grimorio.js','journey.js','art-protection.js','reading-art.js','custom-ritual.js','pwa.js','manifest.webmanifest','assets/optimized/manifest.js','assets/icons/icon-192.png','assets/icons/icon-512.png'];
 const shellURLs=new Set(shellPaths.map(p=>new URL(p,scope).href));
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(SHELL);await cache.addAll([...shellURLs].map(url=>new Request(url,{cache:'reload'})))} )()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('arcana-shell-')&&key!==SHELL)await caches.delete(key);await self.clients.claim()})()));
