@@ -26,3 +26,7 @@ Metodologia: Arsenal web-design-engineer / unslop-redline-passes e typographic-c
 ## Revisão: Noite dos Arcanos (solicitação do proprietário)
 
 A direção de ateliê foi rejeitada em favor de uma experiência imersiva, próxima à versão anterior. Preserva-se a tipografia legível e o acabamento das molduras, mas retornam índigo, obsidiana e ouro. O display usa Cinzel Decorative, os títulos Cormorant Garamond e o texto Alegreya. Os fundos são cenas reais extraídas das ilustrações já existentes: Lua, Sacerdotisa, Sol, Mundo e Eremita, com véus escuros para leitura; não são novas pinturas independentes. A abertura retorna ao trio Estrela, Lua e Sol. A virada de carta é uma rotação de 180° de um objeto CSS 3D com duas faces, de duração 960 ms, sem fade substituindo o verso; somente a carta recém-revelada anima, e o estado persistido não reanima. Reduced motion revela imediatamente. Sem dependências novas. A identidade de ateliê deixa de ser a direção vigente.
+
+## Ritual dos sigilos
+
+Cada carta possui um sigilo original determinístico (13 traçados × 6 marcas de selo = 78 combinações), com cor de naipe. A revelação ativa dois anéis em sentidos opostos durante 2,7 s. A mandala agrega somente cartas já reveladas, com uma ligação para cada par; uma nova carta acende o nó e as linhas correspondentes. Inversões orientam o sigilo da mandala em 180°. Sem loops permanentes; reduced motion preserva o estado final. SVG/CSS sem dependências. Os motivos são ficcionais e não representam um alfabeto rúnico histórico.
