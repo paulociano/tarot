@@ -1,6 +1,12 @@
 name: Verify neural voice (real model)
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'voice-worker.js'
+      - 'browser/voice-real.mjs'
+      - '.github/workflows/voice-real.yml'
 permissions:
   contents: read
 jobs:

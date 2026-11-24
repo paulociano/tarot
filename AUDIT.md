@@ -45,3 +45,5 @@ Worker com recursos fixados por versão, inferência local, sem textos pessoais 
 
 ## Oráculo generativo privado
 Implementação opcional sem credenciais nem endpoint ativo por padrão. Código de acesso server-side, origem restrita, payload minimizado, validação de cartas, instruções de segurança, limite de tokens, timeout e respostas sem cache. Sem armazenamento de credenciais do cliente. Throttle local não substitui quota distribuída; habilitação comercial exige autenticação, limites persistentes, avaliação adversarial e consentimento. Nenhuma chamada paga realizada nesta entrega.
+
+Verificação adicional: testes Chromium com endpoint simulado para consentimento, exclusão de anotações/código do payload, resposta, erro recuperável e descarte de credenciais ao navegar. Workflow real da voz acionado por mudanças nos arquivos de inferência e teste (não usa API paga). Resultados dependem do CI.
