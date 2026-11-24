@@ -117,7 +117,7 @@ dialog{background:#151526f7;border-color:var(--gold);border-radius:9px}dialog::b
 /* Ritual of the sigils — finite, state-driven SVG animation. */
 .slot{position:relative}.slot button{position:relative;isolation:isolate}.slot .flip-stage,.slot button>.tarot{position:relative;z-index:1}
 .rune-halo{position:absolute;z-index:0;pointer-events:none;overflow:visible;color:var(--rune,#d8b77b);width:148%;height:auto;left:50%;top:48%;transform:translate(-50%,-50%);opacity:.44}
-.rune-halo .rune-ring,.constellation .mandala-outer,.constellation .mandala-inner{transform-origin:0 0;transform-box:view-box}
+.rune-halo .rune-ring,.constellation .mandala-outer,.constellation .mandala-inner{transform-origin:center;transform-box:view-box}
 .rune-halo.rune-awake{opacity:0;animation:rune-ignite 2.7s ease-out both;filter:drop-shadow(0 0 5px currentColor)}
 .rune-awake .outer-ring{animation:rune-turn 2.7s cubic-bezier(.15,.6,.25,1) both}
 .rune-awake .inner-ring{animation:rune-turn-back 2.7s cubic-bezier(.15,.6,.25,1) both}
@@ -138,3 +138,6 @@ dialog{background:#151526f7;border-color:var(--gold);border-radius:9px}dialog::b
 .rune-daily,.rune-detail{position:relative;isolation:isolate}.rune-daily>.flip-stage,.rune-detail>.tarot{position:relative;z-index:1}.rune-detail .rune-halo{width:130%}
 @media(max-width:620px){.rune-altar{grid-template-columns:minmax(0,1fr);gap:8px;padding:16px 4px;text-align:center}.altar-visual{max-width:210px}.rune-legend{justify-content:center}.rune-halo{width:125%}.rune-detail{width:160px;margin:auto}.altar-copy h3{font-size:28px}}
 @media(prefers-reduced-motion:reduce){.rune-halo.rune-awake{animation:none!important;opacity:.44;transform:translate(-50%,-50%)}.constellation .new-link{stroke-dashoffset:0;opacity:.36}.mandala-node.new-node{opacity:1}}
+
+/* Keep the halo in the ritual area without creating horizontal page overflow. */
+.spread{overflow:clip;overflow-clip-margin:14px}.rune-detail .rune-halo{max-width:calc(100% + 36px)}
