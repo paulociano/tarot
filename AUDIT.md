@@ -24,3 +24,6 @@ Cartas com duas faces, prévia por hover/foco e detalhes completos por clique/to
 
 ## Fundação ARCANA 3
 Correções: salto de conteúdo sem mudar o hash; alertas de armazenamento; validação de sessão/conversa; importação de backup com deduplicação; bloqueio de revelação vinculado à conclusão da animação, com cancelamento por navegação ou desativação. Testes de domínio e navegador ampliados. Revalidação pendente de CI.
+
+## Pipeline de publicação ARCANA 3
+CI gera os derivados, testa uso de WebP e valida o pacote (158 arquivos; menos de 50% dos bytes originais). Release automático somente quando a origem de Pages é GitHub Actions. Configuração legada continua funcional. A mudança de origem requer ação do proprietário caso ainda esteja em modo branch; não foi feita via conector.

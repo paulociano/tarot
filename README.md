@@ -30,7 +30,10 @@ Requer Node.js 22 para testes. Sirva a raiz com `python -m http.server 8000` e a
 
 Os PNGs originais são preservados. A aplicação aceita também WebP, JPG e JPEG. Para gerar derivados responsivos, execute `python -m pip install Pillow==11.3.0` e `python scripts/optimize-art.py`. O workflow **Prepare optimized ARCANA artwork** produz o pacote; extraia em `assets/optimized/` e faça commit para habilitar os derivados. Sem eles, são usados os originais.
 
-Publicação via GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root).
+Publicação via GitHub Pages: **Settings → Pages → Source → GitHub Actions**. O workflow Test ARCANA gera WebPs, testa a versão otimizada, prepara o site e publica automaticamente quando a origem de Pages é GitHub Actions. Enquanto a origem for Deploy from a branch, a versão PNG existente permanece funcional e o workflow produz o artefato otimizado sem alterar a configuração.
 
 ## ARCANA 3 — Fundação
 Backup do diário versionado, importação de JSON validada (inclusive formato antigo), deduplicação por ID e alerta de gravação local. A revelação espera o evento de conclusão da animação e respeita a preferência de movimento. A navegação por teclado mantém a rota ao saltar para o conteúdo.
+
+### Release otimizado
+O workflow Test ARCANA gera 158 WebPs, verifica o uso efetivo de WebP no Chromium, aplica um limite de tamanho de 50% dos originais e prepara `dist/`. A publicação depende da origem GitHub Actions configurada no Pages. O workflow separado de otimização continua disponível para gerar apenas os derivados.
