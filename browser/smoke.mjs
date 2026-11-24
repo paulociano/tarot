@@ -1,16 +1,16 @@
 import { chromium } from 'playwright';
 import { createServer } from 'node:http';
-import { readFile } from 'node:fs/promises';
+import { readFile, mkdir } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import assert from 'node:assert/strict';
 const root=process.cwd(), mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg'};
 const server=createServer(async(req,res)=>{try{const p=resolve(root,'.'+new URL(req.url,'http://localhost').pathname.replace(/\/$/,'/index.html'));if(!p.startsWith(root+sep))throw Error('invalid');const body=await readFile(p);res.writeHead(200,{'Content-Type':mime[extname(p)]||'application/octet-stream'});res.end(body)}catch{res.writeHead(404);res.end()}});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const url='http://127.0.0.1:'+server.address().port;
-const browser=await chromium.launch({headless:true});let errors=[];
+const browser=await chromium.launch({headless:true});let errors=[];await mkdir('browser/screenshots',{recursive:true});
 try{
 for(const width of [360,768,1440]){
 const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});page.on('pageerror',e=>errors.push(e.message));
-await page.goto(url+'/#ritual');await page.locator('#setup').waitFor();await page.locator('[name=spread]').selectOption('three');await page.locator('[name=mode]').selectOption('choose');await page.locator('[name=question]').fill('Como explorar minhas escolhas?');await page.locator('#setup button').click();
+await page.goto(url+'/#home');await page.locator('.hero-plate img:not(.pending-art)').waitFor();assert.ok(await page.locator('.hero-plate img').evaluate(img=>img.naturalWidth>0));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'home overflow at '+width);await page.screenshot({path:'browser/screenshots/home-'+width+'.png',fullPage:true});await page.goto(url+'/#ritual');await page.locator('#setup').waitFor();await page.locator('[name=spread]').selectOption('three');await page.locator('[name=mode]').selectOption('choose');await page.locator('[name=question]').fill('Como explorar minhas escolhas?');await page.locator('#setup button').click();
 assert.equal(await page.locator('[data-pick]').count(),78);
 await page.locator('[data-pick]').nth(3).click();assert.equal(await page.locator('[data-pick]').count(),77);
 await page.reload();await page.locator('[data-pick]').first().waitFor();assert.equal(await page.locator('[data-pick]').count(),77);
@@ -18,7 +18,7 @@ await page.locator('[data-pick]').nth(2).click();await page.locator('[data-pick]
 await page.locator('button[data-ask="Explique as combinações"]').click();assert.equal(await page.locator('.msg').count(),3);await page.locator('#note').fill('Uma reflexão de teste');await page.locator('#save').click();await page.locator('nav a[href="#journal"]').click();await page.locator('.journal-entry').waitFor();assert.match(await page.locator('.journal-entry').innerText(),/Uma reflexão de teste/);
 await page.locator('nav a[href="#daily"]').click();await page.locator('.daily-art .plate').waitFor();const daily=await page.locator('.daily-art .plate').innerText();await page.reload();await page.locator('.daily-art .plate').waitFor();assert.equal(await page.locator('.daily-art .plate').innerText(),daily);
 await page.locator('nav a[href="#atlas"]').click();await page.locator('#search').fill('sacerdotisa');await page.locator('[data-card]').first().click();await page.locator('#favorite-card').click();await page.keyboard.press('Escape');await page.locator('#favorites').click();assert.equal(await page.locator('[data-card]').count(),1);await page.locator('[data-card] img:not(.pending-art)').waitFor();assert.ok(await page.locator('[data-card] img').evaluate(img=>img.naturalWidth>0));
-assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page overflow at '+width);await page.close();console.log('PASS width '+width+' · selection, reload, combinations, chat, journal, daily, favorites');
+assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page overflow at '+width);await page.screenshot({path:'browser/screenshots/atlas-'+width+'.png',fullPage:true});await page.close();console.log('PASS width '+width+' · selection, reload, combinations, chat, journal, daily, favorites');
 }
 const page=await browser.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(url+'/#ritual');await page.locator('#setup').waitFor();await page.locator('[name=spread]').selectOption('one');await page.locator('[name=mode]').selectOption('manual');await page.locator('#setup button').click();await page.locator('#manual select[name=card]').selectOption('18-a-lua');await page.locator('#manual select[name=orientation]').selectOption('reverse');await page.locator('#manual button').click();await page.locator('#reading').waitFor();assert.match(await page.locator('.slot').innerText(),/Invertida/);assert.match(await page.locator('#reading').innerText(),/A Lua/);
 assert.deepEqual(errors,[]);console.log('PASS manual reversed card and no browser errors');

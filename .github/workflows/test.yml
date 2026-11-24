@@ -25,3 +25,9 @@ jobs:
       - run: npm install --no-save playwright@1.56.1
       - run: npx playwright install --with-deps chromium
       - run: node browser/smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arcana-visual-review
+          path: browser/screenshots/
+          if-no-files-found: ignore
