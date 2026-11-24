@@ -256,3 +256,5 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 /* Semantic heading levels independent of visual hierarchy. */
 h2.section-compact-heading{font:600 clamp(25px,2.5vw,32px)/1.02 var(--serif);letter-spacing:normal}
+
+.oracle-threads{border-block:1px solid var(--line);margin:20px 0;padding:14px 0}.oracle-threads .eyebrow{margin-bottom:10px}.oracle-threads strong{color:var(--gold);font-weight:600}.oracle-threads p:not(.eyebrow){margin:5px 0 12px;color:var(--muted)}.oracle-threads>div:last-child p{margin-bottom:0}

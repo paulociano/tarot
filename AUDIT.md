@@ -68,3 +68,6 @@ CI 66c9df9: smoke Chromium aprovado nas três larguras, cofre, voz controlada, a
 
 ### Hierarquia semântica
 Revisão estática identificou títulos H3 sem H2 intermediário no Portal e no Grimório. Corrigida a hierarquia sem mudar a tipografia, com títulos/landmarks identificados para a seção de funcionamento, resumo da jornada, backup e cofre. A regra axe `heading-order` passa a integrar os gates bloqueantes. O resultado final depende da execução do novo pipeline.
+
+## Direção editorial
+Baseline 354225e: CI completo aprovado, 24 superfícies axe sem violações nas regras executadas. Home otimizada medida em 1.225.811 bytes nas três larguras contra 2.682.431 no baseline inicial (redução de aproximadamente 54%). Oráculo local revisado para incluir posições intermediárias, comparar alternativas da Encruzilhada sem recomendação preditiva, priorizar relações por afinidade temática e oferecer práticas associadas às cartas; perguntas de prática, sombra e aprofundamento têm rotas distintas. Sem IA generativa, sem transmissão de dados. A narração neural continua com roteiro editorial próprio e sem textos privados. Novos testes unitários e de interface aguardam CI.

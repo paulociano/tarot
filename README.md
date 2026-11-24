@@ -83,3 +83,5 @@ Trilha procedural original em Web Audio, cinco harmonias, camadas suaves de osci
 A auréola ornamental carrega somente quando existe mandala e recebe versão WebP transparente no build otimizado. O pacote offline inclui o derivado. O orçamento de abertura continua em 2,5 MB; a auditoria registra a ausência de carregamento prematuro da auréola.
 
 O build confere os 158 derivados das cartas por nome e os ornamentos/cenários separadamente, de modo que a auréola não interfira na validação da coleção.
+
+A síntese do Oráculo local considera as posições intermediárias, destaca até dois fios simbólicos, distingue o tema reconhecido na pergunta da área selecionada e oferece práticas ligadas aos arcanos. A Encruzilhada compara os dois caminhos como perspectivas, não como resultados. O diálogo diferencia pedidos de prática, sombra, combinação e aprofundamento. A voz neural mantém o roteiro editorial separado, sem perguntas ou anotações privadas.
