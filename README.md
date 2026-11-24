@@ -19,3 +19,6 @@ Publicação: Settings → Pages → Deploy from a branch → main → /(root). 
 ## Validação
 
 Execute `npm test` para testes de domínio. Para o smoke test em Chromium: `npm install --no-save playwright@1.56.1`, `npx playwright install chromium`, `node browser/smoke.mjs`.
+
+### Otimização de imagens
+Os PNGs em assets/cards são os originais. `python -m pip install Pillow==11.3.0` e `python scripts/optimize-art.py` geram WebPs em `assets/optimized/` e ativam o manifesto. O workflow Prepare optimized ARCANA artwork também gera o pacote para download; extraia seu conteúdo nessa pasta e faça commit para publicar pelo GitHub Pages. Sem pacote, a aplicação continua usando PNG. Os originais não são alterados.
