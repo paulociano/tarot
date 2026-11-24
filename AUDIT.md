@@ -97,3 +97,6 @@ CI dbe01b6 aprovado. Upload 92173b2 contém cena e MP3 dos Espelhos; integrados 
 
 ## Universum pessoal
 CI e19c1f7 aprovado; upload 20ff952 inclui Onirium PNG/MP3. Oitava trilha vinculada com ganho preservado. Schema de experiências validado e limitado a 300, perfil opcional, sem duplicar tiragens/sonhos, escaping de campos e grafo de etiquetas explícitas. Guard local e Cofre estendidos, backwards compatibility v1; testes de união, criptografia, limites, arte vetorial e smoke de salvamento/reload. Build e shell incluem módulos. Auditoria 16 rotas × 3 larguras pendente; não verificado perceptualmente o novo áudio ou visual em dispositivo físico.
+
+## Aurora
+CI ac7aa99 aprovado (45494530938); publicação anterior concluída. Aurora reutiliza dados do Astronomy Engine, carta diária e mecanismos de runas/I Ching sem alterar sessão de tarot, relógio monotônico e saveMoment. Tipos do Universum ampliados; cofre antigo compatível. Sem armazenamento do rascunho após reload, sem rastreamento, sem nova mídia. Smoke de estações opcionais, observação lunar, carta compartilhada, sessão intacta, gravação única, filtro e reset; auditoria de 17 rotas × três larguras pendente.

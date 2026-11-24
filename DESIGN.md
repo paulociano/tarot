@@ -79,3 +79,6 @@ Oito câmaras. Atlas onírico como constelação pessoal de etiquetas explícita
 
 ## Universum pessoal
 O coração do Portal abre a constelação pessoal; acesso linear também no Grimório e diretório. O diagrama conecta origens de experiências com temas em comum, não presume influência ou progresso pessoal. Lista textual é a alternativa acessível e permite recuperar arte paramétrica. Sem nova pintura, compartilhando atmosfera do Grimório.
+
+## Aurora
+Cinco estações como instrumento circular, não checklist de tarefas. Navegação livre, escolha explícita de céu e símbolo, sem pontuação, sem progresso obrigatório; contemplação e dados astronômicos distintos. Um único registro agregado mediante ação explícita. Rascunho mantém dia de início e pode ser reiniciado. Atmosfera sonora e pictórica do Observatório.

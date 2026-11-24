@@ -1,7 +1,7 @@
 // Stable registry: navigation, room ownership and cinematic environment are independent.
 export const chambers=Object.freeze([
  {id:'sanctuary',name:'O Santuário',glyph:'✧',scene:'ritual',route:'ritual',description:'Tarot e oráculos',detail:'Escolha cartas, pedras rúnicas ou o instrumento das mutações.',x:50,y:13,links:[['ritual','Iniciar tiragem'],['elder','Runas do Futhark'],['iching','I Ching'],['architect','Arquiteto de rituais']]},
- {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Céu e ciclos',detail:'Explore a Lua, os astros e a carta do dia.',x:83,y:29,links:[['daily','Carta do dia'],['astrarium','Astrarium · Mapa celeste']]},
+ {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Céu e ciclos',detail:'Explore a Lua, os astros e a carta do dia.',x:83,y:29,links:[['daily','Carta do dia'],['astrarium','Astrarium · Mapa celeste'],['aurora','Aurora · Ritual cotidiano']]},
  {id:'atelier',name:'O Ateliê',glyph:'◇',scene:'atlas',route:'atelier',description:'Criação simbólica',detail:'Componha sua própria mandala ou sigilo.',x:83,y:71,links:[['atelier','Ateliê Alquímico']]},
  {id:'grimoire',name:'O Grimório',glyph:'▤',scene:'journal',route:'journal',description:'Memória e reflexão',detail:'Revisite suas leituras e proteja seu histórico.',x:50,y:87,links:[['journal','Diário e cofre'],['personal','Minha constelação']]},
  {id:'library',name:'A Biblioteca',glyph:'✷',scene:'atlas',route:'atlas',description:'Conhecimento',detail:'Descubra arcanos, combinações e a Jornada do Louco.',x:17,y:71,links:[['atlas','Baralho completo'],['lab','Combinações'],['journey','Jornada do Louco']]},
@@ -17,6 +17,7 @@ export const routes=Object.freeze({
  iching:{scene:'ritual',nav:'ritual',title:'I Ching',room:'sanctuary'},
  daily:{scene:'daily',nav:'daily',title:'O Observatório',room:'observatory'},
  astrarium:{scene:'daily',nav:'daily',title:'Astrarium',room:'observatory'},
+ aurora:{scene:'daily',nav:'daily',title:'Aurora',room:'observatory'},
  atlas:{scene:'atlas',nav:'atlas',title:'A Biblioteca',room:'library'},
  lab:{scene:'atlas',nav:'lab',title:'Laboratório de Combinações',room:'library'},
  journey:{scene:'atlas',nav:'atlas',title:'Jornada do Louco',room:'library'},
