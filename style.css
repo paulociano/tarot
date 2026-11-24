@@ -219,9 +219,9 @@ body[data-immersion=essential] .scene-painting,.motion-off .scene-painting{trans
 
 /* Install and offline status; optional ornamental raster remains behind live SVG. */
 footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{max-width:540px;min-width:0}.pwa-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.pwa-actions .secondary{font-size:14px;padding:7px 12px;min-height:40px}#pwa-status{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.35}#pwa-status:empty{display:none}#network-indicator{display:block;color:var(--gold);margin-bottom:8px}#network-indicator[hidden]{display:none}.pwa-actions button[hidden]{display:none}
-.painted-runes .altar-visual,.painted-runes .lab-mandala{position:relative;isolation:isolate}.painted-runes .altar-visual:before,.painted-runes .lab-mandala:before{content:"";position:absolute;inset:-5%;background:url("./assets/runes/aureola.png") center/contain no-repeat;opacity:.38;z-index:-1;pointer-events:none}.painted-runes .altar-visual:has(.constellation-awake):before{animation:ornament-awake 2.2s ease-out both}@keyframes ornament-awake{from{opacity:0;transform:rotate(-24deg) scale(.9)}to{opacity:.38;transform:none}}
+.altar-visual,.lab-mandala{position:relative;isolation:isolate}.altar-visual:before,.lab-mandala:before{content:"";position:absolute;inset:-5%;background:url("./assets/runes/aureola.png") center/contain no-repeat;opacity:.38;z-index:-1;pointer-events:none}.altar-visual:has(.constellation-awake):before{animation:ornament-awake 2.2s ease-out both}@keyframes ornament-awake{from{opacity:0;transform:rotate(-24deg) scale(.9)}to{opacity:.38;transform:none}}
 @media(max-width:620px){footer{flex-wrap:wrap;gap:18px}.pwa-actions{justify-content:flex-start}.pwa-controls{width:100%}}
-@media(prefers-reduced-motion:reduce){.painted-runes .altar-visual:before{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.altar-visual:before{animation:none!important}}
 
 /* Wordmark without subtitle; study journey. */
 .brand{align-items:center;white-space:nowrap}.brand>span:last-child{line-height:1.15}.brand-mark{display:flex;align-items:center}
@@ -250,3 +250,6 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 .altar-visual{isolation:isolate;position:relative}.altar-complete .altar-visual:after{content:"";position:absolute;inset:5%;border-radius:50%;pointer-events:none;border:1px solid #d1b27b70;box-shadow:0 0 24px #c6a46c26,inset 0 0 16px #c6a46c16;opacity:0;animation:seal-complete 1.9s 1.8s cubic-bezier(.2,.65,.3,1) both}
 @keyframes seal-complete{0%{opacity:0;transform:scale(.88)}35%{opacity:.85}100%{opacity:0;transform:scale(1.12)}}
 @media(prefers-reduced-motion:reduce){.scene-layer{transition:none!important}.altar-complete .altar-visual:after{display:none}}.motion-off .altar-complete .altar-visual:after{display:none}
+
+/* The ornamental texture is requested only when a mandala exists. */
+.optimized-art .altar-visual:before,.optimized-art .lab-mandala:before{background-image:url('./assets/optimized/aureola.webp')}

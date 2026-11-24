@@ -32,6 +32,13 @@ for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
             image = ImageOps.exif_transpose(raw).convert("RGB")
             image.thumbnail((1920, 1080), Image.Resampling.LANCZOS)
             image.save(scene_target / (name + ".webp"), "WEBP", quality=86, method=6)
+# Preserve the alpha channel of the optional mandala ornament.
+halo = Path("assets/runes/aureola.png")
+if halo.is_file():
+    with Image.open(halo) as raw:
+        ornament = raw.convert("RGBA")
+        ornament.thumbnail((720, 720), Image.Resampling.LANCZOS)
+        ornament.save(target / "aureola.webp", "WEBP", quality=84, method=6)
 (target / "manifest.js").write_text("export const optimizedArt = true;\n", encoding="utf-8")
 (target / "stats.json").write_text(json.dumps({"original_bytes": before, "derivative_bytes": after, "files": len(originals)*2}, indent=2))
 print(f"Originals: {before:,} bytes; derivatives: {after:,} bytes")

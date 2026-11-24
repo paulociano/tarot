@@ -19,16 +19,16 @@ try{
   for(const [route,selector] of routes){
    const page=await context.newPage();page.on('pageerror',e=>errors.push({width,route,message:e.message}));
    await page.goto(base+'#'+route);await page.locator(selector).first().waitFor();
-   if(route==='home')await page.locator('.plate-mount img:not(.pending-art)').first().waitFor();
+   if(route==='home'){await page.locator('.plate-mount img:not(.pending-art)').first().waitFor();await page.locator('.scene-layer[data-painting="portal"].scene-visible').waitFor();}
    await page.evaluate(()=>document.fonts.ready);
-   const measured=await page.evaluate(()=>{const resources=performance.getEntriesByType('resource').filter(r=>r.name.startsWith(location.origin));return {scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,domNodes:document.querySelectorAll('*').length,resourceCount:resources.length,resourceBytes:resources.reduce((n,r)=>n+(r.encodedBodySize||0),0),imageBytes:resources.filter(r=>/\.(webp|png|jpg)(\?|$)/.test(r.name)).reduce((n,r)=>n+(r.encodedBodySize||0),0),voiceRequests:resources.filter(r=>r.name.includes('voice-worker')).length,navigationMs:Math.round(performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd||0)}});
+   const measured=await page.evaluate(()=>{const resources=performance.getEntriesByType('resource').filter(r=>r.name.startsWith(location.origin));return {scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,domNodes:document.querySelectorAll('*').length,resourceCount:resources.length,resourceBytes:resources.reduce((n,r)=>n+(r.encodedBodySize||0),0),imageBytes:resources.filter(r=>/\.(webp|png|jpg)(\?|$)/.test(r.name)).reduce((n,r)=>n+(r.encodedBodySize||0),0),voiceRequests:resources.filter(r=>r.name.includes('voice-worker')).length,haloRequests:resources.filter(r=>r.name.includes('aureola.')).length,navigationMs:Math.round(performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd||0)}});
    await page.addScriptTag({content:axe});
    const result=await page.evaluate(async()=>{const result=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','best-practice']}});return {violations:result.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary})).slice(0,15),count:v.nodes.length})),incomplete:result.incomplete.map(v=>({id:v.id,count:v.nodes.length})),passed:result.passes.length}});
-   report.routes.push({width,route,...measured,...result});console.log('QUALITY '+width+' '+route+' nodes='+measured.domNodes+' bytes='+measured.resourceBytes+' axe='+result.violations.length);
+   report.routes.push({width,route,...measured,...result});console.log('QUALITY '+width+' '+route+' nodes='+measured.domNodes+' bytes='+measured.resourceBytes+' axe='+result.violations.map(v=>v.id).join(','));
    report.gates.push({width,route,check:'horizontal-overflow',pass:measured.scrollWidth<=width+1},{width,route,check:'voice-lazy-load',pass:measured.voiceRequests===0});
    const blockers=result.violations.filter(v=>['button-name','link-name','label','aria-valid-attr-value','aria-required-attr','document-title','html-has-lang'].includes(v.id));
    report.gates.push({width,route,check:'basic accessible controls',pass:blockers.length===0,findings:blockers.map(v=>v.id)});
-   if(route==='home'){report.gates.push({width,route,check:'cold local resource budget 2.5 MB',pass:measured.resourceBytes<=2_500_000});await page.screenshot({path:'browser/screenshots/quality-home-'+width+'.png',fullPage:true})}
+   if(route==='home'){report.gates.push({width,route,check:'ornament lazy-load',pass:measured.haloRequests===0});report.gates.push({width,route,check:'cold local resource budget 2.5 MB',pass:measured.resourceBytes<=2_500_000});await page.screenshot({path:'browser/screenshots/quality-home-'+width+'.png',fullPage:true})}
    await page.close();
   }
   await context.close();
