@@ -40,3 +40,6 @@ O workflow Test ARCANA gera 158 WebPs, verifica o uso efetivo de WebP no Chromiu
 
 ## ARCANA Cinematic
 Cinco ambientes panorâmicos opcionais em `assets/scenes/` (consulte o README dessa pasta). Modos Essencial, Imersivo e Cinematográfico; parallax limitado ao último modo, entrada de carta coordenada à virada, ambientação sonora procedural opcional e desligada por padrão. A preferência de movimento reduzido mantém toda a funcionalidade. Os fundos existentes continuam funcionando enquanto as pinturas panorâmicas estiverem ausentes.
+
+## Conhecimento dos Arcanos
+As 78 cartas possuem arquétipo editorial, aprofundamento, temas e pergunta reflexiva. O laboratório permite comparar duas ou três cartas, com inversões, relações temáticas, eco numérico e mandala, sem modificar a sessão de tiragem. Dez modalidades de tiragem estão disponíveis. Interpretações são autorais, contextuais e não preditivas; não há IA generativa nesta fase.
