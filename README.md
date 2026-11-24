@@ -81,3 +81,5 @@ O Grimório apresenta 12 registros por página e a conversa exibe inicialmente a
 Trilha procedural original em Web Audio, cinco harmonias, camadas suaves de osciladores, modulação lenta, filtro e panorama estéreo quando suportado. Transição de áudio limitada a duas camadas (16 osciladores incluindo moduladores); não reinicia ao navegar dentro do mesmo ambiente. Ducking preservado durante a narração, pausa quando a aba fica oculta. Cenários anteriores permanecem até que a próxima pintura carregue; em falhas, o último cenário permanece. O círculo completo ganha um pulso breve, respeitando movimento reduzido. Sem novos arquivos de arte, música externa ou dependências pesadas. Qualidade auditiva subjetiva ainda requer escuta.
 
 A auréola ornamental carrega somente quando existe mandala e recebe versão WebP transparente no build otimizado. O pacote offline inclui o derivado. O orçamento de abertura continua em 2,5 MB; a auditoria registra a ausência de carregamento prematuro da auréola.
+
+O build confere os 158 derivados das cartas por nome e os ornamentos/cenários separadamente, de modo que a auréola não interfira na validação da coleção.
