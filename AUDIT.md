@@ -21,3 +21,6 @@ Gerador de 158 WebPs (420/1050 px) e manifesto; CI separado produz pacote e esta
 
 ## Atlas — consulta interativa
 Cartas com duas faces, prévia por hover/foco e detalhes completos por clique/toque. Escape dispensa a prévia. Sem material de produção artística na aplicação. Testes de hover, teclado, toque e ausência dos controles removidos.
+
+## Fundação ARCANA 3
+Correções: salto de conteúdo sem mudar o hash; alertas de armazenamento; validação de sessão/conversa; importação de backup com deduplicação; bloqueio de revelação vinculado à conclusão da animação, com cancelamento por navegação ou desativação. Testes de domínio e navegador ampliados. Revalidação pendente de CI.

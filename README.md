@@ -31,3 +31,6 @@ Requer Node.js 22 para testes. Sirva a raiz com `python -m http.server 8000` e a
 Os PNGs originais são preservados. A aplicação aceita também WebP, JPG e JPEG. Para gerar derivados responsivos, execute `python -m pip install Pillow==11.3.0` e `python scripts/optimize-art.py`. O workflow **Prepare optimized ARCANA artwork** produz o pacote; extraia em `assets/optimized/` e faça commit para habilitar os derivados. Sem eles, são usados os originais.
 
 Publicação via GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root).
+
+## ARCANA 3 — Fundação
+Backup do diário versionado, importação de JSON validada (inclusive formato antigo), deduplicação por ID e alerta de gravação local. A revelação espera o evento de conclusão da animação e respeita a preferência de movimento. A navegação por teclado mantém a rota ao saltar para o conteúdo.
