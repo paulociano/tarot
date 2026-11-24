@@ -1,5 +1,6 @@
 import {deck,} from './deck.js';
 import {DREAM_KEY,checkedDreams,mergeDreams} from './dream-data.js';
+import {PERSONAL_KEY,emptyPersonal,checkedPersonal,mergePersonal} from './personal-data.js';
 import {validRecord} from './engine.js';
 import {importJournal,journalBackup} from './storage.js';
 import {journeyProgress} from './journey.js';
@@ -7,18 +8,19 @@ import {validTemplates} from './custom-ritual.js';
 const FORMAT='arcana-vault', VERSION=1, ITERATIONS=600000;
 const MAX_PLAIN=5_000_000;
 export const MAX_VAULT_FILE=7_000_000;
-const KEYS={records:'arcana-journal-v1',favorites:'arcana-favorites-v1',chapters:'arcana-journey-v1',templates:'arcana-custom-rituals-v1',dreams:DREAM_KEY};
+const KEYS={records:'arcana-journal-v1',favorites:'arcana-favorites-v1',chapters:'arcana-journey-v1',templates:'arcana-custom-rituals-v1',dreams:DREAM_KEY,personal:PERSONAL_KEY};
 const known=new Set(deck.map(c=>c.id));
 const favoritesOf=x=>Array.isArray(x)?[...new Set(x.filter(id=>known.has(id)))]:[];
 const enc=new TextEncoder(),dec=new TextDecoder();
-export function makeVault({records=[],favorites=[],chapters=[],templates=[],dreams=[]}={}){
- const data={format:FORMAT,version:VERSION,records:importJournal(JSON.stringify(journalBackup(records)),[]).records,favorites:favoritesOf(favorites),chapters:journeyProgress(chapters),templates:validTemplates(templates),dreams:checkedDreams(dreams)};
+export function makeVault({records=[],favorites=[],chapters=[],templates=[],dreams=[],personal=emptyPersonal()}={}){
+ const data={format:FORMAT,version:VERSION,records:importJournal(JSON.stringify(journalBackup(records)),[]).records,favorites:favoritesOf(favorites),chapters:journeyProgress(chapters),templates:validTemplates(templates),dreams:checkedDreams(dreams),personal:checkedPersonal(personal)};
  if(enc.encode(JSON.stringify(data)).length>MAX_PLAIN)throw Error('O cofre excede 5 MB de conteúdo. Exporte o diário separadamente.');
  return data;
 }
 function checked(data){
  if(!data||data.format!==FORMAT||data.version!==VERSION||!Array.isArray(data.records)||data.records.length>5000||!data.records.every(validRecord)||!Array.isArray(data.favorites)||data.favorites.length>78||!data.favorites.every(id=>known.has(id))||!Array.isArray(data.chapters)||data.chapters.length>22||journeyProgress(data.chapters).length!==data.chapters.length||!Array.isArray(data.templates)||data.templates.length>50||validTemplates(data.templates).length!==data.templates.length)throw Error('Cofre incompatível ou corrompido.');
  if(Object.hasOwn(data,'dreams'))checkedDreams(data.dreams);
+ if(Object.hasOwn(data,'personal'))checkedPersonal(data.personal);
  return makeVault(data);
 }
 export function mergeVault(current,incoming){
@@ -28,8 +30,9 @@ export function mergeVault(current,incoming){
  if(c.templates.length+additional.length>50)throw Error('A união ultrapassa 50 modelos. Libere espaço no Arquiteto antes de importar.');
  if(result.records.length>5000)throw Error('A união ultrapassa 5.000 registros.');
  const dreamMerge=mergeDreams(c.dreams,b.dreams);
- const merged=makeVault({dreams:dreamMerge.rows,records:result.records,favorites:[...c.favorites,...b.favorites],chapters:[...c.chapters,...b.chapters],templates:[...c.templates,...additional]});
- return {data:merged,added:{records:result.added,favorites:merged.favorites.length-c.favorites.length,chapters:merged.chapters.length-c.chapters.length,templates:additional.length,dreams:dreamMerge.added},preserved:{records:result.skipped,templates:b.templates.length-additional.length,dreams:dreamMerge.preserved}};
+ const personalMerge=mergePersonal(c.personal,b.personal);
+ const merged=makeVault({personal:personalMerge.data,dreams:dreamMerge.rows,records:result.records,favorites:[...c.favorites,...b.favorites],chapters:[...c.chapters,...b.chapters],templates:[...c.templates,...additional]});
+ return {data:merged,added:{records:result.added,favorites:merged.favorites.length-c.favorites.length,chapters:merged.chapters.length-c.chapters.length,templates:additional.length,dreams:dreamMerge.added,moments:personalMerge.added},preserved:{records:result.skipped,templates:b.templates.length-additional.length,dreams:dreamMerge.preserved,moments:personalMerge.preserved}};
 }
 function base64(bytes){let s='';for(let i=0;i<bytes.length;i+=8192)s+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(s)}
 function from64(s){if(typeof s!=='string'||!s.length||s.length>MAX_VAULT_FILE||!/^[A-Za-z0-9+/]+={0,2}$/.test(s))throw Error('Arquivo de cofre inválido.');return Uint8Array.from(atob(s),c=>c.charCodeAt(0))}
