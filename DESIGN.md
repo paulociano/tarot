@@ -82,3 +82,6 @@ O coração do Portal abre a constelação pessoal; acesso linear também no Gri
 
 ## Aurora
 Cinco estações como instrumento circular, não checklist de tarefas. Navegação livre, escolha explícita de céu e símbolo, sem pontuação, sem progresso obrigatório; contemplação e dados astronômicos distintos. Um único registro agregado mediante ação explícita. Rascunho mantém dia de início e pode ser reiniciado. Atmosfera sonora e pictórica do Observatório.
+
+## Natalis
+Círculo tropical calibrado, ascendente à esquerda quando calculado, signos em setores de 30°, casas por signos inteiros, linhas de aspecto diferenciadas e tabela de valores. Trilhas radiais dos astros esquemáticas para legibilidade. Tríade Sol/Lua/Ascendente como perguntas, não atribuição de personalidade. Reutiliza cenário e música do Observatório.

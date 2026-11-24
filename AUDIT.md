@@ -100,3 +100,6 @@ CI e19c1f7 aprovado; upload 20ff952 inclui Onirium PNG/MP3. Oitava trilha vincul
 
 ## Aurora
 CI ac7aa99 aprovado (45494530938); publicação anterior concluída. Aurora reutiliza dados do Astronomy Engine, carta diária e mecanismos de runas/I Ching sem alterar sessão de tarot, relógio monotônico e saveMoment. Tipos do Universum ampliados; cofre antigo compatível. Sem armazenamento do rascunho após reload, sem rastreamento, sem nova mídia. Smoke de estações opcionais, observação lunar, carta compartilhada, sessão intacta, gravação única, filtro e reset; auditoria de 17 rotas × três larguras pendente.
+
+## Natalis
+Cálculo por Astronomy Engine vendorizado, horizonte oriental pela interseção de planos, obliquidade verdadeira, tempo sideral local e offset histórico explícito. Comparação independente com Swiss Ephemeris Moshier no instante J2000 (2000-01-01 12h UTC, lat/lon 0): maior diferença das dez longitudes ~0,0032°, ascendente 11,37386966° vs 11,37389960°, MC 279,61106186° vs 279,61108780°. Este caso de referência não certifica a precisão em todo intervalo. Testes incluem entradas inválidas, ausência de coordenadas, wrap, casas, aspectos, registro e exportação sem dados brutos de nascimento. Auditoria 18 rotas × três larguras pendente. Sem nova mídia ou geolocalização. Mapa natal não é método científico de avaliação pessoal.
