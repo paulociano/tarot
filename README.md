@@ -55,3 +55,6 @@ Manifest, ícones PNG próprios, instalação pelo navegador, shell local via Se
 
 ## Jornada do Louco
 Percurso autoral de 22 capítulos, com estudo, contemplação, práticas e progresso local. Acesse pela página inicial ou pela Biblioteca. Funciona offline depois de preparar o shell; as pinturas não armazenadas usam o fallback vetorial. O estudo não altera a tiragem em andamento. O progresso é separado do backup do diário. O logotipo no cabeçalho exibe somente ARCANA.
+
+## Museu das pinturas
+Galeria independente das tiragens: 78 pinturas sem moldura, filtro por coleção, navegação direta ou por setas, zoom de 100% a 300%, contemplação sem texto interpretativo e tela cheia quando suportada pelo navegador. Acesso pela Biblioteca ou pelos detalhes de um arcano. Usa as imagens existentes, com derivados responsivos quando habilitados, e fallback vetorial se a imagem estiver indisponível offline. Nenhuma nova pintura necessária.
