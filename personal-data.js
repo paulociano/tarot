@@ -1,8 +1,8 @@
 import {deck} from './deck.js';
 import {fold,parseSymbols} from './dream-data.js';
 export const PERSONAL_KEY='arcana-personal-v1',MAX_MOMENTS=300;
-export const momentTypes=Object.freeze({atelier:{name:'Ateliê',route:'atelier',glyph:'◇'},elder:{name:'Runas',route:'elder',glyph:'ᚠ'},iching:{name:'I Ching',route:'iching',glyph:'☷'},mirrors:{name:'Espelhos',route:'mirrors',glyph:'◈'},silentium:{name:'Silentium',route:'silentium',glyph:'◎'},astrarium:{name:'Astrarium',route:'astrarium',glyph:'☽'},tarot:{name:'Tarot',route:'journal',glyph:'✧'},dream:{name:'Onirium',route:'onirium',glyph:'☾'},aurora:{name:'Aurora',route:'aurora',glyph:'☉'}});
-const allowed=['atelier','elder','iching','mirrors','silentium','astrarium','aurora'];
+export const momentTypes=Object.freeze({atelier:{name:'Ateliê',route:'atelier',glyph:'◇'},elder:{name:'Runas',route:'elder',glyph:'ᚠ'},iching:{name:'I Ching',route:'iching',glyph:'☷'},mirrors:{name:'Espelhos',route:'mirrors',glyph:'◈'},silentium:{name:'Silentium',route:'silentium',glyph:'◎'},astrarium:{name:'Astrarium',route:'astrarium',glyph:'☽'},tarot:{name:'Tarot',route:'journal',glyph:'✧'},dream:{name:'Onirium',route:'onirium',glyph:'☾'},aurora:{name:'Aurora',route:'aurora',glyph:'☉'},natal:{name:'Natalis',route:'natal',glyph:'♁'}});
+const allowed=['atelier','elder','iching','mirrors','silentium','astrarium','aurora','natal'];
 export const emptyPersonal=()=>({profile:{name:'',intention:''},moments:[]});
 const str=(v,n)=>typeof v==='string'&&v.length<=n;
 const validDesign=d=>!!d&&['mandala','sigil'].includes(d.kind)&&[4,6,8,12].includes(d.symmetry)&&Number.isInteger(d.complexity)&&d.complexity>=2&&d.complexity<=7&&['gold','amethyst','ivory'].includes(d.ink)&&Number.isInteger(d.seed)&&d.seed>=0&&d.seed<=4294967295;
