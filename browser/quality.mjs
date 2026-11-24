@@ -10,7 +10,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const base='http://127.0.0.1:'+server.address().port+prefix;
 const browser=await chromium.launch();const report={environment:{browser:browser.version(),assetMode:'optimized dist under /tarot/',motion:'reduce',network:'local server; external fonts blocked; no throttling',deviceScaleFactor:1},routes:[],gates:[],limitations:['Laboratory metrics, not real-user Core Web Vitals','Automated accessibility rules do not certify WCAG compliance','No physical-device or subjective image/audio evaluation']};
 const errors=[];
-const routes=[['home','.hero'],['ritual','#setup'],['daily','.daily-reading'],['atlas','#grid'],['lab','#main h1'],['journey','#chapter-title'],['architect','#custom-form'],['journal','#vault-panel'],['atelier','#atelier-preview'],['astrarium','#astro-table tbody tr'],['elder','#elder-form'],['iching','#hex-form'],['silentium','#silentium-room'],['mirrors','#mirror-workbench']];
+const routes=[['home','.hero'],['ritual','#setup'],['daily','.daily-reading'],['atlas','#grid'],['lab','#main h1'],['journey','#chapter-title'],['architect','#custom-form'],['journal','#vault-panel'],['atelier','#atelier-preview'],['astrarium','#astro-table tbody tr'],['elder','#elder-form'],['iching','#hex-form'],['silentium','#silentium-room'],['mirrors','#mirror-workbench'],['onirium','#dream-form']];
 try{
  await mkdir('browser/screenshots',{recursive:true});
  for(const width of [360,768,1440]){

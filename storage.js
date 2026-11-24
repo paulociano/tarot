@@ -15,7 +15,7 @@ export const journalBackup=records=>({format:'arcana-journal',version:1,records}
 
 // Optimistic concurrency guard for local tabs. Check exact stored versions before writing.
 // localStorage is not transactional across tabs: this detects stale snapshots, not a global lock.
-export const COLLECTION_KEYS=['arcana-journal-v1','arcana-favorites-v1','arcana-journey-v1','arcana-custom-rituals-v1'];
+export const COLLECTION_KEYS=['arcana-journal-v1','arcana-favorites-v1','arcana-journey-v1','arcana-custom-rituals-v1','arcana-dreams-v1'];
 export function storageGuard(provider){
  const expected=new Map(),tracked=new Set([...COLLECTION_KEYS,'arcana-session-v2']);
  const read=(key,fallback)=>{try{const raw=provider().getItem(key);if(tracked.has(key)&&!expected.has(key))expected.set(key,raw);return JSON.parse(raw)??fallback}catch{return fallback}};
