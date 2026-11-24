@@ -74,3 +74,6 @@ Baseline 354225e: CI completo aprovado, 24 superfícies axe sem violações nas 
 
 ## Integração musical
 Baseline a433929: testes aprovados. Upload 887c3d2: cinco MP3 identificados no GitHub. Integração com HTMLMediaElement/Web Audio, opt-in, ganho master limitado, cancelamento de trocas concorrentes, duas faixas máximas e timeout de 15 s. Pausa libera elementos de áudio. Os MP3 não são precacheados; PWA offline permanece funcional sem garantia de música offline. Testes de reprodução real Chromium para cada arquivo, ganho-alvo, ducking, pausa e ausência de requests na abertura. Validação auditiva/visual anterior aprovada pelo usuário; novos arquivos ainda não foram escutados por mim. Loop nativo pode revelar diferenças entre começo e fim de cada faixa.
+
+## ARCANA Universe — fase 1
+Baseline a5e89f3: CI e publicação aprovados, cinco faixas integradas. Extensão da arquitetura com registry de rotas e câmaras, caminho de navegação, portal radial acessível e Ateliê funcional. Exportação SVG contém apenas geometria autoral; nenhuma pintura, intenção em texto ou recurso externo. Rascunho em memória, sem persistência ainda. Ateliê reutiliza Biblioteca. Novos testes de rotas, geometria, limites, download, foco e largura 360px, além de axe em nove rotas × três larguras. Testes completos pendentes. Nenhum arquivo pictórico ou MP3 modificado.

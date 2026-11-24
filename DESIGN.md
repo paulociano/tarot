@@ -58,3 +58,6 @@ Cada sala possui assinatura harmônica discreta. Crossfade e panorama de baixa i
 
 ## Trilha final
 Cinco composições Suno fornecidas pelo autor, preservadas nos caminhos originais em assets. Ganho de 15% no barramento musical (teto 20%), 4% durante narração; crossfade de 1,8 s. O ícone discreto de áudio ambiente continua sendo o único controle. A trilha é secundária à voz e não inicia automaticamente.
+
+## Universum
+Tese visual: o Portal é um instrumento armilar habitável, não um catálogo de widgets. Cinco câmaras reais distribuem-se em um diagrama orbital de SVG e links HTML, com alternativa de navegação linear para toque e teclado. O hero mantém as pinturas e o acesso direto à tiragem. Identidade obsidiana/índigo/ametista/ouro/marfim preservada. O Ateliê começa como uma mesa de criação geométrica em duas colunas, com prévia autoral e controles semânticos; em telas pequenas, composição e controles empilham. Não usar pinturas exportáveis nem prometer significado sobrenatural dos sigilos. Sem novas bibliotecas ou autoplay.
