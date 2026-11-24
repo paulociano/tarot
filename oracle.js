@@ -44,17 +44,17 @@ function synthesis(cards,spread,common){
  const start=first.name+' na posição '+first.position+' abre a leitura com '+first.meaning+'.';
  const bridge=middle.length===1?middle[0].name+' em '+middle[0].position+' desloca o olhar para '+middle[0].meaning+'.':middle.length? 'Entre as posições, '+middle.map(c=>c.name+' ('+c.position+'): '+c.meaning).join('; ')+'.':'';
  const end=last.name+' em '+last.position+' convida a examinar '+last.meaning+'.';
- return [start,bridge,end,common.length?'O tema que atravessa mais de uma carta é '+common.join(', ')+'.':'As posições são perspectivas complementares, não etapas inevitáveis de um acontecimento.'].filter(Boolean).join(' ');
+ return [start,bridge,end,common.length?(common.length===1?'Um tema atravessa mais de uma carta: ':'Alguns temas atravessam mais de uma carta: ')+common.join(', ')+'.':'As posições são perspectivas complementares, não etapas inevitáveis de um acontecimento.'].filter(Boolean).join(' ');
 }
 export function oracleReading(session){
  const r=interpret(session.items,session.spread,session.topic,session.customSpread);if(!r)return null;
  const {lens,source}=lensMatch(session.question,session.topic);
  const themes=new Map();for(const c of r.cards)for(const t of c.study.themes)themes.set(t,(themes.get(t)||0)+1);
  const common=[...themes].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([t])=>t);
- const end=r.cards.at(-1),focusCard=[...r.cards].reverse().sort((a,b)=>themeScore(b,lens)-themeScore(a,lens))[0];
+ const focusCard=[...r.cards].reverse().sort((a,b)=>themeScore(b,lens)-themeScore(a,lens))[0];
  const links=linksFor(r,lens);
  const threads=links.map(p=>({title:p.title,text:connective(r.cards[p.i],r.cards[p.j])}));
- const practice='A partir de '+focusCard.name+', '+sentence(focusCard.action)+(lens?' '+lens.practice:'');
+ const practice=focusCard.name+' oferece um ponto de partida: '+sentence(focusCard.action)+(lens?' '+lens.practice:'');
  return {title:lens?.title||'Reflexão aberta',recognized:!!lens,source,common,narrative:synthesis(r.cards,session.spread,common),links,threads,practice,question:focusCard.study.question,focus:r.focus,reading:r};
 }
 const followUp=q=>/\b(ela|ele|essa|esse|isso|dessas|desses|continue|mais|exemplo)\b/.test(q)||/^(e |como |por que )/.test(q)||/\baprofund[a-z]*\b/.test(q);
