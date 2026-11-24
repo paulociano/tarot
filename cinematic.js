@@ -1,5 +1,5 @@
 // ARCANA Cinematic: optional paintings, bounded motion and curated scene soundtrack.
-export const scenes={home:{file:'portal',name:'O Portal'},ritual:{file:'santuario',name:'O Santuário'},atlas:{file:'biblioteca',name:'A Biblioteca'},daily:{file:'observatorio',name:'O Observatório'},journal:{file:'grimorio',name:'O Grimório'},silentium:{file:'silentium',name:'Silentium',fallback:'observatorio'}};
+export const scenes={home:{file:'portal',name:'O Portal'},ritual:{file:'santuario',name:'O Santuário'},atlas:{file:'biblioteca',name:'A Biblioteca'},daily:{file:'observatorio',name:'O Observatório'},journal:{file:'grimorio',name:'O Grimório'},silentium:{file:'silentium',name:'Silentium',fallback:'observatorio'},mirrors:{file:'espelhos',name:'Câmara dos Espelhos',fallback:'grimorio'}};
 import {createSoundscape} from './soundscape.js';
 let sceneToken=0,currentScene='',requestedScene='',currentLayer=null;
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches||document.body.classList.contains('motion-off');

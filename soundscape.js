@@ -1,5 +1,5 @@
 // ARCANA soundtrack. Media is streamed on demand, never preloaded at startup.
-export const sceneTracks=Object.freeze({home:'portal',ritual:'santuario',atlas:'biblioteca',daily:'observatorio',journal:'grimorio'});
+export const sceneTracks=Object.freeze({home:'portal',ritual:'santuario',atlas:'biblioteca',daily:'observatorio',journal:'grimorio',silentium:'silentium'});
 export const MUSIC_MAX=.20,MUSIC_NORMAL=.15,MUSIC_DUCK=.04;
 const FADE=1.8;
 export function createSoundscape(factory,hidden=()=>false,mediaFactory=()=>new Audio()){
@@ -15,7 +15,7 @@ export function createSoundscape(factory,hidden=()=>false,mediaFactory=()=>new A
  async function play(enabled,route){
  desired=enabled;
  if(!enabled||hidden()){epoch++;clear();return false}
- route=route==='silentium'?'daily':Object.hasOwn(sceneTracks,route)?route:'home';
+ route=route==='mirrors'?'journal':Object.hasOwn(sceneTracks,route)?route:'home';
  if(pending?.layer.route===route)return pending.promise;
  const ticket=++epoch;cancelPending();
  if(current?.route===route)return true;

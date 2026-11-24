@@ -9,11 +9,11 @@ dest = Path("dist")
 if dest.exists():
     shutil.rmtree(dest)
 dest.mkdir()
-for name in ["index.html", "style.css", "app.js", "universe.js", "atelier.js", "astrarium.js", "astronomy-data.js", "ancestral.js", "ancestral-data.js", "silentium.js", "silentium-clock.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "soundscape.js", "knowledge.js", "oracle.js", "vault.js", "narration.js", "voice-script.js", "voice-worker.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
+for name in ["index.html", "style.css", "app.js", "universe.js", "atelier.js", "astrarium.js", "astronomy-data.js", "ancestral.js", "ancestral-data.js", "silentium.js", "silentium-clock.js", "mirrors.js", "mirrors-data.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "soundscape.js", "knowledge.js", "oracle.js", "vault.js", "narration.js", "voice-script.js", "voice-worker.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
     shutil.copy2(name, dest / name)
 shutil.copytree("assets", dest / "assets", ignore=shutil.ignore_patterns("README.md"))
 shutil.copytree("vendor", dest / "vendor")
-for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
+for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium"):
     assert (dest / "assets" / f"{name}.mp3").is_file(), f"Missing soundtrack: {name}"
 stats = json.loads((dest / "assets/optimized/stats.json").read_text())
 assert stats["files"] == 158
@@ -29,7 +29,7 @@ if (dest / "assets/runes/aureola.png").is_file():
 for name in ("runa", "moeda"):
     if (dest / "assets/instruments" / f"{name}.png").is_file():
         assert (optimized / f"{name}.webp").is_file(), f"Missing instrument: {name}"
-for scene in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium"):
+for scene in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium", "espelhos"):
     if any((dest / "assets/scenes" / f"{scene}{ext}").is_file() for ext in (".png", ".webp")):
         assert (optimized / "scenes" / f"{scene}.webp").is_file(), f"Missing scene: {scene}"
 assert stats["derivative_bytes"] < stats["original_bytes"] * .5

@@ -24,7 +24,7 @@ for path in originals:
 # Optional panoramic environments; original files remain untouched.
 scene_target = target / "scenes"
 scene_target.mkdir(exist_ok=True)
-for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium"):
+for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium", "espelhos"):
     candidates = [Path("assets/scenes") / (name + ext) for ext in (".png", ".webp")]
     path = next((p for p in candidates if p.is_file()), None)
     if path:

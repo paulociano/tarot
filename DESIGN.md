@@ -70,3 +70,6 @@ A seleção rúnica utiliza pedras de obsidiana, com símbolo oculto até a esco
 
 ## Silentium
 Câmara sem exigência de interação contínua. Um disco de luz pictórico em anéis calibrados é a assinatura visual; expansão/contração só na prática respiratória escolhida, sem retenção e com alternativa estática/reduced motion. Tempo restante e fase são textuais. A contemplação de pintura substitui o disco, sem animação adicional. Encerramento não confere pontos ou recompensa. Seis câmaras no Portal, novo ponto em órbita. Reutiliza música do Observatório em 15% e ducking 4%; pintura própria opcional com fallback.
+
+## Speculum
+Sete câmaras em constelação regular. A Câmara dos Espelhos usa diagramas SVG em vez de placares: roda de áreas somente desenha o polígono quando todas estão avaliadas, atlas destaca famílias escolhidas, bússola numerada, duas portas para alternativas. Todos têm equivalentes textuais, controles acessíveis e rascunho independente. Não inferir estado psicológico nem prescrever decisões. Reutiliza a trilha Grimório e recebe cenário opcional.
