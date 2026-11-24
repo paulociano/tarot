@@ -17,7 +17,7 @@ function ordinalCards(q,cards){const ord=['primeira','segunda','terceira','quart
 function selected(q,cards){const named=namedCards(q,cards);return named.length?named:ordinalCards(q,cards)}
 function remembered(chat,cards){for(const m of [...chat].reverse()){if(m.role!=='user')continue;const matches=selected(norm(m.text),cards);if(matches.length)return matches}return []}
 export function oracleReading(session){
- const r=interpret(session.items,session.spread,session.topic);if(!r)return null;
+ const r=interpret(session.items,session.spread,session.topic,session.customSpread);if(!r)return null;
  const lens=lensFor(session.question,session.topic);
  const themes=new Map();for(const c of r.cards)for(const t of c.study.themes)themes.set(t,(themes.get(t)||0)+1);
  const common=[...themes].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([t])=>t);

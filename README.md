@@ -58,3 +58,6 @@ Percurso autoral de 22 capítulos, com estudo, contemplação, práticas e progr
 
 ## Museu das pinturas
 Galeria independente das tiragens: 78 pinturas sem moldura, filtro por coleção, navegação direta ou por setas, zoom de 100% a 300%, contemplação sem texto interpretativo e tela cheia quando suportada pelo navegador. Acesso pela Biblioteca ou pelos detalhes de um arcano. Usa as imagens existentes, com derivados responsivos quando habilitados, e fallback vetorial se a imagem estiver indisponível offline. Nenhuma nova pintura necessária.
+
+## Arquiteto de Rituais
+Crie até 50 modelos locais de uma a dez cartas, com nome, títulos, propósitos e disposição em grade, linha ou círculo. Acesse pelo preparo da tiragem (`#architect`). Modelos podem ser editados ou excluídos sem alterar as leituras existentes: cada leitura personalizada guarda a sua própria definição validada, inclusive no backup do Grimório. O modelo reutilizável fica no armazenamento local; o backup do diário inclui as definições das leituras, não a biblioteca de modelos. Em telas pequenas, a geometria se adapta para grade. Funciona offline após a atualização do shell.
