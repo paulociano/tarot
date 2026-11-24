@@ -27,3 +27,6 @@ Correções: salto de conteúdo sem mudar o hash; alertas de armazenamento; vali
 
 ## Pipeline de publicação ARCANA 3
 CI gera os derivados, testa uso de WebP e valida o pacote (158 arquivos; menos de 50% dos bytes originais). Release automático somente quando a origem de Pages é GitHub Actions. Configuração legada continua funcional. A mudança de origem requer ação do proprietário caso ainda esteja em modo branch; não foi feita via conector.
+
+## Oráculo contextual
+Motor local separado em oracle.js; síntese contextual por temas, referências recentes e posição, guardrails anteriores à seleção de cartas, narração somente com voz local. Sem backend ou transmissão de perguntas. Testes de contexto, inversão, limites e continuidade; validação em CI pendente. Voz real depende do dispositivo.

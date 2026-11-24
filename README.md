@@ -43,3 +43,6 @@ Cinco ambientes panorâmicos opcionais em `assets/scenes/` (consulte o README de
 
 ## Conhecimento dos Arcanos
 As 78 cartas possuem arquétipo editorial, aprofundamento, temas e pergunta reflexiva. O laboratório permite comparar duas ou três cartas, com inversões, relações temáticas, eco numérico e mandala, sem modificar a sessão de tiragem. Dez modalidades de tiragem estão disponíveis. Interpretações são autorais, contextuais e não preditivas; não há IA generativa nesta fase.
+
+## Oráculo ARCANA — interpretação contextual local
+O Oráculo utiliza temas reconhecidos por palavras-chave, posição, orientação, estudos dos arcanos e relações entre cartas. A síntese distingue o contexto da pergunta de fatos: não faz previsões e não infere sentimentos de terceiros. A conversa retoma referências recentes a cartas e posições; não é um modelo generativo. A narração é opcional e só usa voz de português com `localService` verdadeiro no dispositivo. Se indisponível, o texto permanece acessível. Não são enviadas perguntas ou leituras a serviços de IA. Uma integração generativa futura exige backend, consentimento, controle de acesso/custos e configuração segura de credenciais no servidor.
