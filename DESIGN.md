@@ -55,3 +55,6 @@ Narração neural pt-BR sob demanda, ritmo desacelerado em 12% no length scale, 
 
 ## Continuidade sensorial
 Cada sala possui assinatura harmônica discreta. Crossfade e panorama de baixa intensidade; a voz tem prioridade. Trocas de cenários não devem piscar ou deixar o fundo vazio durante a carga. Pulso final da mandala como confirmação breve, sem partículas ou animação infinita adicional. A paleta, pinturas e controles existentes permanecem.
+
+## Trilha final
+Cinco composições Suno fornecidas pelo autor, preservadas nos caminhos originais em assets. Ganho de 15% no barramento musical (teto 20%), 4% durante narração; crossfade de 1,8 s. O ícone discreto de áudio ambiente continua sendo o único controle. A trilha é secundária à voz e não inicia automaticamente.

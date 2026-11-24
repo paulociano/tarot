@@ -12,6 +12,8 @@ dest.mkdir()
 for name in ["index.html", "style.css", "app.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "soundscape.js", "knowledge.js", "oracle.js", "vault.js", "narration.js", "voice-script.js", "voice-worker.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
     shutil.copy2(name, dest / name)
 shutil.copytree("assets", dest / "assets", ignore=shutil.ignore_patterns("README.md"))
+for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
+    assert (dest / "assets" / f"{name}.mp3").is_file(), f"Missing soundtrack: {name}"
 stats = json.loads((dest / "assets/optimized/stats.json").read_text())
 assert stats["files"] == 158
 optimized = dest / "assets/optimized"

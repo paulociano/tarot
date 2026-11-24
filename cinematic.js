@@ -1,4 +1,4 @@
-// ARCANA Cinematic: optional paintings, bounded motion and original procedural audio.
+// ARCANA Cinematic: optional paintings, bounded motion and curated scene soundtrack.
 export const scenes={home:{file:'portal',name:'O Portal'},ritual:{file:'santuario',name:'O Santuário'},atlas:{file:'biblioteca',name:'A Biblioteca'},daily:{file:'observatorio',name:'O Observatório'},journal:{file:'grimorio',name:'O Grimório'}};
 import {createSoundscape} from './soundscape.js';
 let sceneToken=0,currentScene='',requestedScene='',currentLayer=null;
