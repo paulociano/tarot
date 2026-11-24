@@ -65,3 +65,6 @@ CI c43b051: 24 combinações auditadas. Gate de controles acessíveis, overflow 
 
 ### Revalidação do refinamento sensorial
 CI 66c9df9: smoke Chromium aprovado nas três larguras, cofre, voz controlada, armazenamento multiaba e grafo de áudio real. Build interrompido por assertion antiga que contava todos os WebP na raiz (158), incluindo o novo ornamento. Corrigida a validação para comparar os nomes exatos das 158 versões das 79 cartas e validar cenário/auréola separadamente. O gate de 2,5 MB continua inalterado. O relatório imprime os identificadores e alvos das regras axe para diagnóstico. Resultados da nova execução ainda pendentes.
+
+### Hierarquia semântica
+Revisão estática identificou títulos H3 sem H2 intermediário no Portal e no Grimório. Corrigida a hierarquia sem mudar a tipografia, com títulos/landmarks identificados para a seção de funcionamento, resumo da jornada, backup e cofre. A regra axe `heading-order` passa a integrar os gates bloqueantes. O resultado final depende da execução do novo pipeline.

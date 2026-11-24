@@ -1,5 +1,5 @@
 // ARCANA public static resources only. No private data or third-party requests.
-const VERSION='v13-sensory-budget';
+const VERSION='v14-accessibility';
 const SHELL='arcana-shell-'+VERSION, ART='arcana-art-v1', ORIGINAL='arcana-original-v1';
 const scope=new URL(self.registration.scope);
 const shellPaths=['index.html','style.css','app.js','deck.js','engine.js','runes.js','storage.js','cinematic.js','soundscape.js','knowledge.js','oracle.js','vault.js','narration.js','voice-script.js','voice-worker.js','grimorio.js','journey.js','art-protection.js','reading-art.js','custom-ritual.js','pwa.js','manifest.webmanifest','assets/optimized/manifest.js','assets/icons/icon-192.png','assets/icons/icon-512.png'];

@@ -253,3 +253,6 @@ footer>div:first-child{display:flex;flex-direction:column;gap:5px}.pwa-controls{
 
 /* The ornamental texture is requested only when a mandala exists. */
 .optimized-art .altar-visual:before,.optimized-art .lab-mandala:before{background-image:url('./assets/optimized/aureola.webp')}
+
+/* Semantic heading levels independent of visual hierarchy. */
+h2.section-compact-heading{font:600 clamp(25px,2.5vw,32px)/1.02 var(--serif);letter-spacing:normal}
