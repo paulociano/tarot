@@ -1,0 +1,7 @@
+import {deck} from './deck.js';
+import {localDay,topics,spreads} from './engine.js';
+const names=new Map(deck.map(c=>[c.id,c]));
+const norm=s=>String(s??'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+export function filterJournal(records,{query='',topic='',month='',day=''}={}){const q=norm(query).trim();return records.filter(r=>{const date=localDay(new Date(r.date));return (!topic||r.topic===topic)&&(!month||date.startsWith(month))&&(!day||date===day)&&(!q||norm([r.question,r.note,topics[r.topic],spreads[r.spread].name,...r.items.map(i=>names.get(i.id)?.name)].join(' ')).includes(q))}).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))}
+export function journalStats(records){const cards=new Map(),days=new Map();let total=0,reversed=0;for(const r of records){const day=localDay(new Date(r.date));days.set(day,(days.get(day)||0)+1);for(const i of r.items){cards.set(i.id,(cards.get(i.id)||0)+1);total++;if(i.reversed)reversed++}}return {readings:records.length,unique:cards.size,total,reversed,days:Object.fromEntries(days),frequent:[...cards].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,5).map(([id,count])=>({id,count,name:names.get(id)?.name}))}}
+export function monthDays(month){if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(month))return [];const [y,m]=month.split('-').map(Number);const start=new Date(y,m-1,1);const count=new Date(y,m,0).getDate();return [...Array((start.getDay()+6)%7).fill(null),...Array.from({length:count},(_,i)=>month+'-'+String(i+1).padStart(2,'0'))]}

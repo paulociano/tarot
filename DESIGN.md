@@ -36,3 +36,6 @@ Cada carta do atlas apresenta a pintura na frente e uma ficha de estudo no verso
 
 ## Cinematic — ambientes e atmosfera
 Portal, Santuário, Biblioteca, Observatório e Grimório recebem pinturas panorâmicas opcionais (16:9). A pintura é o fundo, não contém UI, texto ou sigilos funcionais. Véus contrastantes, troca de camada em 650 ms, parallax limitado a 8/5 px por eixo no modo cinematográfico. Entrada de carta em 420 ms, virada após chegada, sigilos e conexões em seguida. Modo essencial desativa movimento; áudio ambiente sintetizado e opt-in, independente do som de ação. Sem WebGL ou bibliotecas novas. As imagens de carta originais são fallback; não se afirma que as cinco pinturas já existam.
+
+## Experiência cinematográfica única e Grimório
+Removido seletor de imersão; cinematográfico permanente, com desligamento de animações e reduced motion preservados. Ícones SVG de traço fino, estado ativo dourado, estado inativo riscado, aria-pressed e tooltip. Grimório usa frequências reais do diário salvo e calendário local; selo exportado contém apenas a geometria dos arcanos.

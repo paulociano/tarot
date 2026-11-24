@@ -30,3 +30,6 @@ CI gera os derivados, testa uso de WebP e valida o pacote (158 arquivos; menos d
 
 ## Oráculo contextual
 Motor local separado em oracle.js; síntese contextual por temas, referências recentes e posição, guardrails anteriores à seleção de cartas, narração somente com voz local. Sem backend ou transmissão de perguntas. Testes de contexto, inversão, limites e continuidade; validação em CI pendente. Voz real depende do dispositivo.
+
+## Grimório e controles
+Modos removidos, ícones com nomes acessíveis e áreas de toque de 44 px. Estatísticas descritivas, busca e calendário, selo SVG, preservação do diário local e backups. Testes adicionados; publicação e runtime pendentes.

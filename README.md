@@ -39,10 +39,13 @@ Backup do diário versionado, importação de JSON validada (inclusive formato a
 O workflow Test ARCANA gera 158 WebPs, verifica o uso efetivo de WebP no Chromium, aplica um limite de tamanho de 50% dos originais e prepara `dist/`. A publicação depende da origem GitHub Actions configurada no Pages. O workflow separado de otimização continua disponível para gerar apenas os derivados.
 
 ## ARCANA Cinematic
-Cinco ambientes panorâmicos opcionais em `assets/scenes/` (consulte o README dessa pasta). Modos Essencial, Imersivo e Cinematográfico; parallax limitado ao último modo, entrada de carta coordenada à virada, ambientação sonora procedural opcional e desligada por padrão. A preferência de movimento reduzido mantém toda a funcionalidade. Os fundos existentes continuam funcionando enquanto as pinturas panorâmicas estiverem ausentes.
+Cinco ambientes panorâmicos opcionais em `assets/scenes/` (consulte o README dessa pasta). Experiência Cinematográfica única; parallax discreto, entrada de carta coordenada à virada, ambientação sonora procedural opcional e desligada por padrão. A preferência de movimento reduzido mantém toda a funcionalidade. Os fundos existentes continuam funcionando enquanto as pinturas panorâmicas estiverem ausentes.
 
 ## Conhecimento dos Arcanos
 As 78 cartas possuem arquétipo editorial, aprofundamento, temas e pergunta reflexiva. O laboratório permite comparar duas ou três cartas, com inversões, relações temáticas, eco numérico e mandala, sem modificar a sessão de tiragem. Dez modalidades de tiragem estão disponíveis. Interpretações são autorais, contextuais e não preditivas; não há IA generativa nesta fase.
 
 ## Oráculo ARCANA — interpretação contextual local
 O Oráculo utiliza temas reconhecidos por palavras-chave, posição, orientação, estudos dos arcanos e relações entre cartas. A síntese distingue o contexto da pergunta de fatos: não faz previsões e não infere sentimentos de terceiros. A conversa retoma referências recentes a cartas e posições; não é um modelo generativo. A narração é opcional e só usa voz de português com `localService` verdadeiro no dispositivo. Se indisponível, o texto permanece acessível. Não são enviadas perguntas ou leituras a serviços de IA. Uma integração generativa futura exige backend, consentimento, controle de acesso/custos e configuração segura de credenciais no servidor.
+
+## Grimório pessoal
+Histórico visual, contagens de cartas, arcanos recorrentes, calendário, busca e filtros por área, mês e dia. Exportação de selos SVG sem incluir pergunta ou anotação. Os controles de áudio ambiente, sons de interação e animações são ícones acessíveis no cabeçalho. A experiência cinematográfica é única, respeitando a preferência por movimento reduzido. Dados continuam locais, com backup JSON; IndexedDB e sincronização não foram implementados nesta etapa.
