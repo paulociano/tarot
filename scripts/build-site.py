@@ -9,7 +9,7 @@ dest = Path("dist")
 if dest.exists():
     shutil.rmtree(dest)
 dest.mkdir()
-for name in ["index.html", "style.css", "app.js", "universe.js", "atelier.js", "astrarium.js", "astronomy-data.js", "ancestral.js", "ancestral-data.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "soundscape.js", "knowledge.js", "oracle.js", "vault.js", "narration.js", "voice-script.js", "voice-worker.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
+for name in ["index.html", "style.css", "app.js", "universe.js", "atelier.js", "astrarium.js", "astronomy-data.js", "ancestral.js", "ancestral-data.js", "silentium.js", "silentium-clock.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "soundscape.js", "knowledge.js", "oracle.js", "vault.js", "narration.js", "voice-script.js", "voice-worker.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
     shutil.copy2(name, dest / name)
 shutil.copytree("assets", dest / "assets", ignore=shutil.ignore_patterns("README.md"))
 shutil.copytree("vendor", dest / "vendor")
@@ -26,7 +26,10 @@ actual = {p.name for p in optimized.glob("*.webp") if re.search(r"-(420|1050)\.w
 assert actual == expected, f"Card derivatives: missing={sorted(expected-actual)}, extra={sorted(actual-expected)}"
 if (dest / "assets/runes/aureola.png").is_file():
     assert (optimized / "aureola.webp").is_file(), "Missing transparent ornamental derivative"
-for scene in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
+for name in ("runa", "moeda"):
+    if (dest / "assets/instruments" / f"{name}.png").is_file():
+        assert (optimized / f"{name}.webp").is_file(), f"Missing instrument: {name}"
+for scene in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium"):
     if any((dest / "assets/scenes" / f"{scene}{ext}").is_file() for ext in (".png", ".webp")):
         assert (optimized / "scenes" / f"{scene}.webp").is_file(), f"Missing scene: {scene}"
 assert stats["derivative_bytes"] < stats["original_bytes"] * .5

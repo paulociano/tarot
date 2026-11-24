@@ -1,10 +1,11 @@
 // Stable registry: navigation, room ownership and cinematic environment are independent.
 export const chambers=Object.freeze([
  {id:'sanctuary',name:'O Santuário',glyph:'✧',scene:'ritual',route:'ritual',description:'Tarot e oráculos',detail:'Escolha cartas, pedras rúnicas ou o instrumento das mutações.',x:50,y:13,links:[['ritual','Iniciar tiragem'],['elder','Runas do Futhark'],['iching','I Ching'],['architect','Arquiteto de rituais']]},
- {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Céu e ciclos',detail:'Explore a Lua, os astros e a carta do dia.',x:84,y:39,links:[['daily','Carta do dia'],['astrarium','Astrarium · Mapa celeste']]},
- {id:'atelier',name:'O Ateliê',glyph:'◇',scene:'atlas',route:'atelier',description:'Criação simbólica',detail:'Componha sua própria mandala ou sigilo.',x:71,y:82,links:[['atelier','Ateliê Alquímico']]},
- {id:'grimoire',name:'O Grimório',glyph:'▤',scene:'journal',route:'journal',description:'Memória e reflexão',detail:'Revisite suas leituras e proteja seu histórico.',x:29,y:82,links:[['journal','Diário e cofre']]},
- {id:'library',name:'A Biblioteca',glyph:'✷',scene:'atlas',route:'atlas',description:'Conhecimento',detail:'Descubra arcanos, combinações e a Jornada do Louco.',x:16,y:39,links:[['atlas','Baralho completo'],['lab','Combinações'],['journey','Jornada do Louco']]}
+ {id:'observatory',name:'O Observatório',glyph:'☽',scene:'daily',route:'daily',description:'Céu e ciclos',detail:'Explore a Lua, os astros e a carta do dia.',x:83,y:29,links:[['daily','Carta do dia'],['astrarium','Astrarium · Mapa celeste']]},
+ {id:'atelier',name:'O Ateliê',glyph:'◇',scene:'atlas',route:'atelier',description:'Criação simbólica',detail:'Componha sua própria mandala ou sigilo.',x:83,y:71,links:[['atelier','Ateliê Alquímico']]},
+ {id:'grimoire',name:'O Grimório',glyph:'▤',scene:'journal',route:'journal',description:'Memória e reflexão',detail:'Revisite suas leituras e proteja seu histórico.',x:50,y:87,links:[['journal','Diário e cofre']]},
+ {id:'library',name:'A Biblioteca',glyph:'✷',scene:'atlas',route:'atlas',description:'Conhecimento',detail:'Descubra arcanos, combinações e a Jornada do Louco.',x:17,y:71,links:[['atlas','Baralho completo'],['lab','Combinações'],['journey','Jornada do Louco']]},
+ {id:'silence',name:'Silentium',glyph:'◎',scene:'silentium',route:'silentium',description:'Contemplação',detail:'Encontre um intervalo de silêncio, presença ou contemplação de uma pintura.',x:17,y:29,links:[['silentium','Entrar na câmara do silêncio']]}
 ].map(r=>Object.freeze({...r,links:Object.freeze(r.links.map(l=>Object.freeze(l)))})));
 export const routes=Object.freeze({
  home:{scene:'home',nav:'home',title:'O Portal',room:null},
@@ -18,7 +19,8 @@ export const routes=Object.freeze({
  lab:{scene:'atlas',nav:'lab',title:'Laboratório de Combinações',room:'library'},
  journey:{scene:'atlas',nav:'atlas',title:'Jornada do Louco',room:'library'},
  journal:{scene:'journal',nav:'journal',title:'O Grimório',room:'grimoire'},
- atelier:{scene:'atlas',nav:'home',title:'Ateliê Alquímico',room:'atelier'}
+ atelier:{scene:'atlas',nav:'home',title:'Ateliê Alquímico',room:'atelier'},
+ silentium:{scene:'silentium',nav:'home',title:'Silentium',room:'silence'}
 });
 export function resolveRoute(hash){const requested=String(hash||'').replace(/^#/,'')||'home',name=requested==='museum'?'atlas':Object.hasOwn(routes,requested)?requested:'home';return {name,...routes[name],redirect:requested!==name}}
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

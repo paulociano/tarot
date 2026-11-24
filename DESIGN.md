@@ -67,3 +67,6 @@ Instrumento circular em latão visual/indigo com escala de fase, calendário de 
 
 ## Oráculos ancestrais
 A seleção rúnica utiliza pedras de obsidiana, com símbolo oculto até a escolha, SVG preciso e texto acessível; o I Ching utiliza três moedas, seis linhas que se acumulam da base ao topo, marcação de mutações e figuras em paralelo. Texturas opcionais de autoria ARCANA são somente suportes materiais; a notação permanece vetorial. Não confundir os sigilos autorais do tarot com o Futhark histórico.
+
+## Silentium
+Câmara sem exigência de interação contínua. Um disco de luz pictórico em anéis calibrados é a assinatura visual; expansão/contração só na prática respiratória escolhida, sem retenção e com alternativa estática/reduced motion. Tempo restante e fase são textuais. A contemplação de pintura substitui o disco, sem animação adicional. Encerramento não confere pontos ou recompensa. Seis câmaras no Portal, novo ponto em órbita. Reutiliza música do Observatório em 15% e ducking 4%; pintura própria opcional com fallback.

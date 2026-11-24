@@ -1,5 +1,5 @@
 // ARCANA Cinematic: optional paintings, bounded motion and curated scene soundtrack.
-export const scenes={home:{file:'portal',name:'O Portal'},ritual:{file:'santuario',name:'O Santuário'},atlas:{file:'biblioteca',name:'A Biblioteca'},daily:{file:'observatorio',name:'O Observatório'},journal:{file:'grimorio',name:'O Grimório'}};
+export const scenes={home:{file:'portal',name:'O Portal'},ritual:{file:'santuario',name:'O Santuário'},atlas:{file:'biblioteca',name:'A Biblioteca'},daily:{file:'observatorio',name:'O Observatório'},journal:{file:'grimorio',name:'O Grimório'},silentium:{file:'silentium',name:'Silentium',fallback:'observatorio'}};
 import {createSoundscape} from './soundscape.js';
 let sceneToken=0,currentScene='',requestedScene='',currentLayer=null;
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches||document.body.classList.contains('motion-off');
@@ -7,7 +7,7 @@ export function showScene(route,optimized=false){
  const s=scenes[route]||scenes.home;if(requestedScene===s.file)return;requestedScene=s.file;const token=++sceneToken,host=document.querySelector('.scene-background');
  host.style.setProperty('--px','0px');host.style.setProperty('--py','0px');
  if(currentScene===s.file&&currentLayer){requestedScene=s.file;return}
- const paths=[...(optimized?['./assets/optimized/scenes/'+s.file+'.webp']:[]),'./assets/scenes/'+s.file+'.png','./assets/scenes/'+s.file+'.webp'];
+ const paths=[s.file,...(s.fallback?[s.fallback]:[])].flatMap(file=>[...(optimized?['./assets/optimized/scenes/'+file+'.webp']:[]),'./assets/scenes/'+file+'.png','./assets/scenes/'+file+'.webp']);
  function attempt(i){if(token!==sceneToken)return;if(i>=paths.length){requestedScene='';return}const image=new Image();image.decoding='async';image.alt='';image.className='scene-painting protected-art';image.draggable=false;
  image.onload=()=>{if(token!==sceneToken)return;const previous=currentLayer;
  // Retain the previous painting while the next loads. Discard only obsolete fading layers.

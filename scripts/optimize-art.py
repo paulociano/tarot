@@ -24,7 +24,7 @@ for path in originals:
 # Optional panoramic environments; original files remain untouched.
 scene_target = target / "scenes"
 scene_target.mkdir(exist_ok=True)
-for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
+for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio", "silentium"):
     candidates = [Path("assets/scenes") / (name + ext) for ext in (".png", ".webp")]
     path = next((p for p in candidates if p.is_file()), None)
     if path:
@@ -39,6 +39,14 @@ if halo.is_file():
         ornament = raw.convert("RGBA")
         ornament.thumbnail((720, 720), Image.Resampling.LANCZOS)
         ornament.save(target / "aureola.webp", "WEBP", quality=84, method=6)
+# Small transparent ritual material textures, loaded only inside their tools.
+for name in ("runa", "moeda"):
+    source_texture = Path("assets/instruments") / f"{name}.png"
+    if source_texture.is_file():
+        with Image.open(source_texture) as raw:
+            texture = raw.convert("RGBA")
+            texture.thumbnail((384, 384), Image.Resampling.LANCZOS)
+            texture.save(target / f"{name}.webp", "WEBP", quality=85, method=6)
 (target / "manifest.js").write_text("export const optimizedArt = true;\n", encoding="utf-8")
 (target / "stats.json").write_text(json.dumps({"original_bytes": before, "derivative_bytes": after, "files": len(originals)*2}, indent=2))
 print(f"Originals: {before:,} bytes; derivatives: {after:,} bytes")

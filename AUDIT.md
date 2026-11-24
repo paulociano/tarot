@@ -85,3 +85,6 @@ Revisão do CI 4450d81: testes unitários passaram; smoke parou porque `[data-ch
 
 ## Fase 3 — oráculos ancestrais
 24 runas distintas; biblioteca e sorteio sem reposição por rejeição de viés de módulo via crypto.getRandomValues. Matriz King Wen 8×8 conferida; 64 configurações únicas, 6/9 mutáveis, 7/8 estáveis, seis linhas da base ao topo, distribuição de três moedas 1:3:3:1. Reflexões autorais, não traduções de sentenças clássicas nem previsão. Testes de todas as 64 figuras, pares 1/2, 11/12 e 63, probabilidades, pool oculto, exportação e 360px. Texturas opcionais, nenhuma imagem alterada. Histórico em sessão; integração persistente futura. Novos testes e auditoria de 12 rotas aguardam CI.
+
+## Silentium — fase 4
+CI c1f1f4d (run 45487352269) aprovado, texturas `assets/instruments/runa.png` e `moeda.png` identificadas no upload e22495b. Build gera derivados RGBA 384px e verifica presença. Silentium usa relógio monotônico testável e ciclo de vida explícito (pausa em background, cleanup de intervalo e narração na troca de rota). Testes de pausa, conclusão, formato de tempo, movimento opcional, contemplação de arcano, reentrada e 13 rotas × 3 larguras. Trilha reaproveitada, pintura opcional e fallback; sem promessas de tratamento. Não foi feito teste físico ou escuta nova. CI pendente.

@@ -15,7 +15,7 @@ export function createSoundscape(factory,hidden=()=>false,mediaFactory=()=>new A
  async function play(enabled,route){
  desired=enabled;
  if(!enabled||hidden()){epoch++;clear();return false}
- route=Object.hasOwn(sceneTracks,route)?route:'home';
+ route=route==='silentium'?'daily':Object.hasOwn(sceneTracks,route)?route:'home';
  if(pending?.layer.route===route)return pending.promise;
  const ticket=++epoch;cancelPending();
  if(current?.route===route)return true;
