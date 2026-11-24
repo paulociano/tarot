@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "ARCANA · Tarot surrealista",
+  "short_name": "ARCANA",
+  "description": "Um universo de símbolos, reflexão e pintura surrealista.",
+  "lang": "pt-BR",
+  "start_url": "./#home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0d18",
+  "theme_color": "#0c0d18",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

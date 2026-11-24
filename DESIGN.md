@@ -39,3 +39,6 @@ Portal, Santuário, Biblioteca, Observatório e Grimório recebem pinturas panor
 
 ## Experiência cinematográfica única e Grimório
 Removido seletor de imersão; cinematográfico permanente, com desligamento de animações e reduced motion preservados. Ícones SVG de traço fino, estado ativo dourado, estado inativo riscado, aria-pressed e tooltip. Grimório usa frequências reais do diário salvo e calendário local; selo exportado contém apenas a geometria dos arcanos.
+
+## Sigilos híbridos
+Geometria dos 78 sigilos continua em SVG. A textura pictórica opcional `assets/runes/aureola.png` é um anel alquímico ornamentado transparente, exibido atrás das mandalas sem interferir nas linhas nem na exportação vetorial. O fallback é o desenho vetorial atual. A identidade dos sigilos não depende de raster.

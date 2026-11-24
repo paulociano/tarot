@@ -33,3 +33,6 @@ Motor local separado em oracle.js; síntese contextual por temas, referências r
 
 ## Grimório e controles
 Modos removidos, ícones com nomes acessíveis e áreas de toque de 44 px. Estatísticas descritivas, busca e calendário, selo SVG, preservação do diário local e backups. Testes adicionados; publicação e runtime pendentes.
+
+## PWA e sigilos pictóricos
+Manifest e ícones, Service Worker de escopo relativo, app shell versionado, cache público de arte limitado a 20 originais e 200 derivados, pacote completo opt-in WebP, status offline e instalação. Dados privados não entram no Cache Storage. Teste Chromium offline adicionado; instalação real iOS/Android, quota, atualização multiaba e revisão visual permanecem pendentes. A origem Pages observada no último CI é legacy, portanto pacote completo depende de mudar Source para GitHub Actions.
