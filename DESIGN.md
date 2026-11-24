@@ -42,3 +42,6 @@ Removido seletor de imersão; cinematográfico permanente, com desligamento de a
 
 ## Sigilos híbridos
 Geometria dos 78 sigilos continua em SVG. A textura pictórica opcional `assets/runes/aureola.png` é um anel alquímico ornamentado transparente, exibido atrás das mandalas sem interferir nas linhas nem na exportação vetorial. O fallback é o desenho vetorial atual. A identidade dos sigilos não depende de raster.
+
+## Jornada e marca
+Marca reduzida ao wordmark ARCANA e ao losango existente. Jornada dos 22 arcanos como sequência editorial livre, com navegação direta, progresso reversível e práticas contemplativas; sem bloquear capítulos. A auréola enviada em assets/runes/aureola.png permanece integrada às mandalas.

@@ -3,12 +3,13 @@ from pathlib import Path
 import shutil
 import json
 import hashlib
+import re
 
 dest = Path("dist")
 if dest.exists():
     shutil.rmtree(dest)
 dest.mkdir()
-for name in ["index.html", "style.css", "app.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "knowledge.js", "oracle.js", "narration.js", "grimorio.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
+for name in ["index.html", "style.css", "app.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "knowledge.js", "oracle.js", "narration.js", "grimorio.js", "journey.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
     shutil.copy2(name, dest / name)
 shutil.copytree("assets", dest / "assets", ignore=shutil.ignore_patterns("README.md"))
 stats = json.loads((dest / "assets/optimized/stats.json").read_text())
@@ -25,5 +26,5 @@ for path in sorted(dest.rglob("*")):
         fingerprint.update(str(path.relative_to(dest)).encode())
         fingerprint.update(path.read_bytes())
 worker = dest / "sw.js"
-worker.write_text(worker.read_text(encoding="utf-8").replace("const VERSION='v1';", "const VERSION='"+fingerprint.hexdigest()[:16]+"';"), encoding="utf-8")
+worker.write_text(re.sub(r"const VERSION='[^']+';", "const VERSION='"+fingerprint.hexdigest()[:16]+"';", worker.read_text(encoding="utf-8"), count=1), encoding="utf-8")
 print(json.dumps(stats))
