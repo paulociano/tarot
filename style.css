@@ -181,3 +181,27 @@ body.optimized-art[data-scene=home]{--scene:url('./assets/optimized/18-a-lua-105
 
 /* Foundation: visible recoverable storage errors and backup controls. */
 #storage-warning{padding:12px 16px;border:1px solid var(--gold);background:#302139;color:#f3e2be;margin:0 0 20px}#storage-warning[hidden]{display:none}.journal-backup input[hidden]{display:none}.journal-backup #import-result:empty{display:none}#import-result{color:var(--gold);margin:14px 0 0}
+
+/* Cinematic layer: separate paintings, no dependency on optional scene assets. */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.immersion-control{display:block}.immersion-control select{width:auto;max-width:160px;min-height:40px;padding:5px 8px;font:600 14px/1.2 var(--serif);color:var(--gold)}
+.scene-layer{position:absolute;inset:0;opacity:0;transition:opacity .65s var(--ease);overflow:hidden;z-index:1}
+.scene-layer.scene-visible{opacity:1}.scene-painting{display:block;width:104%;height:104%;position:absolute;inset:-2%;object-fit:cover;object-position:center;transform:translate(var(--px,0px),var(--py,0px));transition:transform .25s ease-out}
+.scene-layer:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080a15e8 0%,#0b0d19b0 47%,#0b0d1950 100%),linear-gradient(0deg,#090b17e8,transparent 65%,#090b1730)}
+.scene-background:after{z-index:2}
+body:not([data-scene=home]) .scene-layer:after{background:linear-gradient(90deg,#080a15dc,#0b0d19ae 50%,#0b0d19a5),linear-gradient(0deg,#090b17e6,transparent 70%)}
+.ritual-table{position:relative;isolation:isolate;overflow:clip;overflow-clip-margin:14px}
+.ritual-table:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 24%,#6a4c6330,transparent 60%)}
+body[data-immersion=cinematic] .ritual-table:after{content:"";position:absolute;top:64px;left:50%;width:min(80%,580px);aspect-ratio:1;transform:translateX(-50%);border:1px solid #d1b27b38;border-radius:50%;box-shadow:0 0 0 12px #d1b27b08,0 0 0 32px #d1b27b0c;z-index:-1;pointer-events:none}
+body[data-immersion=cinematic] .slot-awake .flip-object{animation-delay:.42s}
+body[data-immersion=cinematic] .slot-awake .rune-awake{animation-delay:.5s}
+body[data-immersion=cinematic] .constellation-awake .new-link{animation-delay:1.15s}
+body[data-immersion=cinematic] .constellation-awake .new-node{animation-delay:.95s}
+body[data-immersion=cinematic] .shuffle .slot{animation:deck-arrive .8s var(--ease) both}
+body[data-immersion=cinematic] .shuffle .slot:nth-child(2n){animation-delay:.1s}
+body[data-immersion=cinematic] .shuffle .slot:nth-child(3n){animation-delay:.2s}
+@keyframes deck-arrive{from{transform:translateY(18px) rotate(-5deg);opacity:.45}to{transform:none;opacity:1}}
+@media(hover:hover) and (pointer:fine){body[data-immersion=cinematic]:not(.motion-off) .pick-card:not(:disabled):hover .tarot{transform:translateY(-7px) rotate(-2deg);box-shadow:0 12px 22px #0008}}
+body[data-immersion=essential] .scene-painting,.motion-off .scene-painting{transform:none}
+@media(max-width:620px){.scene-layer:after,body:not([data-scene=home]) .scene-layer:after{background:linear-gradient(0deg,#080a15eb,#0b0d19ae 55%,#0b0d19d8)}.immersion-control select{font-size:13px;min-height:40px}.header-controls{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.scene-painting{transform:none!important}.scene-layer{transition:none!important}}

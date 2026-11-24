@@ -21,6 +21,17 @@ for path in originals:
             im.save(out, "WEBP", quality=quality, method=6)
             after += out.stat().st_size
         print(path.stem)
+# Optional panoramic environments; original files remain untouched.
+scene_target = target / "scenes"
+scene_target.mkdir(exist_ok=True)
+for name in ("portal", "santuario", "biblioteca", "observatorio", "grimorio"):
+    candidates = [Path("assets/scenes") / (name + ext) for ext in (".png", ".webp")]
+    path = next((p for p in candidates if p.is_file()), None)
+    if path:
+        with Image.open(path) as raw:
+            image = ImageOps.exif_transpose(raw).convert("RGB")
+            image.thumbnail((1920, 1080), Image.Resampling.LANCZOS)
+            image.save(scene_target / (name + ".webp"), "WEBP", quality=86, method=6)
 (target / "manifest.js").write_text("export const optimizedArt = true;\n", encoding="utf-8")
 (target / "stats.json").write_text(json.dumps({"original_bytes": before, "derivative_bytes": after, "files": len(originals)*2}, indent=2))
 print(f"Originals: {before:,} bytes; derivatives: {after:,} bytes")

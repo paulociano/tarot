@@ -33,3 +33,6 @@ Cada carta possui um sigilo original determinístico (13 traçados × 6 marcas d
 
 ## Biblioteca interativa
 Cada carta do atlas apresenta a pintura na frente e uma ficha de estudo no verso: arcano/naipe, elemento, significados normal e invertido e área simbólica. Hover ou foco por teclado ativa a rotação; clique/toque abre os detalhes completos. A saída do ponteiro restaura a pintura. A mesa de tiragem permanece com cartas fechadas até a seleção.
+
+## Cinematic — ambientes e atmosfera
+Portal, Santuário, Biblioteca, Observatório e Grimório recebem pinturas panorâmicas opcionais (16:9). A pintura é o fundo, não contém UI, texto ou sigilos funcionais. Véus contrastantes, troca de camada em 650 ms, parallax limitado a 8/5 px por eixo no modo cinematográfico. Entrada de carta em 420 ms, virada após chegada, sigilos e conexões em seguida. Modo essencial desativa movimento; áudio ambiente sintetizado e opt-in, independente do som de ação. Sem WebGL ou bibliotecas novas. As imagens de carta originais são fallback; não se afirma que as cinco pinturas já existam.

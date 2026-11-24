@@ -37,3 +37,6 @@ Backup do diário versionado, importação de JSON validada (inclusive formato a
 
 ### Release otimizado
 O workflow Test ARCANA gera 158 WebPs, verifica o uso efetivo de WebP no Chromium, aplica um limite de tamanho de 50% dos originais e prepara `dist/`. A publicação depende da origem GitHub Actions configurada no Pages. O workflow separado de otimização continua disponível para gerar apenas os derivados.
+
+## ARCANA Cinematic
+Cinco ambientes panorâmicos opcionais em `assets/scenes/` (consulte o README dessa pasta). Modos Essencial, Imersivo e Cinematográfico; parallax limitado ao último modo, entrada de carta coordenada à virada, ambientação sonora procedural opcional e desligada por padrão. A preferência de movimento reduzido mantém toda a funcionalidade. Os fundos existentes continuam funcionando enquanto as pinturas panorâmicas estiverem ausentes.

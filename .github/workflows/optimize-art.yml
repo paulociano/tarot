@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['assets/cards/*.png', 'scripts/optimize-art.py', '.github/workflows/optimize-art.yml']
+    paths: ['assets/cards/*.png', 'assets/scenes/*', 'scripts/optimize-art.py', '.github/workflows/optimize-art.yml']
 permissions:
   contents: read
 jobs:
