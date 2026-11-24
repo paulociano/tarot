@@ -76,3 +76,6 @@ Sete câmaras em constelação regular. A Câmara dos Espelhos usa diagramas SVG
 
 ## Onirium
 Oito câmaras. Atlas onírico como constelação pessoal de etiquetas explícitas, com conexões somente por sonhos compartilhados, números e lista equivalente. Rascunho em sessão, salvamento explícito e privacidade informada. Perguntas de associação pessoal, não dicionário de significados universais. Arte e música do Grimório como fallback; cenário próprio opcional.
+
+## Universum pessoal
+O coração do Portal abre a constelação pessoal; acesso linear também no Grimório e diretório. O diagrama conecta origens de experiências com temas em comum, não presume influência ou progresso pessoal. Lista textual é a alternativa acessível e permite recuperar arte paramétrica. Sem nova pintura, compartilhando atmosfera do Grimório.

@@ -94,3 +94,6 @@ Upload 2a02d84 contém Silentium PNG e MP3. Faixa integrada como sexto ambiente,
 
 ## Onirium
 CI dbe01b6 aprovado. Upload 92173b2 contém cena e MP3 dos Espelhos; integrados como sétima trilha, mesmo ganho. Onirium usa schema estrito, escaping nas saídas HTML, deduplicação de etiquetas normalizadas, 250 registros máx., paginação, grafo 8 nós e 28 conexões máx., armazenamento guardado contra snapshot multiaba obsoleto. Cofre v1 estendido com campo dreams opcional para compatibilidade antiga e validação antes de gravar, merge preserva local e rollback inclui chave nova. Testes de conteúdo HTML hostil, persistência, exportação, edição, grafo e cofre; auditoria de 15 rotas em três larguras pendente. Sem garantia de criptografia em repouso. Não foi inspecionado novo cenário nem escutado MP3.
+
+## Universum pessoal
+CI e19c1f7 aprovado; upload 20ff952 inclui Onirium PNG/MP3. Oitava trilha vinculada com ganho preservado. Schema de experiências validado e limitado a 300, perfil opcional, sem duplicar tiragens/sonhos, escaping de campos e grafo de etiquetas explícitas. Guard local e Cofre estendidos, backwards compatibility v1; testes de união, criptografia, limites, arte vetorial e smoke de salvamento/reload. Build e shell incluem módulos. Auditoria 16 rotas × 3 larguras pendente; não verificado perceptualmente o novo áudio ou visual em dispositivo físico.
