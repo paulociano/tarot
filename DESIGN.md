@@ -46,5 +46,6 @@ Geometria dos 78 sigilos continua em SVG. A textura pictórica opcional `assets/
 ## Jornada e marca
 Marca reduzida ao wordmark ARCANA e ao losango existente. Jornada dos 22 arcanos como sequência editorial livre, com navegação direta, progresso reversível e práticas contemplativas; sem bloquear capítulos. A auréola enviada em assets/runes/aureola.png permanece integrada às mandalas.
 
-## Museu
-Sala escura, pintura sem bordas, controles discretos e área de zoom rolável. A contemplação oculta o aprofundamento, não a navegação. Navegação por teclado não interfere no seletor nem na rolagem com zoom. Tela cheia opcional e saída nativa. Mantém a sessão de leitura intacta.
+
+## Proteção e compartilhamento
+Museu removido por redundância. A biblioteca permanece interativa. Proteção de superfície por eventos e CSS sem bloquear atalhos, seleção de textos ou navegação. Exportação vetorial autoral com selo e identificação das cartas, sem raster ou conteúdo pessoal. Não constitui DRM.

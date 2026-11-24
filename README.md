@@ -56,8 +56,9 @@ Manifest, ícones PNG próprios, instalação pelo navegador, shell local via Se
 ## Jornada do Louco
 Percurso autoral de 22 capítulos, com estudo, contemplação, práticas e progresso local. Acesse pela página inicial ou pela Biblioteca. Funciona offline depois de preparar o shell; as pinturas não armazenadas usam o fallback vetorial. O estudo não altera a tiragem em andamento. O progresso é separado do backup do diário. O logotipo no cabeçalho exibe somente ARCANA.
 
-## Museu das pinturas
-Galeria independente das tiragens: 78 pinturas sem moldura, filtro por coleção, navegação direta ou por setas, zoom de 100% a 300%, contemplação sem texto interpretativo e tela cheia quando suportada pelo navegador. Acesso pela Biblioteca ou pelos detalhes de um arcano. Usa as imagens existentes, com derivados responsivos quando habilitados, e fallback vetorial se a imagem estiver indisponível offline. Nenhuma nova pintura necessária.
 
 ## Arquiteto de Rituais
 Crie até 50 modelos locais de uma a dez cartas, com nome, títulos, propósitos e disposição em grade, linha ou círculo. Acesse pelo preparo da tiragem (`#architect`). Modelos podem ser editados ou excluídos sem alterar as leituras existentes: cada leitura personalizada guarda a sua própria definição validada, inclusive no backup do Grimório. O modelo reutilizável fica no armazenamento local; o backup do diário inclui as definições das leituras, não a biblioteca de modelos. Em telas pequenas, a geometria se adapta para grade. Funciona offline após a atualização do shell.
+
+## Proteção de imagens e compartilhamento
+O Baralho concentra a consulta às pinturas. A rota antiga #museum redireciona ao Baralho. Arraste e menu de contexto são bloqueados nas superfícies de arte, com restrição de long press quando suportada. Isso é uma barreira de interface, não DRM: imagens públicas podem ser recuperadas por ferramentas do navegador, cache, URL, GitHub ou captura de tela. Os originais permanecem preservados. Exportação de composição simbólica em SVG usa somente sigilos, nomes e orientações das cartas; nenhuma pintura, pergunta ou anotação é incorporada.

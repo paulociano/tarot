@@ -36,3 +36,6 @@ Modos removidos, ícones com nomes acessíveis e áreas de toque de 44 px. Estat
 
 ## PWA e sigilos pictóricos
 Manifest e ícones, Service Worker de escopo relativo, app shell versionado, cache público de arte limitado a 20 originais e 200 derivados, pacote completo opt-in WebP, status offline e instalação. Dados privados não entram no Cache Storage. Teste Chromium offline adicionado; instalação real iOS/Android, quota, atualização multiaba e revisão visual permanecem pendentes. A origem Pages observada no último CI é legacy, portanto pacote completo depende de mudar Source para GitHub Actions.
+
+## Proteção de superfície de arte
+Remoção do museu e módulos correspondentes; redirecionamento de hash legado. Proteção de contexto e arraste restrita às superfícies de arte, sem bloquear teclado ou cópia de textos. Exportação simbólica sem pinturas. Recursos públicos permanecem recuperáveis por URL ou captura; não é controle de acesso. Testes de navegador adicionados.

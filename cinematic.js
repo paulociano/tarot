@@ -9,7 +9,7 @@ export function showScene(route,optimized=false){
  const previous=currentLayer;currentLayer=null;
  if(previous){previous.classList.remove('scene-visible');setTimeout(()=>previous.remove(),700)}
  const paths=[...(optimized?['./assets/optimized/scenes/'+s.file+'.webp']:[]),'./assets/scenes/'+s.file+'.png','./assets/scenes/'+s.file+'.webp'];
- function attempt(i){if(i>=paths.length||token!==sceneToken)return;const image=new Image();image.decoding='async';image.alt='';image.className='scene-painting';image.onload=()=>{if(token!==sceneToken)return;currentLayer=document.createElement('div');currentLayer.className='scene-layer';currentLayer.setAttribute('aria-hidden','true');currentLayer.append(image);host.append(currentLayer);const layer=currentLayer;requestAnimationFrame(()=>{if(layer.isConnected)layer.classList.add('scene-visible')})};image.onerror=()=>attempt(i+1);image.src=paths[i]}
+ function attempt(i){if(i>=paths.length||token!==sceneToken)return;const image=new Image();image.decoding='async';image.alt='';image.className='scene-painting protected-art';image.draggable=false;image.onload=()=>{if(token!==sceneToken)return;currentLayer=document.createElement('div');currentLayer.className='scene-layer';currentLayer.setAttribute('aria-hidden','true');currentLayer.append(image);host.append(currentLayer);const layer=currentLayer;requestAnimationFrame(()=>{if(layer.isConnected)layer.classList.add('scene-visible')})};image.onerror=()=>attempt(i+1);image.src=paths[i]}
  attempt(0)
 }
 let frame=0,px=0,py=0;export function bindAtmosphere(){

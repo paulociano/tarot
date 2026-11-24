@@ -9,7 +9,7 @@ dest = Path("dist")
 if dest.exists():
     shutil.rmtree(dest)
 dest.mkdir()
-for name in ["index.html", "style.css", "app.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "knowledge.js", "oracle.js", "narration.js", "grimorio.js", "journey.js", "museum.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
+for name in ["index.html", "style.css", "app.js", "deck.js", "engine.js", "runes.js", "storage.js", "cinematic.js", "knowledge.js", "oracle.js", "narration.js", "grimorio.js", "journey.js", "art-protection.js", "reading-art.js", "custom-ritual.js", "pwa.js", "sw.js", "manifest.webmanifest", ".nojekyll"]:
     shutil.copy2(name, dest / name)
 shutil.copytree("assets", dest / "assets", ignore=shutil.ignore_patterns("README.md"))
 stats = json.loads((dest / "assets/optimized/stats.json").read_text())
